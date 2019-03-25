@@ -28,6 +28,11 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "footer" */ "./views/saruufooter.vue")
+    },{
+      path: "/Materialkitr",
+      name: "Materialkitr",
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/materialkitr.vue")
     }
   ]
 });
