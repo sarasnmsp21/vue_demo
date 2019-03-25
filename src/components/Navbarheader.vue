@@ -1,7 +1,7 @@
 <template>
 <!-- created by ram -->
   <div>
-    <b-navbar toggleable="lg" type="" variant="">
+    <b-navbar fixed="top" toggleable="lg" type="" variant="">
       <b-container class="mx-5 px-5">
         <b-navbar-brand class="text-white" href="#">{{ msg }}</b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"/>
@@ -29,8 +29,11 @@ export default {
 
 <style scoped lang="scss">
 .navbar-nav {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+
   .nav-link {
       color: white;
   }
 }
+
 </style>
