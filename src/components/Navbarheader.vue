@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .navbar-nav {
-  background-color: rgba(0, 0, 0, 0.075) !important;
+
 
   .nav-link {
       color: white;
