@@ -7,7 +7,7 @@
                   <b-row >
                     
 
-                  <div class="col-md-3 ">
+                  <div class="col-md-3 col-sm-12">
                      
                    <div class="card border-0" >
                       
@@ -24,7 +24,7 @@
                
 
 
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-12">
                    
                  <div class="card border-0" >
                     
@@ -40,7 +40,7 @@
                 </div>
            
 
-                   <div class="col-md-3 ">
+                   <div class="col-md-3 col-sm-12">
                      
                    <div class="card border-0" >
                   <img class="card-img-top  w-50 h-30  mx-auto rounded-circle" src="../assets/img4.jpeg" alt="Card image cap">

@@ -4,11 +4,11 @@
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit">
-          <b-nav-item 
-          href="#" 
-          slot="navlinks" 
-          v-for="link in navlinks" 
-          v-bind:key="link.index"
+          <b-nav-item
+            href="#"
+            slot="navlinks"
+            v-for="link in navlinks"
+            v-bind:key="link.index"
           >{{ link.name }}</b-nav-item>
         </Navbarheader>
         <!-- Navigation Bar End -->
@@ -33,20 +33,48 @@
 
     <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
-      <divheaders>
-        <h3 slot="h3tag">{{productHeader}}</h3>
-        <p slot="ptag" class="text-muted">{{productDescription}}</p>
-      </divheaders>
+        <b-col md="6" class="mx-auto">
+          <divheaders>
+            <h3 slot="h3tag">{{productHeader}}</h3>
+            <p slot="ptag" class="text-muted">{{productDescription}}</p>
+          </divheaders>
+        </b-col>
+        <b-row>
+          <productspecs></productspecs>
+        </b-row>
+        <b-col md="10" class="mx-auto">
+          <divheaders>
+            <h3 slot="h3tag">{{teamHeader}}</h3>
+          </divheaders>
+        </b-col>
+        <teammedia></teammedia>
+        <div class="pt-2">
+          <b-col md="8" class="mx-auto">
+            <divheaders>
+              <h3 slot="h3tag">{{workHeader}}</h3>
+              <p slot="ptag" class="text-muted pt-4 workdesc">{{workDescription}}</p>
+            </divheaders>
 
-      <b-row>
-        <productspecs></productspecs>
-      </b-row>
+          <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Your Name" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Your Email" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea rows="4" placeholder="Your Message" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor your-msg-txtarea"></textarea>
+                </div>
+            </div>
+            <div class="mt-3 text-center">
+                <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
+            </div>
 
-      <divheaders>
-        <h3 slot="h3tag">{{teamHeader}}</h3>
-      </divheaders>
 
-      <teammedia></teammedia>
+          </b-col>
+        </div>
       </b-col>
     </div>
   </div>
@@ -65,25 +93,29 @@ export default {
     productspecs,
     teammedia
   },
-  data(){
-    return{
-      navlinks:[
-        {name:'Home'},
-        {name:'About Us'},
-        {name:'Services'},
-        {name:'Contact Us'},
+  data() {
+    return {
+      navlinks: [
+        { name: "Home" },
+        { name: "About Us" },
+        { name: "Services" },
+        { name: "Contact Us" }
       ],
       productHeader: "Let's Talk Product",
-      productDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,itaque? Dolor asperiores enim ipsa assumenda laudantium. Nihil explicabo at eaque assumenda modidoloresexpedita recusandae repellat mollitia, adipisci iste deserunt?",
+      productDescription:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,itaque? Dolor asperiores enim ipsa assumenda laudantium. Nihil explicabo at eaque assumenda modidoloresexpedita recusandae repellat mollitia, adipisci iste deserunt?",
       teamHeader: "Here is our team",
-    }
-  } 
+      workHeader: "Work with us",
+      workDescription:
+        "Divide details about your product or agency work into parts. Write a fewlines about each one bout each one and contact us about any further collaboration. We will respond getback to you in a couple of hours."
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.fulldiv{
-  font-family: 'Ubuntu', sans-serif;
+.fulldiv {
+  font-family: "Ubuntu", sans-serif;
 }
 .top-jumbotron {
   height: 600px;
@@ -94,9 +126,39 @@ export default {
 }
 
 .oversection {
-  font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    top: -180px;
-    margin: 0 20px;
+  font-family: "Ubuntu", sans-serif;
+  // position: relative;
+  // top: -180px;
+  // margin: 0 20px;
+  margin-top: -150px;
+}
+
+.workdesc {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.sndbtn {
+    background-color: #9C2AB0;
+    border-color: #9C2AB0;
+    font-size: 12px;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.sndbtn:hover {
+    background-color: #9C2AB0;
+    border-color: #9C2AB0;
+    color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+}
+
+.sndbtn:focus {
+    background-color: #9C2AB0;
+    border-color: #9C2AB0;
+    outline: none;
+    border-radius: 4px;
 }
 </style>
