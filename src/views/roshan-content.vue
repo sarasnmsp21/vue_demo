@@ -3,7 +3,9 @@
     
     
         <div class="background  img-fluid py-5">
-            <Navbarheader msg="Material Kit"></Navbarheader>
+            <Navbarheader msg="Material Kit">
+                <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">{{ link }}</b-nav-item>
+            </Navbarheader>
             <b-container>
                 <b-row class="justify-content-center">
                     <b-col cols=8>
@@ -18,9 +20,7 @@
                             </div>
                             <p class="pt-3">Incline is set of landing and support pages aimed at helping companies promote new products and business launches.</p>
                             <div class="pt-3">
-                                <button class="btn btn-outline-warning text-white">
-                                                                                                                                            <span class="small">PURCHASE NOW</span>
-                                                                                                                                          </button>
+                                <b-button class="text-white small" variant="outline-warning">purchase now</b-button>
                             </div>
                         </div>
                     </b-col>
@@ -40,117 +40,11 @@
     
                 </b-col>
             </b-row>
-            <b-row class="mx-auto my-5 ">
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card1" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>Product landing </h4>
-                            <b-card-text>
-                                <p class="text-secondary">You can use this page to promote your product or a store.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card2" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4> Real estate landing
-                                <span class="bg-danger p-1"> new!</span>
-                            </h4>
-                            <b-card-text>
-                                <p class="text-secondary">You can use this page to promote your real estate.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card3" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4> Restaurant landing </h4>
-                            <b-card-text>
-                                <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-            </b-row>
-            <!-- ------------------------- -->
-            <b-row class="mx-auto my-5 ">
-    
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card4" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>App landing</h4>
-                            <b-card-text>
-                                <p class="text-secondary">You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-    
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card5" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>Company landing </h4>
-                            <b-card-text>
-                                <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card6" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>
-                                Fullpage scrolling
-                                <span class="p-1 bg-danger"> New!</span>
-                            </h4>
-                            <b-card-text>
-                                <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-            </b-row>
-            <!-- ------------------------- -->
-    
-            <b-row class="mx-auto my-5 ">
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card3" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>App landing</h4>
-                            <b-card-text>
-                                <p class="text-secondary">You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-    
-                <b-col md=4>
-                    <div>
-                        <b-card title="" :img-src="card7" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                            <h4>Company landing </h4>
-                            <b-card-text>
-                                <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                            </b-card-text>
-    
-                        </b-card>
-                    </div>
-                </b-col>
-            </b-row>
+            <!-- using component for card -->
+            <roshan-cards class="mt-5">
+            </roshan-cards>
         </b-container>
+    
         <!-- ------------------- -->
         <div class="background-2 mt-5 pb-3" fluid-grow alt="Fluid-grow image">
             <div class="line"></div>
@@ -169,44 +63,8 @@
                         </div>
                     </b-col>
                 </b-row>
-                <b-row class="mx-auto my-5">
-                    <b-col md=4>
-                        <div>
-                            <b-card title="" :img-src="card4" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                                <h4>App landing</h4>
-                                <b-card-text>
-                                    <p class="text-secondary">You can use this page to promote your restaurant.</p>
-                                </b-card-text>
-    
-                            </b-card>
-                        </div>
-                    </b-col>
-                    <b-col md=4>
-                        <div>
-                            <b-card title="" :img-src="card5" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                                <h4>Company landing </h4>
-                                <b-card-text>
-                                    <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                                </b-card-text>
-    
-                            </b-card>
-                        </div>
-                    </b-col>
-                    <b-col md=4>
-                        <div>
-                            <b-card title="" :img-src="card6" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-                                <h4>
-                                    Fullpage scrolling
-                                    <span class="p-1 bg-danger"> New!</span>
-                                </h4>
-                                <b-card-text>
-                                    <p class="text-secondary"> You can use this page to promote your restaurant.</p>
-                                </b-card-text>
-    
-                            </b-card>
-                        </div>
-                    </b-col>
-                </b-row>
+                <roshanCard2>
+                </roshanCard2>
             </b-container>
         </div>
         <!-- -------------- -->
@@ -295,89 +153,153 @@
             <b-row class="justify-content-center m-auto">
                 <b-col md=4 class="mb-5">
                     <div class="mb-5">
-                        <h3 class=" pt-5 ">Intuitive workflow</h3>
-                        <div class="d-flex flex-row py-2">
-                            <div class="p-2 ">
-                                <span class="pr-2 text-warning">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                            </div>
-                            <div class="p-2 text-secondary ">
-                                <p>Speed up your development process with Gulp and BrowserSync live browser reload</p>
-                            </div>
-                        </div>
+                        <h3 class=" pt-5 text-left ">Intuitive workflow</h3>
     
-                        <div class="d-flex flex-row py-2">
-                            <div class="p-2 ">
-                                <span class="pr-2 text-warning">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                            </div>
-                            <div class="p-2 text-secondary ">
-                                <p> Easily adjust the look of any component with tons of additional SASS variables included</p>
-                            </div>
-                        </div>
     
-                        <div class="d-flex flex-row py-2">
-                            <div class="p-2 ">
-                                <span class="pr-2 text-warning">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                            </div>
-                            <div class="p-2 text-secondary">
-                                <p> Easily make global changes with HTML file @@includes</p>
-                            </div>
-                        </div>
+                        <b-media tag="li" class="my-4">
+    
+                            <font-awesome-icon class="mt-2" icon="coffee" slot="aside" blank blank-color="#cba" alt="placeholder" />
+    
+                            <p class="mb-0 text-left">
+                                Speed up your development process with Gulp and BrowserSync live browser reload </p>
+    
+                        </b-media>
+    
+                        <b-media tag="li" class="my-4">
+    
+                            <font-awesome-icon class="mt-2" icon="coffee" slot="aside" blank blank-color="#cba" alt="placeholder" />
+    
+                            <p class="mb-0 text-left">
+                                Speed up your development process with Gulp and BrowserSync live browser reload </p>
+    
+                        </b-media>
+    
+                        <b-media tag="li" class="my-4">
+    
+                            <font-awesome-icon class="mt-2" icon="coffee" slot="aside" blank blank-color="#cba" alt="placeholder" />
+    
+                            <p class="mb-0 text-left">
+                                Speed up your development process with Gulp and BrowserSync live browser reload </p>
+    
+                        </b-media>
     
                         <div class="d-flex flex-row py-2 ">
-                            <button class="btn btn-outline-warning btn-lg text-dark">
-                  <div class="small">DOCUMENTATION</div>
-                </button>
+                            <div class="pt-3">
+                                <b-button class="text-dark" variant="outline-warning">DOCUMENTATION</b-button>
+                            </div>
                         </div>
                     </div>
                 </b-col>
                 <b-col md=5>
                     <div class="down-image">
-                        <figure class="mb-0">
-                            <img src="images/yellow.jpeg" class="pt-5 w-75 h-50 one" alt="" />
-                            <img src="images/vertical.jpg" class="pt-5 w-50 h-50 two" alt="" />
+                        <figure class="mb-0 picture">
+                            <img src="../assets/yellow.jpeg" class="pt-5 w-75 h-50   one" />
+                            <img src="../assets/vertical1.jpg" class="pt-5  w-50 h-50  two" />
                         </figure>
                     </div>
                 </b-col>
             </b-row>
         </div>
-    <roshan-cards>
-        </roshan-cards>
+        <!-- ----------------------- -->
+        <div class="background-2 mt-5 pb-3" fluid-grow alt="Fluid-grow image">
+            <div class="line"></div>
+            <b-container class="mt-5">
+                <b-row class="justify-content-center">
+                    <b-col md=6>
+                        <div class="text-center mt-5">
+                            <div class="title">
+                                <h1 class="pt-5">Ultimate solution</h1>
+                            </div>
+                            <div class="content pt-3">
+                                <p class=" text-dark">
+                                    Easily create a website of any complexity with dozens of pages and independent components for any purpose.
+                                </p>
+                            </div>
+                        </div>
+                    </b-col>
+                </b-row>
+    
+    
+                <b-row class=" m-auto">
+                    <b-col md=10 class=" mx-auto ">
+                        <div class=" my-5">
+                            <b-row class="m-auto">
+                                <b-col md=4 class="first-image p-0 m-0">
+    
+                                    <b-card overlay :img-src="img1" img-alt="Card Image" text-variant="white" class="border-0" title="Image Overlay" sub-title="Subtitle">
+                                        <b-card-text class="d-flex flex-column justify-content-end">
+                                            Some quick example text to build on the card and make up the bulk of the card's content.
+                                        </b-card-text>
+                                    </b-card>
+    
+                                </b-col>
+                                <!--  -->
+                                <b-col md=4 class="middle-image m-auto  ">
+    
+                                    <b-card overlay :img-src="img2" img-alt="Card Image" text-variant="white" class="border-0" title="Image Overlay" sub-title="Subtitle">
+                                        <b-card-text>
+                                            Some quick example text to build on the card and make up the bulk of the card's content.
+                                        </b-card-text>
+                                    </b-card>
+    
+                                </b-col>
+                                <!--  -->
+                                <b-col md=4 class="third-image p-0 m-0">
+                                    <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0" title="Image Overlay" sub-title="Subtitle">
+                                        <b-card-text>
+                                            Some quick example text to build on the card and make up the bulk of the card's content.
+                                        </b-card-text>
+                                    </b-card>
+                                </b-col>
+                            </b-row>
+                        </div>
+                    </b-col>
+                </b-row>
+            </b-container>
+        </div>
+        <!-- ---------- -->
+        <b-container class="my-5">
+            <b-row class="m-auto justify-content-center">
+                <div class="col-md-6">
+                    <div class="title">
+                        <h2 class="text-center mt-5 p-2">Pricing options</h2>
+                    </div>
+                    <div class="content">
+                        <p class="text-secondary p-2 text-center">Secure payment via Stripe or Paypal. 100% money back guarantee.</p>
+                    </div>
+                </div>
+            </b-row>
+            <roshan-card3>
+            </roshan-card3>
+        </b-container>
     </div>
 </template>
 
 
 <script>
     import Navbarheader from "@/components/Navbarheader.vue";
-     import roshanCards from "@/components/roshan-cards.vue";
-    import images1 from "../assets/web2.jpg";
-    import images2 from "../assets/web3.jpg";
-    import images3 from "../assets/web4.jpg";
-    import images4 from "../assets/web5.png";
-    import images5 from "../assets/web6.jpg";
-    import images6 from "../assets/web7.png";
-    import images7 from "../assets/web9.jpeg";
+    import roshanCards from "@/components/roshan-cards.vue";
+    import roshanCard2 from "@/components/roshan-card2.vue";
+    import roshanCard3 from "@/components/roshan-card3.vue";
+    import pictures1 from "../assets/1.jpg";
+    import pictures2 from "../assets/2.jpg";
+    import pictures3 from "../assets/3.jpg";
     
     export default {
         data() {
             return {
-                card1: images1,
-                card2: images2,
-                card3: images3,
-                card4: images4,
-                card5: images5,
-                card6: images6,
-                card7: images7
+                navlinks: ["Home", "Services", "About-us", "Contact Us"],
+                img1: pictures1,
+                img2: pictures2,
+                img3: pictures3
             };
         },
+    
         components: {
             Navbarheader,
-            roshanCards
+            roshanCards,
+            roshanCard2,
+            roshanCard3
         }
     };
 </script>
@@ -408,5 +330,52 @@
         top: -10px;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    
+    .down-image {
+        .picture {
+            .one {
+                z-index: -1;
+                top: 75px;
+                position: relative;
+            }
+        }
+    }
+    
+    .down-image {
+        .picture {
+            .two {
+                z-index: -1;
+                top: -20px;
+                height: 700px;
+                position: absolute;
+                left: 150px;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .down-image {
+            .two {
+                position: relative;
+                bottom: 50px;
+                left: 60px;
+                height: 435px !important;
+            }
+        }
+    }
+    
+    .first-image {
+        padding: 0px !important;
+    }
+    
+    .middle-image {
+        transform: scale(1.1, 1.2);
+        z-index: 10 !important;
+        padding: 0px !important;
+    }
+    
+    .third-image {
+        padding: 0px !important;
     }
 </style>
