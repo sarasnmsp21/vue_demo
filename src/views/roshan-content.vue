@@ -346,13 +346,15 @@
                 </b-col>
             </b-row>
         </div>
-    
+    <roshan-cards>
+        </roshan-cards>
     </div>
 </template>
 
 
 <script>
     import Navbarheader from "@/components/Navbarheader.vue";
+     import roshanCards from "@/components/roshan-cards.vue";
     import images1 from "../assets/web2.jpg";
     import images2 from "../assets/web3.jpg";
     import images3 from "../assets/web4.jpg";
@@ -374,7 +376,8 @@
             };
         },
         components: {
-            Navbarheader
+            Navbarheader,
+            roshanCards
         }
     };
 </script>
