@@ -4,7 +4,12 @@
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit">
-          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">{{ link.name }}</b-nav-item>
+          <b-nav-item 
+          href="#" 
+          slot="navlinks" 
+          v-for="link in navlinks" 
+          v-bind:key="link.index"
+          >{{ link.name }}</b-nav-item>
         </Navbarheader>
 
         <div class="container mt-5 pt-5">
@@ -41,7 +46,7 @@ export default {
         {name:'Home'},
         {name:'About Us'},
         {name:'Services'},
-        {name:'Contact'},
+        {name:'Contact Us'},
       ],
     }
   } 
@@ -54,7 +59,7 @@ export default {
 .top-jumbotron {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/headerimage.jpg");
+    url("../assets/rimages/headerimage.jpg");
   background-size: cover;
   margin-top: -110px;
 }
