@@ -23,8 +23,9 @@
             </p>
             <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
               <small>
+                
                 <i class="fas fa-caret-right mr-1"></i>
-                Watch Video
+                <font-awesome-icon icon="coffee" class="mr-2"/>Watch Video
               </small>
             </button>
           </div>
@@ -77,7 +78,13 @@
           </b-col>
         </div>
       </b-col>
+      
     </div>
+    <!-- <customfooter></customfooter> -->
+    <div class="mt-5">
+      <sfooter brandnm="MaterialKit"></sfooter>
+    </div>
+
   </div>
 </template>
 
@@ -86,21 +93,25 @@ import Navbarheader from "@/components/Navbarheader.vue";
 import divheaders from "@/components/divheaders.vue";
 import productspecs from "@/components/productspecs.vue";
 import teammedia from "@/components/teammedia.vue";
+import customfooter from "@/components/footer.vue";
+import sfooter from "@/components/sarasfooter.vue";
 
 export default {
   components: {
     Navbarheader,
     divheaders,
     productspecs,
-    teammedia
+    teammedia,
+    customfooter,
+    sfooter
   },
   data() {
     return {
       navlinks: [
         { name: "Home" },
-        { name: "About Us" },
-        { name: "Services" },
-        { name: "Contact Us" }
+        { name: "Product" },
+        { name: "Team" },
+        { name: "Contact" }
       ],
       productHeader: "Let's Talk Product",
       productDescription:
@@ -145,26 +156,26 @@ export default {
 }
 
 .sndbtn {
-    background-color: #9C2AB0;
-    border-color: #9C2AB0;
-    font-size: 12px;
-    outline: none;
-    color: white;
-    border-radius: 4px;
+  background-color: #9C2AB0;
+  border-color: #9C2AB0;
+  font-size: 12px;
+  outline: none;
+  color: white;
+  border-radius: 4px;
 }
 
 .sndbtn:hover {
-    background-color: #9C2AB0;
-    border-color: #9C2AB0;
-    color: #ffffff;
-    outline: none;
-    border-radius: 4px;
+  background-color: #9C2AB0;
+  border-color: #9C2AB0;
+  color: #ffffff;
+  outline: none;
+  border-radius: 4px;
 }
 
 .sndbtn:focus {
-    background-color: #9C2AB0;
-    border-color: #9C2AB0;
-    outline: none;
-    border-radius: 4px;
+  background-color: #9C2AB0;
+  border-color: #9C2AB0;
+  outline: none;
+  border-radius: 4px;
 }
 </style>
