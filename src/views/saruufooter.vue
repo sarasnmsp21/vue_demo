@@ -29,7 +29,11 @@
       </b-jumbotron>
     <sectionpart2></sectionpart2>
     <card></card>
+    <ipad></ipad>
+    <clean></clean>
+   
     <custom-footer></custom-footer>
+    
   </div>
 </template>
 
@@ -39,6 +43,8 @@ import Navbarheader from "@/components/Navbarheader.vue";
 import customFooter from "@/components/sarasfooter.vue";
 import card from "@/components/mediacards.vue";
 import sectionpart2 from "@/components/sectionpart2.vue";
+import ipad from "@/components/mobile.vue";
+import clean from "@/components/cleancode.vue";
 
 
 export default {
@@ -47,7 +53,9 @@ export default {
     customFooter,
      Navbarheader,
      card,
-     sectionpart2
+     sectionpart2,
+     ipad,
+     clean
   },
    data(){
     return{
