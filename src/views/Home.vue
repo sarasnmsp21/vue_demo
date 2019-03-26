@@ -2,6 +2,7 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
    <appheader msg="Material Kit"></appheader>
+   <div class="oversectiion ml-4 mb-0 mr-4 ml-4 shadow p-3 mb-0 bg-white rounded">
     <contentparagraph></contentparagraph>
     <product></product>
     <cardcontent></cardcontent>
@@ -11,6 +12,7 @@
     <productimg> </productimg>
      <productdesp></productdesp>
      <appform></appform>
+   </div>
     <customfooter></customfooter>
   </div>
 </template>
@@ -50,3 +52,14 @@ export default {
     }
   };
 </script>
+
+<style lang="scss">
+.oversectiion
+{
+ margin: -100px 20px 0 ;
+}
+.home
+{
+  background-color: #ccc;
+}
+</style>

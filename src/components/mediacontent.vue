@@ -1,8 +1,7 @@
   <template>
 
       <!---media obj-->
-  <div>
-      <b-container>
+ 
       <b-row class="ml-5 mr-5 pl-5 pr-5 pt-4 pb-4"> 
    
 
@@ -48,8 +47,8 @@
 
   
       </b-row>
-      </b-container>
-</div>
+    
+
     <!---media obj-->
                          
                           
