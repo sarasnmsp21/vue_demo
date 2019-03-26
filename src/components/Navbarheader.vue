@@ -1,16 +1,13 @@
 <template>
 <!-- created by ram -->
   <div>
-    <b-navbar fixed="top" toggleable="lg" type="" variant="">
-      <b-container class="mx-5 px-5">
+    <b-navbar id="mainnav" fixed="top" toggleable="lg" type="" variant="">
+      <b-container class="px-5">
         <b-navbar-brand class="text-white" href="#">{{ msg }}</b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"/>
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
+            <slot name="navlinks"></slot>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
@@ -27,10 +24,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .navbar-nav {
-
-
   .nav-link {
       color: white;
   }

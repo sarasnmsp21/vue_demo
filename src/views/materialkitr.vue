@@ -3,9 +3,11 @@
     <div>
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
-        <Navbarheader msg="Material Kit"></Navbarheader>
+        <Navbarheader msg="Material Kit">
+          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">{{ link.name }}</b-nav-item>
+        </Navbarheader>
 
-        <div class="mt-5 pt-5 container">
+        <div class="container mt-5 pt-5">
           <div class="mt-5 pt-5 text-white text-left">
             <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
             <p class="col-md-5">
@@ -25,14 +27,24 @@
     </div>
   </div>
 </template>	
-
 <script>
+
 import Navbarheader from "@/components/Navbarheader.vue";
 
 export default {
   components: {
     Navbarheader
-  }
+  },
+  data(){
+    return{
+      navlinks:[
+        {name:'Home'},
+        {name:'About Us'},
+        {name:'Services'},
+        {name:'Contact'},
+      ],
+    }
+  } 
 };
 </script>
 
