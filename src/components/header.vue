@@ -20,7 +20,8 @@
        </b-navbar>
      </div>
        <!-- Navigation Bar -->
-        <div class="mt-5 pt-5 container">
+        <b-container class="mt-5 pt-5 ">
+          <b-row>
           <div class="mt-5 pt-5 text-white text-left">
             <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
             <p class="col-md-5">
@@ -35,7 +36,8 @@
               </small>
             </button>
           </div>
-        </div>
+          </b-row>
+        </b-container>
       </b-jumbotron>
     </div>
   </div>
@@ -62,5 +64,8 @@ export default {
     url("../assets/images/headerimage.jpg");
   background-size: cover;
   margin-top: -110px;
+}
+.navbar{
+background-color: #050a0e38;
 }
 </style>

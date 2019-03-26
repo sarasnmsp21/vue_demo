@@ -2,7 +2,7 @@
      <template>
            <!--image area-->
            <b-container>
-                          <div class="pl-5 mr-5 ml-5">
+                          <div class="pl-5 pb-4 pt-4 mr-5 ml-5">
                           <b-row>
 
                            <div class="col-md-4 ">
