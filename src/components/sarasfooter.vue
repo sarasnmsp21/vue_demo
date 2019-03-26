@@ -9,7 +9,7 @@
           <b-col md="10">
             <b-row>
               <b-col md="3" sm="6" cols="6">
-                <h4 class="h6 text-left pl-5">
+                <h4 class="h6 text-left">
                   <b>Address</b>
                 </h4>
                 <address>
