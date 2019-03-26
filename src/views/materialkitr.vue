@@ -12,6 +12,7 @@
           >{{ link.name }}</b-nav-item>
         </Navbarheader>
         <!-- Navigation Bar End -->
+        <div class="banner-content">
         <div class="container mt-5 pt-5">
           <div class="mt-5 pt-5 text-white text-left">
             <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
@@ -27,6 +28,7 @@
               </small>
             </button>
           </div>
+        </div>
         </div>
       </b-jumbotron>
     </div>
@@ -72,7 +74,6 @@
                 <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
             </div>
 
-
           </b-col>
         </div>
       </b-col>
@@ -117,9 +118,14 @@ export default {
 .fulldiv {
   font-family: "Ubuntu", sans-serif;
 }
+
+.banner-content{
+  margin-top: 110px; 
+}
+
 .top-jumbotron {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/rimages/headerimage.jpg");
   background-size: cover;
   margin-top: -110px;
