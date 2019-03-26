@@ -1,4 +1,5 @@
 <template>
+<div>
   <footer show variant="light py-5">
     <b-container>
       <b-row>
@@ -66,6 +67,7 @@
       </b-row>
     </b-container>
   </footer>
+  </div>
 </template>
 
 <style lang="scss">
