@@ -59,7 +59,7 @@ export default {
 .top-jumbotron {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/headerimage.jpg");
+    url("../assets/rimages/headerimage.jpg");
   background-size: cover;
   margin-top: -110px;
 }
