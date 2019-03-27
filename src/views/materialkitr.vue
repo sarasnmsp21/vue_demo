@@ -3,86 +3,97 @@
     <div>
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
-        <Navbarheader msg="Material Kit">
+        <Navbarheader msg="Material Kit Pro">
           <b-nav-item
             href="#"
             slot="navlinks"
             v-for="link in navlinks"
             v-bind:key="link.index"
-          >{{ link.name }}</b-nav-item>
+          ><small>{{ link.name }}</small></b-nav-item>
         </Navbarheader>
-        <!-- Navigation Bar End -->
+
         <div class="banner-content">
-        <div class="container mt-5 pt-5">
-          <div class="mt-5 pt-5 text-white text-left">
-            <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
-            <p class="col-md-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo, similique et earum voluptates amet ad.
-            </p>
-            <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
-              <small>
-                
-                <i class="fas fa-caret-right mr-1"></i>
-                <font-awesome-icon icon="coffee" class="mr-2"/>Watch Video
-              </small>
-            </button>
+          <div class="container mt-5 pt-5">
+            <div class="mt-5 pt-5 text-white text-left">
+              <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
+              <p class="col-md-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo, similique et earum voluptates amet ad.
+              </p>
+              <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
+                <small>
+                  <font-awesome-icon :icon="['fas','caret-right']" class="mr-2"/>Watch Video
+                </small>
+              </button>
+            </div>
           </div>
-        </div>
         </div>
       </b-jumbotron>
     </div>
-  
+
     <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
         <b-col md="6" class="mx-auto">
+          <!-- section header -->
           <divheaders>
             <h3 slot="h3tag">{{productHeader}}</h3>
             <p slot="ptag" class="text-muted">{{productDescription}}</p>
           </divheaders>
         </b-col>
-        <b-row>
+          <!-- component used -->
           <productspecs></productspecs>
-        </b-row>
         <b-col md="10" class="mx-auto">
+          <!-- section header -->
           <divheaders>
             <h3 slot="h3tag">{{teamHeader}}</h3>
           </divheaders>
         </b-col>
+
+        <!-- team members display -->
         <teammedia></teammedia>
         <div class="pt-2">
           <b-col md="8" class="mx-auto">
+            <!-- section header -->
             <divheaders>
               <h3 slot="h3tag">{{workHeader}}</h3>
               <p slot="ptag" class="text-muted pt-4 workdesc">{{workDescription}}</p>
             </divheaders>
 
-          <div class="row mb-3">
-                <div class="col-md-6">
-                    <input type="text" placeholder="Your Name" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="Your Email" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor">
-                </div>
+            <b-row class=" mb-3">
+              <b-col md="6">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
+                >
+              </b-col>
+              <b-col md="6">
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
+                >
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col md="12">
+                <textarea
+                  rows="4"
+                  placeholder="Your Message"
+                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor your-msg-txtarea"
+                ></textarea>
+              </b-col>
+            </b-row>
+            <div class="mt-3 mb-5 text-center">
+              <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <textarea rows="4" placeholder="Your Message" class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor your-msg-txtarea"></textarea>
-                </div>
-            </div>
-            <div class="mt-3 text-center">
-                <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
-            </div>
-
           </b-col>
         </div>
       </b-col>
-      
     </div>
     <!-- <customfooter></customfooter> -->
     <div class="mt-5">
       <sfooter brandnm="MaterialKit"></sfooter>
     </div>
-
   </div>
 </template>
 
@@ -91,7 +102,6 @@ import Navbarheader from "@/components/Navbarheader.vue";
 import divheaders from "@/components/divheaders.vue";
 import productspecs from "@/components/productspecs.vue";
 import teammedia from "@/components/teammedia.vue";
-import customfooter from "@/components/footer.vue";
 import sfooter from "@/components/sarasfooter.vue";
 
 export default {
@@ -100,16 +110,14 @@ export default {
     divheaders,
     productspecs,
     teammedia,
-    customfooter,
     sfooter
   },
   data() {
     return {
       navlinks: [
-        { name: "Home" },
-        { name: "Product" },
-        { name: "Team" },
-        { name: "Contact" }
+        { name: "Components" },
+        { name: "Sections" },
+        { name: "Examples" }
       ],
       productHeader: "Let's Talk Product",
       productDescription:
@@ -123,13 +131,18 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .fulldiv {
   font-family: "Ubuntu", sans-serif;
+  background-color: #e1e1e1;
 }
 
-.banner-content{
-  margin-top: 110px; 
+.navbar-brand {
+    font-size: 1rem;
+}
+
+.banner-content {
+  margin-top: 110px;
 }
 
 .top-jumbotron {
@@ -154,8 +167,8 @@ export default {
 }
 
 .sndbtn {
-  background-color: #9C2AB0;
-  border-color: #9C2AB0;
+  background-color: #9c2ab0;
+  border-color: #9c2ab0;
   font-size: 12px;
   outline: none;
   color: white;
@@ -163,16 +176,16 @@ export default {
 }
 
 .sndbtn:hover {
-  background-color: #9C2AB0;
-  border-color: #9C2AB0;
+  background-color: #9c2ab0;
+  border-color: #9c2ab0;
   color: #ffffff;
   outline: none;
   border-radius: 4px;
 }
 
 .sndbtn:focus {
-  background-color: #9C2AB0;
-  border-color: #9C2AB0;
+  background-color: #9c2ab0;
+  border-color: #9c2ab0;
   outline: none;
   border-radius: 4px;
 }

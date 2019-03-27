@@ -4,10 +4,10 @@
 <template>
     <div>
         <b-container>
-            <b-row>
+            <b-row class="m-auto">
                 <b-col md=4 v-for="card in cards" v-bind:key="card.index">
                     <div>
-                        <b-card title="" :img-src="card.cardimg" img-alt="Image" img-top tag="article" class=" card mb-2 border-0 text-left">
+                        <b-card  :img-src="card.cardimg" img-alt="Image" img-top tag="article" class=" card mb-2 border-0 text-left">
                             <h4>{{card.heading}} </h4>
                             <b-card-text>
                                 <p class="text-secondary">{{card.para}}</p>

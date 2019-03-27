@@ -5,8 +5,7 @@
     <b-col md="4" class="p-0" v-for="spec in specs" v-bind:key="spec.index">
       <div class="text-center">
         <figure class="pt-3" >
-          <!-- <i class="far fa-comment-alt mb-4 free-chat-icon"></i> -->
-          <font-awesome-icon icon="coffee" :class="spec.dynclass"/>
+          <font-awesome-icon :icon="['fas', 'shield-alt']" :class="spec.dynclass"/>
         </figure>
         <div>
           <h5 class="font-weight-bold specs-heading">{{spec.heading}}</h5>
