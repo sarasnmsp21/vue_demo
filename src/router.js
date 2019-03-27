@@ -30,13 +30,13 @@ export default new Router({
         import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/saruufooter",
-      name: "saruufooter",
+      path: "/saruumainfile",
+      name: "saruumainfile",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "footer" */ "./views/saruufooter.vue")
+        import(/* webpackChunkName: "footer" */ "./views/saruumainfile.vue")
     },{
       path: "/Materialkitr",
       name: "Materialkitr",
