@@ -8,10 +8,10 @@
                         <b-card title="Standard license" img-alt="Image" img-top tag="article" class="card mb-2 py-5">
                             <b-card-text>
                                 <p class="text-center price py-2 text-warning">{{card.price}}</p>
-                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
-                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
-                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
-                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" :icon="['fas','chevron-right']" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" :icon="['fas','chevron-right']" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" :icon="['fas','chevron-right']" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" :icon="['fas','chevron-right']" alt="placeholder" /></span>{{card.para1}}</p>
                                 <div class="pt-3">
                                     <b-button class="text-dark p-3" variant="outline-warning">purchase now</b-button>
                                 </div>

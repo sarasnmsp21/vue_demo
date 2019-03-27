@@ -4,7 +4,7 @@
             <b-row class="justify-content-center mx-auto">
                 <b-col md=3 class="text-center" v-for="card in cards" v-bind:key="card.index">
                     <div class="text-warning icon">
-                        <font-awesome-icon icon="coffee" slot="aside" blank blank-color="#cba" alt="placeholder" />
+                        <font-awesome-icon :icon="['fas','laptop']" slot="aside" blank blank-color="#cba" alt="placeholder" />
                     </div>
                     <h3 class="py-2 text-white">{{card.heading}}</h3>
                     <p class="text-white">{{card.para}} </p>
@@ -20,18 +20,18 @@ export default {
     return {
       cards: [
         {
-          icon: "far fa-id-badge",
+       
           heading: "Fully responsive",
           para:
             " Looks great on all major browsers, tablets and mobile devices."
         },
         {
-          icon: "far fa-id-badge",
+        
           heading: "Built with SASS",
           para: "Easily adjustable with tons of SASS variables included."
         },
         {
-          icon: "Free support",
+       
           heading: "Free support",
           para:
             "Feel free to contact us with any feature requests or bug reports."

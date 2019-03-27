@@ -73,8 +73,7 @@
             <b-col md=8>
                 <div class="mt-5">
                     <b-media tag="li" class="my-4">
-                        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-                        <font-awesome-icon icon="coffee" slot="aside" blank blank-color="#cba" alt="placeholder" />
+                        <font-awesome-icon :icon="['fas','quote-left']" slot="aside" blank blank-color="#cba" alt="placeholder" class="icon1" />
                         <p class="mb-0 text-left">
                             This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind, it can be easily adjusted to create layouts of any complexity within a few minutes.
                         </p>
@@ -115,9 +114,9 @@
                             <h3 class=" pt-5 text-left pb-3 ">Intuitive workflow</h3>
                         </div>
                         <div class="content ">
-                            <p class="text-center"><span class="pr-5"> <font-awesome-icon class="mt-2" icon="coffee" alt="placeholder" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
-                            <p class="text-center"><span class="pr-3"> <font-awesome-icon class="mt-2" icon="coffee" alt="placeholder" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
-                            <p class="text-center"><span class="pr-3"> <font-awesome-icon class="mt-2" icon="coffee" alt="placeholder" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
+                            <p class="text-center"><span class="pr-3"> <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" alt="placeholder" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
+                            <p class="text-center"><span class="pr-3"> <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
+                            <p class="text-center"><span class="pr-3"> <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" /></span> Speed up your development process with Gulp and BrowserSync live browser reload </p>
                         </div>
                         <div class="pt-3 text-left">
                             <b-button class="text-dark" variant="outline-warning">DOCUMENTATION</b-button>
@@ -262,7 +261,7 @@
         <!--  footer using component-->
         <roshanFooter brandnm="Icline" class="bg-dark text-white p-5">
         </roshanFooter>
-        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+     
     </div>
 </template>
 
@@ -329,6 +328,22 @@ export default {
   top: -10px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.icon1 {
+  font-size: 27px;
+}
+// card animation
+.card {
+  background-color: transparent !important;
+  img {
+    transition: 0.5s;
+  }
+  &:hover {
+    img {
+      box-shadow: 2px 5px 4px 5px #888888;
+      transform: translateY(-10px);
+    }
+  }
 }
 
 // work flow image
