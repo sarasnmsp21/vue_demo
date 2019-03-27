@@ -21,7 +21,7 @@
                             <p class="pt-3">Incline is set of landing and support pages aimed at helping 
                                 companies promote new products and business launches.</p>
                             <div class="pt-3">
-                                <b-button class="text-white small" variant="outline-warning">purchase now</b-button>
+                                <b-button class="text-white small" size=lg variant="outline-warning">purchase now</b-button>
                             </div>
                         </div>
                     </b-col>
@@ -42,7 +42,7 @@
     
                 </b-col>
             </b-row>
-            <!-- using component for card -->
+         <!-- using component for card -->
             <roshan-cards class="mt-5">
             </roshan-cards>
         </b-container>
@@ -66,8 +66,8 @@
                         </div>
                     </b-col>
                 </b-row>
+         <!-- using component -->
                 <roshanCard2 class="py-2">
-                    <!-- using component -->
                 </roshanCard2>
             </b-container>
         </div>
@@ -82,7 +82,7 @@
                             This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind
                             , it can be easily adjusted to create layouts of any complexity within a few minutes.
                         </p>
-                        <p class="small text-left py-3">Yuri Gamin, Moscow</p>
+                        <p class="small text-left py-3 zigzag-text">Yuri Gamin, Moscow</p>
                     </b-media>
                 </div>
             </b-col>
@@ -106,7 +106,7 @@
                     </div>
                 </b-col>
             </b-row>
-            <!-- use component  -->
+        <!-- use component  -->
             <roshan-card4>
             </roshan-card4>
     
@@ -296,134 +296,165 @@
 
 
 <script>
-    import Navbarheader from "@/components/Navbarheader.vue";
-    import roshanCards from "@/components/roshan-cards.vue";
-    import roshanCard2 from "@/components/roshan-card2.vue";
-    import roshanCard3 from "@/components/roshan-card3.vue";
-    import roshanCard4 from "@/components/roshan-card4.vue";
-    import roshanFooter from "@/components/sarasfooter.vue";
-    import pictures1 from "../assets/1.jpg";
-    import pictures2 from "../assets/2.jpg";
-    import pictures3 from "../assets/3.jpg";
-    
-    export default {
-        data() {
-            return {
-                navlinks: ["Home", "Services", "About-us", "Contact Us"],
-                img1: pictures1,
-                img2: pictures2,
-                img3: pictures3
-            };
-        },
-    
-        components: {
-            Navbarheader,
-            roshanCards,
-            roshanCard2,
-            roshanCard3,
-            roshanCard4,
-            roshanFooter
-        }
+import Navbarheader from "@/components/Navbarheader.vue";
+import roshanCards from "@/components/roshan-cards.vue";
+import roshanCard2 from "@/components/roshan-card2.vue";
+import roshanCard3 from "@/components/roshan-card3.vue";
+import roshanCard4 from "@/components/roshan-card4.vue";
+import roshanFooter from "@/components/sarasfooter.vue";
+import pictures1 from "../assets/1.jpg";
+import pictures2 from "../assets/2.jpg";
+import pictures3 from "../assets/3.jpg";
+
+export default {
+  data() {
+    return {
+      navlinks: ["Home", "Services", "About-us", "Contact Us"],
+      img1: pictures1,
+      img2: pictures2,
+      img3: pictures3
     };
+  },
+
+  components: {
+    Navbarheader,
+    roshanCards,
+    roshanCard2,
+    roshanCard3,
+    roshanCard4,
+    roshanFooter
+  }
+};
 </script>
 
 <style lang="scss">
-    // banner background image...
-    .background {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-img.jpg");
-        background-size: cover;
-        width: 100%;
-        height: 600px;
-        border-radius: 0px !important;
+// banner background image...
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/background-img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  border-radius: 0px !important;
+}
+
+// second background image..
+.background-2 {
+  background-image: url("../assets/back2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  position: relative;
+}
+
+// line on background image
+.line {
+  width: 0px;
+  height: 100px;
+  border-left: 5px solid rgb(249, 224, 2);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon1 {
+  font-size: 27px;
+}
+
+// card animation
+.card {
+  background-color: transparent !important;
+  img {
+    transition: 0.5s;
+  }
+  &:hover {
+    img {
+      box-shadow: 2px 5px 4px 5px #888888;
+      transform: translateY(-10px);
     }
-    
-    // second background image..
-    .background-2 {
-        background-image: url("../assets/back2.jpg");
-        background-size: cover;
-        width: 100%;
-        height: auto;
-        z-index: 10;
-        position: relative;
-    }
-    
-    // line on background image
-    .line {
-        width: 0px;
-        height: 100px;
-        border-left: 5px solid rgb(249, 224, 2);
-        position: absolute;
-        top: -10px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .icon1 {
-        font-size: 27px;
-    }
-    
-    // card animation
-    .card {
-        background-color: transparent !important;
-        img {
-            transition: 0.5s;
-        }
-        &:hover {
-            img {
-                box-shadow: 2px 5px 4px 5px #888888;
-                transform: translateY(-10px);
-            }
-        }
-    }
-    
-    // work flow image
-    .flexdiv {
-        height: 400px;
-    }
-    
-    .backgdiv {
-        height: 200px;
-        width: 400px;
-        position: relative;
-    }
-    
-    .imageover {
-        height: 400px;
-        width: 250px;
-        position: absolute;
-        top: -50%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .flexdiv {
-            height: 300px;
-            margin-bottom: 70px;
-        }
-        .backgdiv {
-            height: 150px;
-            width: 255px;
-            position: relative;
-        }
-        .imageover {
-            height: 300px;
-            width: 150px;
-        }
-    }
-    
-    // ---------card images for Ultimate solution----------------------
-    .first-image {
-        padding: 0px !important;
-    }
-    
-    .middle-image {
-        transform: scale(1.1, 1.2);
-        z-index: 10 !important;
-        padding: 0px !important;
-    }
-    
-    .third-image {
-        padding: 0px !important;
-    }
+  }
+}
+
+.zigzag-text {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #f5ba4b;
+}
+// work flow image
+.flexdiv {
+  height: 400px;
+}
+
+.backgdiv {
+  height: 200px;
+  width: 400px;
+  position: relative;
+}
+
+.imageover {
+  height: 400px;
+  width: 250px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .flexdiv {
+    height: 300px;
+    margin-bottom: 70px;
+  }
+  .backgdiv {
+    height: 150px;
+    width: 255px;
+    position: relative;
+  }
+  .imageover {
+    height: 300px;
+    width: 150px;
+  }
+}
+
+// ---------card images for Ultimate solution----------------------
+.first-image {
+  padding: 0px !important;
+}
+
+.middle-image {
+  transform: scale(1.1, 1.2);
+  z-index: 10 !important;
+  padding: 0px !important;
+}
+
+.third-image {
+  padding: 0px !important;
+}
+@media only screen and (max-width: 600px) {
+  .first-image {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .middle-image {
+    z-index: 10 !important;
+    transform: scale(1, 1);
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .third-image {
+    margin: 20px 0;
+  }
+}
+//
+// button focus none
+
+.btn-outline-warning {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
 </style>
