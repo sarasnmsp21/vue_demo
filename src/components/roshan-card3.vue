@@ -1,37 +1,26 @@
 
-
-
 <template>
     <div>
         <b-container>
-            <b-row class="justify-content-center">
-                <b-col md=4 v-for="card in cards" v-bind:key="card.index">
+            <b-row class="justify-content-center m-auto">
+                <b-col md="4" v-for="card in cards" v-bind:key="card.index">
                     <div>
-                        <b-card title="Standard license" img-alt="Image" img-top tag="article" class=" card mb-2">
-                            
+                        <b-card title="Standard license" img-alt="Image" img-top tag="article" class="card mb-2 py-5">
                             <b-card-text>
-                                 <p class="text-center">{{card.price}}</p>
-                                 <p class="">{{card.para1}}</p>
-                                <p class="">{{card.para2}}</p>
-                                <p class="">{{card.para3}}</p>
-                                
+                                <p class="text-center price py-2 text-warning">{{card.price}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
+                                <p class=""><span class="pr-3 text-warning"> <font-awesome-icon class="" icon="coffee" alt="placeholder" /></span>{{card.para1}}</p>
                                 <div class="pt-3">
-                                    <b-button class="text-white small" variant="outline-warning">purchase now</b-button>
+                                    <b-button class="text-dark p-3" variant="outline-warning">purchase now</b-button>
                                 </div>
-    
                             </b-card-text>
-    
                         </b-card>
                     </div>
                 </b-col>
             </b-row>
         </b-container>
-    
-    
-    
-    
-    
-    
     </div>
 </template>
 
@@ -59,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
-  background-color: transparent;
+.price {
+  font-size: 30px;
 }
 </style>
