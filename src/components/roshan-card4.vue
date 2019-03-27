@@ -4,7 +4,10 @@
             <b-row class="justify-content-center mx-auto">
                 <b-col md=3 class="text-center" v-for="card in cards" v-bind:key="card.index">
                     <div class="text-warning icon">
-                        <font-awesome-icon :icon="['fas','laptop']" slot="aside" blank blank-color="#cba" alt="placeholder" />
+                        <font-awesome-icon :icon="['fas','laptop']"
+                         slot="aside"
+                         blank blank-color="#cba"
+                         alt="placeholder" />
                     </div>
                     <h3 class="py-2 text-white">{{card.heading}}</h3>
                     <p class="text-white">{{card.para}} </p>
