@@ -335,7 +335,7 @@ export default {
   background-size: cover;
   width: 100%;
   height: 600px;
-  border-radius: 0px !important;
+
 }
 
 // second background image..
@@ -374,14 +374,14 @@ export default {
       box-shadow: 2px 5px 4px 5px #888888;
       transform: translateY(-10px);
     }
-  }
+  }  
 }
 
-.zigzag-text {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #f5ba4b;
-}
+.zigzag-text{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #f5ba4b;
+      }
 // work flow image
 .flexdiv {
   height: 400px;
@@ -453,8 +453,13 @@ export default {
 // button focus none
 
 .btn-outline-warning {
-  &:focus {
-    box-shadow: none !important;
-  }
+	&:focus {
+		box-shadow: none !important;
+	}
 }
+.btn {
+	border-radius: 0%;
+}
+
+
 </style>
