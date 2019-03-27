@@ -3,32 +3,32 @@
     <footer show variant="light py-5">
       <b-container>
         <b-row>
-          <b-col md="2">
-            <h3>{{brandnm}}.</h3>
+          <b-col md="2" sm="12" class="mx-auto mb-3">
+            <h3>{{brandnm}}</h3>
           </b-col>
           <b-col md="10">
             <b-row>
-              <b-col md="3" sm="6" cols="6">
-                <h4 class="h6 text-left">
-                  <b>Address</b>
-                </h4>
-                <address>
-                  <ul class="text-secondary text-left">
-                    <li>
+              <b-col md="2" sm="6" cols="6">
+                <address class="pl-5">
+                  <div class="text-left">
+                    <h4 class="h6">
+                      <b>Address</b>
+                    </h4>
+                    <p class="text-secondary">
                       City Hall
                       <br>212 Street
                       <br>Lawoma
                       <br>735
-                      <br>
-                    </li>
-                  </ul>
+                    </p>
+                  </div>
                 </address>
               </b-col>
               <b-col md="3" sm="6" cols="6">
+                <div class="text-left pl-5">
                 <h4 class="h6">
                   <b>Popular Services</b>
                 </h4>
-                <ul class="text-left">
+                <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary border-bottom footer-text" href="#">Payment Center</a>
                   </li>
@@ -45,12 +45,14 @@
                     <a class="text-secondary border-bottom footer-text" href="#">FAQs</a>
                   </li>
                 </ul>
+                </div>
               </b-col>
               <b-col md="3" sm="6" cols="6">
+                <div class="text-left pl-5">
                 <h4 class="h6">
                   <b>Website Information</b>
                 </h4>
-                <ul class="text-left">
+                <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary border-bottom footer-text" href="#">Website Tutorial</a>
                   </li>
@@ -70,12 +72,14 @@
                     <a class="text-secondary border-bottom footer-text" href="#">Webmaster</a>
                   </li>
                 </ul>
+                </div>
               </b-col>
               <b-col md="3" sm="6" cols="6">
+                <div class="text-left pl-5">
                 <h4 class="h6">
                   <b>Company</b>
                 </h4>
-                <ul class="text-left">
+                <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary border-bottom footer-text" href="#">Our team</a>
                   </li>
@@ -93,6 +97,7 @@
                     >Purchase</a>
                   </li>
                 </ul>
+                </div>
               </b-col>
             </b-row>
           </b-col>
