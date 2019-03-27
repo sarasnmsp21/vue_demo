@@ -29,9 +29,16 @@
               </div>
               <div class="member-socialmedia">
                 <p>
-                  <i class="fab fa-twitter ml-3"></i>
+                  <!-- <i class="fab fa-twitter ml-3"></i>
                   <i class="fab fa-facebook-square ml-3"></i>
-                  <i class="fab fa-google ml-3"></i>
+                  <i class="fab fa-google ml-3"></i> -->
+                  <!-- <font-awesome-icon icon="linkedin-in" class="mr-4 small" style="color:tomato;"/> -->
+
+                  <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+                  
+                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:tomato;"/>
+                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:green;"/>
+                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:blue;"/>
                 </p>
               </div>
             </b-col>
