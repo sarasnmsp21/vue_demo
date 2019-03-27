@@ -10,10 +10,10 @@
            <b-navbar-toggle target="nav_collapse"/>
            <b-collapse is-nav id="nav_collapse">
              <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
-            <b-nav-item href="#">Link</b-nav-item>
+            <b-nav-item href="#">Components</b-nav-item>
+            <b-nav-item href="#">Section</b-nav-item>
+            <b-nav-item href="#">Example</b-nav-item>
+         
             </b-navbar-nav>
           </b-collapse>
          </b-container>
@@ -22,12 +22,12 @@
        <!-- Navigation Bar -->
         <b-container class="mt-5 pt-5 ">
           <b-row>
-          <div class="mt-5 pt-5 text-white text-left">
-            <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
-            <p class="col-md-5">
+          <div class=" mt-5 pt-5 ml-5 mr_5 text-white text-center">
+            <h2 class=" font-weight-bolder">Your Story Starts With Us.</h2>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius
               dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo,
-              similique et earum voluptates amet ad.
+              similique et earum voluptates amet ad similique et earum voluptates amet ad .
             </p>
             <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
               <small>
@@ -65,6 +65,6 @@ export default {
   margin-top: -110px;
 }
 .navbar{
-background-color: #050a0e38;
+background-color: #04172745;
 }
 </style>
