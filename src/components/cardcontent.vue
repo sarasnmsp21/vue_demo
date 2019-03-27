@@ -1,82 +1,79 @@
   <template>
-       <!--card content-->
-    
-                <div class="p-4">
-                  <div class="px-5 mx-5">
-                   <b-container>   
-                  <b-row >
+
+
+       <div class="p-4">
+                  <div class="mx-5">
+                  <b-container>   
+                 <b-row>  
                     
-
-                  <div class="col-md-3 col-sm-12">
+                <b-col md="3" sm="12" v-for="card in cards" v-bind:key="card.index">
+                
                      
-                   <div class="card border-0" >
-                      
-                    <img class="card-img-top  w-50 h-30  mx-auto rounded-circle" src="../assets/img4.jpeg" alt="Card image cap">
-                      <div class="card-body text-center">
-                        <h5 class="card-title ">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                        <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link"> link</a>
-                      </div>
-                    </div>
-                  </div>
-               
-
-
-                <div class="col-md-3 col-sm-12">
-                   
                  <div class="card border-0" >
+                      
+                    <b-img :src="card.img" class="card-img-top  w-50 h-30  mx-auto rounded-circle"  alt="Card image cap"/>
+                     <div class="card-body text-center">
+                       <h5 class="card-title ">{{card.title}}</h5>
+                       <h6 class="card-subtitle mb-2 text-muted ">{{card.subtitle}}</h6>
+                      <p class="card-text  ">{{card.para}}</p>
+                      <a href="#" class="card-link">{{card.link}}</a>
+                      <a href="#" class="card-link"> {{card.link}}</a>
+                    </div>    
                     
-                <img class="card-img-top  w-50 h-30  mx-auto rounded-circle" src="../assets/img4.jpeg" alt="Card image cap">
-                    <div class="card-body text-center">
-                      <h5 class="card-title ">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                      <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link"> link</a>
-                    </div>
-                  </div>
                 </div>
-           
-
-                   <div class="col-md-3 col-sm-12">
-                     
-                   <div class="card border-0" >
-                  <img class="card-img-top  w-50 h-30  mx-auto rounded-circle" src="../assets/img4.jpeg" alt="Card image cap">
-                      <div class="card-body text-center">
-                        <h5 class="card-title ">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                        <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link"> link</a>
-                      </div>
-                    </div>
-                  </div>
+                </b-col>
                
-
-                   <div class="col-md-3 ">
-                     
-                   <div class="card border-0" >
-                    <img class="card-img-top w-50 h-30  mx-auto rounded-circle" src="../assets/img4.jpeg" alt="Card image cap">
-                      <div class="card-body text-center">
-                        <h5 class="card-title ">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                        <p class="card-text  ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link"> link</a>
-                      </div>
-                    </div>
-                      </div>
-                </b-row>
-                   </b-container>
+               </b-row>
+                  </b-container>
                    
                     </div>
-                  </div>
+                </div> 
                  
               
-
-                         <!--card content-->  
   </template>
-  
+                       
+
+  <script>
+  import img1 from "../assets/img4.jpeg";
+export default {
+    data() {
+    return {
+      cards: [
+        {
+          img:img1,
+          title: "Card title",
+          subtitle:"Card subtitle",
+          para:
+            "Some quick example text to build on the card title and make up the bulk of the card's content. ",
+          link:"Card link"
+        },
+       {
+         img:img1,
+          title: "Card title",
+          subtitle:"Card subtitle",
+          para:
+            "Some quick example text to build on the card title and make up the bulk of the card's content. ",
+          link:"Card link"
+        },
+        {
+         img:img1,
+          title: "Card title",
+          subtitle:"Card subtitle",
+          para:
+            "Some quick example text to build on the card title and make up the bulk of the card's content. ",
+          link:"Card link"
+        },
+        {
+         img:img1,
+          title: "Card title",
+          subtitle:"Card subtitle",
+          para:
+            "Some quick example text to build on the card title and make up the bulk of the card's content. ",
+          link:"Card link"
+        }
+      ],
+      }
+   }
+}
+</script> 
              

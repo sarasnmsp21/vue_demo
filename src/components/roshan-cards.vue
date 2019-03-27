@@ -5,7 +5,7 @@
     <div>
         <b-container>
         <b-row>
-            <b-col md=4 v-for="card in cards" v-bind:key="card.index">
+            <b-col md="4" v-for="card in cards" v-bind:key="card.index">
                 <div>
                     <b-card title="" :img-src="card.landimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
                         <h4>{{card.heading}} </h4>
