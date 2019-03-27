@@ -24,9 +24,10 @@ library.add(faCoffee,faShieldAlt,faFingerprint,faCaretRight) //fas
 library.add(faCommentAlt) //far
 library.add(faLinkedinIn,faFacebookSquare,faTwitter,faGoogle,faYoutube,faInstagram) //fab
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-Vue.use(BootstrapVue)
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 
 new Vue({
