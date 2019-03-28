@@ -109,9 +109,9 @@
           <b-col cols="12">
             <div class="text-center text-sm">
               <p class="mb-1 pb-2">
-                &copy; 2018
+                &copy; 2019
                 <a class="text-secondary border-bottom footer-text" href="#">
-                  Robust UI
+                 Material
                   Kit
                 </a>.
               </p>

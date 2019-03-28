@@ -5,20 +5,30 @@ import store from "./store";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
+
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+
+ 
+library.add(faUserSecret)
 import {
   faCoffee,
   faQuoteLeft,
   faChevronRight,
   faLaptop,
-  
+ faBars,
+ faSquare,
+ faCalendar,
+ faCircle,
+ faPencilAlt
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"; //fab
 import {} from "@fortawesome/free-regular-svg-icons"; //far
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faCoffee, faQuoteLeft,faChevronRight,faLaptop); //fas
+library.add(faCoffee, faCircle,faPencilAlt,faBars,faCalendar, faSquare, faQuoteLeft,faChevronRight,faLaptop); //fas
 
 library.add(); //far
 library.add(faLinkedinIn); //fab
