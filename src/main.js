@@ -5,13 +5,24 @@ import store from "./store";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
+
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+
+ 
+library.add(faUserSecret)
 import {
   faCoffee,
   faShieldAlt,
   faFingerprint,
   faCaretRight,
   faLaptop,
+ faBars,
+ faSquare,
+ faCalendar,
+ faCircle,
+ faPencilAlt,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
@@ -27,6 +38,10 @@ import {
 import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
+library.add(faCoffee, faCircle,faPencilAlt,faBars,faCalendar, faSquare, faQuoteLeft,faChevronRight,faLaptop); //fas
+
+library.add(); //far
+library.add(faLinkedinIn); //fab
 library.add(
   faCoffee,
   faShieldAlt,
