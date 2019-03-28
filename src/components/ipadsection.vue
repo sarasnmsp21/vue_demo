@@ -1,24 +1,16 @@
 
 </<template>
-  <div class="bg-light pt-5">
+  <div class="ipad-background-color container-top-margin">
     <b-container>
       <b-row class="text-left">
-        <b-col md="5">
-          <b-row v-for="card in cards" v-bind:key="card.index" class="ml-3">
-            <div>
-              <h3><b>{{card.heading}}</b></h3>
-              <div class="text-dark ipad-text-font">
-                <p>{{card.para}}</p>
-              </div>
-            </div>
+        <b-col md="4">
+          <b-row v-for="card in cards" v-bind:key="card.index" class="ml-5 ">
+            <div class="ipad-heading-font">{{card.heading}}</div>
+            <div class="text-dark ipad-para-font">{{card.para}}</div>
           </b-row>
         </b-col>
-        <div class="col-md-5 ml-auto">
-          
-          <figure class="mb-0">
-            <b-img :src="ipad" img-alt="Image" height="315" />
-          </figure>
-            
+        <div class="col-md-6 ml-auto">
+          <b-img :src="ipad" img-alt="Image" height="315" class="image-fluid" />
         </div>
       </b-row>
     </b-container>
@@ -26,7 +18,7 @@
 </template>
 
 <script>
-  import images1 from "../assets/ipad2.png";
+  import images1 from "../assets/img12.png";
   export default {
     data() {
       return {
@@ -49,4 +41,19 @@
   };
 </script>
 
+<style lang="scss" scoped>
+  .container-top-margin {
+    margin-top: 60px;
+  }
+  .ipad-heading-font {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .ipad-para-font {
+    font-size: 14px;
+  }
+  .ipad-background-color {
+    background-color: #eff1f3;
+  }
+</style>
 
