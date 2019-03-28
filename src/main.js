@@ -12,7 +12,8 @@ import {
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faChevronRight
+  faChevronRight,
+  faQuoteLeft
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -32,7 +33,9 @@ library.add(
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faChevronRight
+  faChevronRight,
+  faQuoteLeft
+
 ); //fas
 library.add(faCommentAlt); //far
 library.add(
