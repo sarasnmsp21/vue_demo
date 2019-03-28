@@ -11,15 +11,14 @@
                     <b-col cols=8>
                         <div class="text-center text-white">
                             <div class="pt-3">
-                                <p class="pt-5">BY SIMPLEQADE</p>
+                                <p class="pt-5 text-white small">BY SIMPLEQADE</p>
                             </div>
-                            <div class="pt-3">
-                                <p class="display-4  text-waight-bold">
-                                    Landing pages occasion
-                                </p>
+                            <div class="py-3">
+                                <h1 class=" text-waight-bold">
+                                    Landing pages for any occasion
+                                </h1>
                             </div>
-                            <p class="pt-3">Incline is set of landing and support pages aimed at helping 
-                                companies promote new products and business launches.</p>
+                            <p class="pt-3  text-white ">Incline is set of landing and support pages aimed at helping companies promote new products and business launches.</p>
                             <div class="pt-3">
                                 <b-button class="text-white small" size=lg variant="outline-warning">purchase now</b-button>
                             </div>
@@ -35,16 +34,15 @@
                     <div class=" title text-center mt-5">
                         <h1 class="pt-5">Landing page variants</h1>
                         <p class="pt-3 text-secondary">
-                            Incline comes with several professionally designed landing pages that can be easily adapted 
-                            for any project.
+                            Incline comes with several professionally designed landing pages that can be easily adapted for any project.
                         </p>
                     </div>
     
                 </b-col>
             </b-row>
-         <!-- using component for card -->
-            <roshan-cards class="mt-5">
-            </roshan-cards>
+            <!-- using component for card -->
+            <landing-pages class="mt-5">
+            </landing-pages>
         </b-container>
     
         <!-- -----------Header variants start-------- -->
@@ -59,16 +57,15 @@
                             </div>
                             <div class="content pt-3">
                                 <p class=" text-secondary">
-                                    Polish your landing page with one of the header options below to impress your
-                                     visitors at first glance.
+                                    Polish your landing page with one of the header options below to impress your visitors at first glance.
                                 </p>
                             </div>
                         </div>
                     </b-col>
                 </b-row>
-         <!-- using component -->
-                <roshanCard2 class="py-2">
-                </roshanCard2>
+                <!-- using component -->
+                <Heade-variants class="py-2">
+                </Heade-variants>
             </b-container>
         </div>
         <!-- -------media object use------- -->
@@ -76,11 +73,9 @@
             <b-col md=8>
                 <div class="mt-5">
                     <b-media tag="li" class="my-4">
-                        <font-awesome-icon :icon="['fas','quote-left']" slot="aside" blank blank-color="#cba" 
-                        alt="placeholder" class="icon1" />
+                        <font-awesome-icon :icon="['fas','quote-left']" slot="aside" blank blank-color="#cba" alt="placeholder" class="icon1" />
                         <p class="mb-0 text-left">
-                            This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind
-                            , it can be easily adjusted to create layouts of any complexity within a few minutes.
+                            This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind , it can be easily adjusted to create layouts of any complexity within a few minutes.
                         </p>
                         <p class="small text-left py-3 zigzag-text">Yuri Gamin, Moscow</p>
                     </b-media>
@@ -99,16 +94,15 @@
                         </div>
                         <div class="content">
                             <p class=" text-white text-center mt-3">
-                                Incline can be used to create anything from a small marketing page
-                                 to a sophisticated website.
+                                Incline can be used to create anything from a small marketing page to a sophisticated website.
                             </p>
                         </div>
                     </div>
                 </b-col>
             </b-row>
-        <!-- use component  -->
-            <roshan-card4>
-            </roshan-card4>
+            <!-- use component  -->
+            <KeyTheme>
+            </KeyTheme>
     
         </div>
         <!-------------Intuitive workflow start -----------  -->
@@ -122,22 +116,19 @@
                         <div class="content ">
                             <p class="text-center">
                                 <span class="pr-3"> 
-                                    <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" 
-                                    alt="placeholder" />
-                                </span> 
-                                    Speed up your development process with Gulp and BrowserSync live browser reload 
+                                        <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" 
+                                        alt="placeholder" />
+                                    </span> Speed up your development process with Gulp and BrowserSync live browser reload
                             </p>
                             <p class="text-center">
                                 <span class="pr-3"> 
-                                    <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" />
-                                </span> 
-                                    Speed up your development process with Gulp and BrowserSync live browser reload 
+                                        <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" />
+                                    </span> Speed up your development process with Gulp and BrowserSync live browser reload
                             </p>
                             <p class="text-center">
                                 <span class="pr-3">
-                                     <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" />
-                                </span> Speed up your development process with Gulp and BrowserSync live browser 
-                                reload 
+                                         <font-awesome-icon class="mt-2 text-warning" :icon="['fas','chevron-right']" />
+                                    </span> Speed up your development process with Gulp and BrowserSync live browser reload
                             </p>
                         </div>
                         <div class="pt-3 text-left">
@@ -168,8 +159,7 @@
                             </div>
                             <div class="content pt-3">
                                 <p class=" text-dark">
-                                    Easily create a website of any complexity with dozens of pages 
-                                    and independent components for any purpose.
+                                    Easily create a website of any complexity with dozens of pages and independent components for any purpose.
                                 </p>
                             </div>
                         </div>
@@ -183,8 +173,7 @@
                             <b-row class="m-auto">
                                 <b-col md=4 class="first-image p-0 m-0">
     
-                                    <b-card overlay :img-src="img1" img-alt="Card Image" text-variant="white"
-                                     class="border-0">
+                                    <b-card overlay :img-src="img1" img-alt="Card Image" text-variant="white" class="border-0">
                                         <b-card-text class="d-flex flex-column justify-content-end">
                                             <div class="card-img-overlay  d-flex flex-column justify-content-end">
                                                 <div class="text-warning icon text-left  pl-2">
@@ -203,11 +192,12 @@
                                     </b-card>
     
                                 </b-col>
+                                <!-- <UltimateSolution>
+                                              </UltimateSolution> -->
                                 <!--  -->
                                 <b-col md=4 class="middle-image m-auto  ">
     
-                                    <b-card overlay :img-src="img2" img-alt="Card Image" text-variant="white"
-                                     class="border-0">
+                                    <b-card overlay :img-src="img2" img-alt="Card Image" text-variant="white" class="border-0">
                                         <b-card-text>
                                             <div class="card-img-overlay  d-flex flex-column justify-content-end">
                                                 <div class="text-warning icon text-left  pl-2">
@@ -227,9 +217,10 @@
     
                                 </b-col>
                                 <!--  -->
+                                <!-- <UltimateSolution>
+                                        </UltimateSolution> -->
                                 <b-col md=4 class="third-image p-0 m-0">
-                                    <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white"
-                                     class="border-0">
+                                    <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0">
                                         <b-card-text>
                                             <div class="card-img-overlay  d-flex flex-column justify-content-end">
                                                 <div class="text-warning icon text-left pl-2">
@@ -261,23 +252,20 @@
                         <h2 class="text-center mt-5 p-2">Pricing options</h2>
                     </div>
                     <div class="content">
-                        <p class="text-secondary p-2 text-center">Secure payment via Stripe or Paypal.
-                             100% money back guarantee.</p>
+                        <p class="text-secondary p-2 text-center">Secure payment via Stripe or Paypal. 100% money back guarantee.</p>
                     </div>
                 </div>
             </b-row>
             <!-- using component -->
-            <roshan-card3>
-            </roshan-card3>
+            <PricingOptions>
+            </PricingOptions>
         </b-container>
         <!-- -----------Download it from the Bootstrap marketplace start--------- -->
         <div class="bg-light my-5 py-5">
             <b-row class="justify-content-center mx-auto">
                 <b-col md=6>
                     <h4 class="text-left">Download it from the Bootstrap marketplace</h4>
-                    <p class="py-2 text-left text-secondary">Each theme featured at the Bootstrap
-                         marketplace has been reviewed by Bootstrap's creators. Six month technical 
-                         support by the theme author is provided.</p>
+                    <p class="py-2 text-left text-secondary">Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators. Six month technical support by the theme author is provided.</p>
                 </b-col>
                 <b-col md=2>
                     <div>
@@ -287,9 +275,10 @@
             </b-row>
     
         </div>
+    
         <!--  footer using component-->
-        <roshanFooter brandnm="Icline" class="bg-dark text-white p-5">
-        </roshanFooter>
+        <Footerweb brandnm="Icline" class="bg-dark text-white p-5">
+        </Footerweb>
     
     </div>
 </template>
@@ -297,11 +286,12 @@
 
 <script>
 import Navbarheader from "@/components/Navbarheader.vue";
-import roshanCards from "@/components/roshan-cards.vue";
-import roshanCard2 from "@/components/roshan-card2.vue";
-import roshanCard3 from "@/components/roshan-card3.vue";
-import roshanCard4 from "@/components/roshan-card4.vue";
-import roshanFooter from "@/components/sarasfooter.vue";
+import landingPages from "@/components/landing-pages.vue";
+import HeadeVariants from "@/components/Heade-variants.vue";
+import PricingOptions from "@/components/Pricing-options.vue";
+import KeyTheme from "@/components/Key-theme.vue";
+import UltimateSolution from "@/components/Ultimate-solution.vue";
+import Footerweb from "@/components/sarasfooter.vue";
 import pictures1 from "../assets/1.jpg";
 import pictures2 from "../assets/2.jpg";
 import pictures3 from "../assets/3.jpg";
@@ -318,11 +308,12 @@ export default {
 
   components: {
     Navbarheader,
-    roshanCards,
-    roshanCard2,
-    roshanCard3,
-    roshanCard4,
-    roshanFooter
+    landingPages,
+    HeadeVariants,
+    PricingOptions,
+    KeyTheme,
+    UltimateSolution,
+    Footerweb
   }
 };
 </script>
@@ -335,7 +326,6 @@ export default {
   background-size: cover;
   width: 100%;
   height: 600px;
-
 }
 
 // second background image..
@@ -374,14 +364,16 @@ export default {
       box-shadow: 2px 5px 4px 5px #888888;
       transform: translateY(-10px);
     }
-  }  
+  }
 }
 
-.zigzag-text{
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #f5ba4b;
-      }
+// text underline style
+.zigzag-text {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #f5ba4b;
+}
+
 // work flow image
 .flexdiv {
   height: 400px;
@@ -432,11 +424,13 @@ export default {
 .third-image {
   padding: 0px !important;
 }
+
 @media only screen and (max-width: 600px) {
   .first-image {
     margin: 20px 0;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .middle-image {
     z-index: 10 !important;
@@ -444,22 +438,22 @@ export default {
     margin: 30px 0;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .third-image {
     margin: 20px 0;
   }
 }
+
 //
 // button focus none
-
 .btn-outline-warning {
-	&:focus {
-		box-shadow: none !important;
-	}
+  &:focus {
+    box-shadow: none !important;
+  }
 }
+
 .btn {
-	border-radius: 0%;
+  border-radius: 0%;
 }
-
-
 </style>
