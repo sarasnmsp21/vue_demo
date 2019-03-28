@@ -4,11 +4,10 @@
       <b-row>
     <b-col md="4" class="p-0" v-for="spec in specs" v-bind:key="spec.index">
       <div class="text-center">
-        <figure class="pt-3" >
-          <i class="fas fa-shield-alt"></i>
+        <figure class="mb-4" >
           <font-awesome-icon :icon="['fas', 'shield-alt']" :class="spec.dynclass"/>
         </figure>
-        <div>
+        <div class="pt-2">
           <h5 class="font-weight-bold specs-heading">{{spec.heading}}</h5>
         </div>
         <div class="text-muted px-2 detail-description">
@@ -51,7 +50,8 @@ export default {
 
 <style lang="scss">
 .detail-description {
-    font-size: 13px;
+  color: #999;
+    font-size: 12px;
     line-height: 1.9;
 }
 .specs-heading{

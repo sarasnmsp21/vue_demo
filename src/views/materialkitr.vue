@@ -4,27 +4,30 @@
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit Pro">
-          <b-nav-item
-            href="#"
-            slot="navlinks"
-            v-for="link in navlinks"
-            v-bind:key="link.index"
-          ><small v-html="link.name"></small></b-nav-item>
+          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
+            <small v-html="link.name"></small>
+          </b-nav-item>
         </Navbarheader>
 
         <div class="banner-content">
-          <div class="container mt-5 pt-5">
-            <div class="main-banner-content text-white text-left">
-              <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
-              <p class="col-md-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo, similique et earum voluptates amet ad.
-              </p>
-              <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
-                <small>
-                  <font-awesome-icon :icon="['fas','caret-right']" class="mr-2"/>Watch Video
-                </small>
-              </button>
-            </div>
+          <div class="container mt-5 pt-5 addpadding">
+            <b-col md="6" class="p-0">
+              <div class="main-banner-content text-white text-left">
+                <div class="mb-3">
+                  <h2 class="font-weight-bolder banner-header">Your Story Starts With Us</h2>
+                </div>
+                <div>
+                  <p
+                    class="banner-text"
+                  >Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</p>
+                </div>
+                <button type="button" class="px-4 py-2 btn btn-danger">
+                  <small>
+                    <font-awesome-icon :icon="['fas','caret-right']" class="mr-2"/>Watch Video
+                  </small>
+                </button>
+              </div>
+            </b-col>
           </div>
         </div>
       </b-jumbotron>
@@ -32,63 +35,75 @@
 
     <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
-        <b-row>
-        <b-col md="6" class="mx-auto">
-          <!-- section header -->
-          <divheaders>
-            <h3 slot="h3tag">{{productHeader}}</h3>
-            <p slot="ptag" class="text-muted">{{productDescription}}</p>
-          </divheaders>
-        </b-col>
-        </b-row>
-          <!-- component used -->
+        <div class="mt-4">
+          <b-row>
+            <b-col md="8" class="mx-auto">
+              <!-- section header -->
+              <divheaders>
+                <h3 slot="h3tag">{{productHeader}}</h3>
+                <p slot="ptag" class="header-text">{{productDescription}}</p>
+              </divheaders>
+            </b-col>
+          </b-row>
+        </div>
+        <!-- component used -->
+        <div class="my-4 pt-3">
           <productspecs></productspecs>
-        <b-col md="10" class="mx-auto">
-          <!-- section header -->
-          <divheaders>
-            <h3 slot="h3tag">{{teamHeader}}</h3>
-          </divheaders>
-        </b-col>
+        </div>
+        <div class="mt-5 pt-5">
+          <b-row>
+            <b-col md="10" class="mx-auto">
+              <!-- section header -->
+              <divheaders>
+                <h3 slot="h3tag">{{teamHeader}}</h3>
+              </divheaders>
+            </b-col>
+          </b-row>
+          <div class="mt-2">
+            <!-- team members display -->
+            <teammedia></teammedia>
+          </div>
+        </div>
 
-        <!-- team members display -->
-        <teammedia></teammedia>
-        <div class="pt-2">
-          <b-col md="8" class="mx-auto">
-            <!-- section header -->
-            <divheaders>
-              <h3 slot="h3tag">{{workHeader}}</h3>
-              <p slot="ptag" class="text-muted pt-4 workdesc">{{workDescription}}</p>
-            </divheaders>
+        <div class="pt-5">
+          <b-row>
+            <b-col md="8" class="mx-auto">
+              <!-- section header -->
+              <divheaders>
+                <h3 slot="h3tag">{{workHeader}}</h3>
+                <p slot="ptag" class="pt-4 workdesc">{{workDescription}}</p>
+              </divheaders>
 
-            <b-row class=" mb-3">
-              <b-col md="6">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
-                >
-              </b-col>
-              <b-col md="6">
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
-                >
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col md="12">
-                <textarea
-                  rows="4"
-                  placeholder="Your Message"
-                  class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor your-msg-txtarea"
-                ></textarea>
-              </b-col>
-            </b-row>
-            <div class="mt-3 mb-5 text-center">
-              <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
-            </div>
-          </b-col>
+              <b-row class="mb-3">
+                <b-col md="6">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
+                  >
+                </b-col>
+                <b-col md="6">
+                  <input
+                    type="text"
+                    placeholder="Your Email"
+                    class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor"
+                  >
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col md="12">
+                  <textarea
+                    rows="4"
+                    placeholder="Your Message"
+                    class="w-100 small border-top-0 border-right-0 border-left-0 border workcolor your-msg-txtarea"
+                  ></textarea>
+                </b-col>
+              </b-row>
+              <div class="mt-3 mb-5 text-center">
+                <button type="button" class="btn p-2 px-3 sndbtn">Send Message</button>
+              </div>
+            </b-col>
+          </b-row>
         </div>
       </b-col>
     </div>
@@ -115,12 +130,12 @@ export default {
   },
   data() {
     return {
-      navlinks: [  
+      navlinks: [
         { name: "Components" },
         { name: "Sections" },
         { name: "Examples" }
       ],
-      productHeader: "Let's Talk Product",
+      productHeader: "Let's talk product",
       productDescription:
         "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.",
       teamHeader: "Here is our team",
@@ -134,22 +149,30 @@ export default {
 
 <style lang="scss">
 body {
-  font-family: Roboto,Helvetica,Arial,sans-serif;
+  // font-family: Roboto,Helvetica,Arial,sans-serif;
   background-color: #e1e1e1;
 }
 
 .navbar-brand {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.addpadding{
-  padding: 0 40px !important;
+.addpadding {
+  padding: 0 100px !important;
 }
 
 .banner-content {
   margin-top: 110px !important;
-  .main-banner-content{
-    padding-top: 12rem;
+  .main-banner-content {
+    padding-top: 9rem;
+    // font-family: Roboto,Helvetica,Arial,sans-serif;
+  }
+
+  .banner-header {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    // font-size: 50px;
   }
 }
 
@@ -163,39 +186,46 @@ body {
 
 .oversection {
   // font-family: "Ubuntu", sans-serif;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  // position: relative;
-  // top: -180px;
-  // margin: 0 20px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   margin-top: -180px;
-}
 
-.workdesc {
-  font-size: 80%;
-  font-weight: 400;
-}
+  .header-text {
+    color: #999;
+    font-size: 15px;
+  }
 
-.sndbtn {
-  background-color: #9c2ab0;
-  border-color: #9c2ab0;
-  font-size: 12px;
-  outline: none;
-  color: white;
-  border-radius: 4px;
-}
+  .workdesc {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+  }
 
-.sndbtn:hover {
-  background-color: #9c2ab0;
-  border-color: #9c2ab0;
-  color: #ffffff;
-  outline: none;
-  border-radius: 4px;
-}
+  .sndbtn {
+    background-color: #9c2ab0;
+    border-color: #9c2ab0;
+    font-size: 12px;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+  }
 
-.sndbtn:focus {
-  background-color: #9c2ab0;
-  border-color: #9c2ab0;
-  outline: none;
-  border-radius: 4px;
+  .sndbtn:hover {
+    background-color: #9c2ab0;
+    border-color: #9c2ab0;
+    color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+  }
+
+  .sndbtn:focus {
+    background-color: #9c2ab0;
+    border-color: #9c2ab0;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  .workcolor:focus{
+    outline: none;
+  }
 }
 </style>

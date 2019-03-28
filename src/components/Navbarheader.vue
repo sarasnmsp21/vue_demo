@@ -2,7 +2,7 @@
   <!-- created by ram -->
   <div>
     <b-navbar id="mainnav" fixed="top" toggleable="lg" type variant>
-      <b-container class="px-5 addpadding">
+      <b-container class="addpadding">
         <b-navbar-brand class="text-white" href="#">{{ msg }}</b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"/>
         <b-collapse is-nav id="nav_collapse">
