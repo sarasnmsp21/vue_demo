@@ -6,13 +6,24 @@ import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
+ 
 import {
   faCoffee,
   faShieldAlt,
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faChevronRight
+  faChevronRight,
+  faQuoteLeft,
+  faBars,
+  faSquare,
+  faQuoteLeft,
+  faCalendar,
+  faCircle,
+  faPencilAlt,
+  faChevronRight,
+  faUserSecret
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -21,27 +32,50 @@ import {
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 } from "@fortawesome/free-brands-svg-icons"; //fab
-import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(
+import {
+  faCommentAlt
+} from "@fortawesome/free-regular-svg-icons"; //far
+
+import {
+  FontAwesomeIcon
+} from "@fortawesome/vue-fontawesome";
+
+library.add( 
+  faCircle,
+  faPencilAlt,
+  faBars,
+  faCalendar,  
+  faSquare,
+  faQuoteLeft,
+  faChevronRight,
+  faLaptop,
   faCoffee,
   faShieldAlt,
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faChevronRight
+  faChevronRight,
+  faQuoteLeft,
+
+  faUserSecret
 ); //fas
-library.add(faCommentAlt); //far
+
+library.add(
+  faCommentAlt
+); //far
+
 library.add(
   faLinkedinIn,
   faFacebookSquare,
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 ); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

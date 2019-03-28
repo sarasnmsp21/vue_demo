@@ -24,7 +24,7 @@
                         
 <script>
   import img1 from "../assets/travel01b.jpg";
-  import img2 from "../assets/images.jpeg";
+  // import img2 from "../assets/images.jpeg";
 export default {
     data() {
     return {

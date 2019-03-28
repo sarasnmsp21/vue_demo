@@ -9,12 +9,12 @@
             slot="navlinks"
             v-for="link in navlinks"
             v-bind:key="link.index"
-          ><small>{{ link.name }}</small></b-nav-item>
+          ><small v-html="link.name"></small></b-nav-item>
         </Navbarheader>
 
         <div class="banner-content">
           <div class="container mt-5 pt-5">
-            <div class="mt-5 pt-5 text-white text-left">
+            <div class="main-banner-content text-white text-left">
               <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
               <p class="col-md-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo, similique et earum voluptates amet ad.
@@ -32,6 +32,7 @@
 
     <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
+        <b-row>
         <b-col md="6" class="mx-auto">
           <!-- section header -->
           <divheaders>
@@ -39,6 +40,7 @@
             <p slot="ptag" class="text-muted">{{productDescription}}</p>
           </divheaders>
         </b-col>
+        </b-row>
           <!-- component used -->
           <productspecs></productspecs>
         <b-col md="10" class="mx-auto">
@@ -90,7 +92,6 @@
         </div>
       </b-col>
     </div>
-    <!-- <customfooter></customfooter> -->
     <div class="mt-5">
       <sfooter brandnm="MaterialKit"></sfooter>
     </div>
@@ -114,14 +115,14 @@ export default {
   },
   data() {
     return {
-      navlinks: [
+      navlinks: [  
         { name: "Components" },
         { name: "Sections" },
         { name: "Examples" }
       ],
       productHeader: "Let's Talk Product",
       productDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,itaque? Dolor asperiores enim ipsa assumenda laudantium. Nihil explicabo at eaque assumenda modidoloresexpedita recusandae repellat mollitia, adipisci iste deserunt?",
+        "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.",
       teamHeader: "Here is our team",
       workHeader: "Work with us",
       workDescription:
@@ -132,8 +133,8 @@ export default {
 </script>
 
 <style lang="scss">
-.fulldiv {
-  font-family: "Ubuntu", sans-serif;
+body {
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   background-color: #e1e1e1;
 }
 
@@ -141,12 +142,19 @@ export default {
     font-size: 1rem;
 }
 
+.addpadding{
+  padding: 0 40px !important;
+}
+
 .banner-content {
-  margin-top: 110px;
+  margin-top: 110px !important;
+  .main-banner-content{
+    padding-top: 12rem;
+  }
 }
 
 .top-jumbotron {
-  height: 600px;
+  height: 700px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/rimages/headerimage.jpg");
   background-size: cover;
@@ -154,11 +162,12 @@ export default {
 }
 
 .oversection {
-  font-family: "Ubuntu", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   // position: relative;
   // top: -180px;
   // margin: 0 20px;
-  margin-top: -150px;
+  margin-top: -180px;
 }
 
 .workdesc {
