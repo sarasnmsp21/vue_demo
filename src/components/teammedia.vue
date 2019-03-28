@@ -2,7 +2,7 @@
   <!-- created by ram -->
   <div>
     <b-row class="mx-auto team-members">
-      <b-col md="6" class="text-center mb-4" v-for="member in members" v-bind:key="member.index">
+      <b-col md="6" sm="12" class="text-center mb-4" v-for="member in members" v-bind:key="member.index">
         <b-media>
           <b-row>
             <b-col md="4" class="text-center">
@@ -15,12 +15,12 @@
                 alt="placeholder"
               />
             </b-col>
-            <b-col md="8" class="text-center pl-2">
+            <b-col md="8" class="text-center px-3 py-2">
               <div class="team-member-name mt-0">
                 <h6 class="font-weight-bolder">{{member.membername}}</h6>
               </div>
-              <div class="member-designation mt-0">
-                <p class="small text-muted">{{member.position}}</p>
+              <div class="member-designation mt-0 ">
+                <p class="text-muted font-weight-bold">{{member.position}}</p>
               </div>
               <div class="member-description">
                 <p class="small text-muted">{{member.memberdesc}}</p>
@@ -145,6 +145,10 @@ export default {
 <style lang="scss">
 .team-members {
   color: #3c4857;
+}
+
+.member-designation{
+  font-size: 10px;
 }
 </style>
 
