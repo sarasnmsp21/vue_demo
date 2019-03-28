@@ -15,6 +15,8 @@ import {
   faFingerprint,
   faCaretRight,
   faLaptop,
+  faChevronRight,
+  faQuoteLeft,
   faBars,
   faSquare,
    faCalendar,
@@ -55,6 +57,10 @@ library.add(
   faShieldAlt,
   faFingerprint,
   faCaretRight,
+  faLaptop,
+  faChevronRight,
+  faQuoteLeft,
+
   faUserSecret
 ); //fas
 

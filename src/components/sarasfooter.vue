@@ -1,20 +1,18 @@
-
+<!--Created by saraswati-->
 <template>
   <div>
     <footer show variant="light py-5">
       <b-container>
         <b-row>
           <b-col md="2" sm="12" class="mx-auto mb-3">
-            <h3>{{brandnm}}</h3>
+            <div class="font-weight-bold footer-heading ">{{brandnm}}</div>
           </b-col>
           <b-col md="10">
             <b-row>
               <b-col md="2" sm="6" cols="6">
                 <address class="pl-5">
                   <div class="text-left">
-                    <h4 class="h6">
-                      <b>Address</b>
-                    </h4>
+                    <div class="font-weight-bold">Address</div>    
                     <p class="text-secondary">
                       City Hall
                       <br>212 Street
@@ -26,73 +24,73 @@
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
+<<<<<<< HEAD
+                <div class="font-weight-bold">Popular Services</div>
+=======
                 <div class="font-weight-bold footer-title mb-2">
                  Popular Services
                 </div>
+>>>>>>> b187a4c955b0e87838164f1a1a54fc1d4afd31af
                 <ul class="text-left p-0">
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Payment Center</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Payment Center</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Contact Directory</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Contact Directory</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Forms</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Forms</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">News and Updates</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">News and Updates</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">FAQs</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">FAQs</a>
                   </li>
                 </ul>
                 </div>
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-                <h4 class="h6">
-                  <b>Website Information</b>
-                </h4>
+               <div class="font-weight-bold">Website Information</div>
                 <ul class="text-left p-0">
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Website Tutorial</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Website Tutorial</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Accessibility</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Accessibility</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Disclaimer</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Disclaimer</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Privacy Policy</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Privacy Policy</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">FAQs</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">FAQs</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Webmaster</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Webmaster</a>
                   </li>
                 </ul>
                 </div>
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-                <h4 class="h6">
-                  <b>Company</b>
-                </h4>
+                <div class="font-weight-bold">Company</div>
                 <ul class="text-left p-0">
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Our team</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Our team</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">About</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">About</a>
                   </li>
                   <li>
-                    <a class="text-secondary border-bottom footer-text" href="#">Contact</a>
+                    <a class="text-secondary bottom-border footer-text" href="#">Contact</a>
                   </li>
                   <li>
                     <a
-                      class="text-secondary border-bottom footer-text"
+                      class="text-secondary bottom-border footer-text"
                       href="#"
                       target="_blank"
                     >Purchase</a>
@@ -110,8 +108,13 @@
             <div class="text-center text-sm">
               <p class="mb-1 pb-2">
                 &copy; 2019
+<<<<<<< HEAD
+                <a class="text-secondary bottom-border footer-text" href="#">
+                  Robust UI
+=======
                 <a class="text-secondary border-bottom footer-text" href="#">
                  Material
+>>>>>>> b187a4c955b0e87838164f1a1a54fc1d4afd31af
                   Kit
                 </a>.
               </p>
@@ -138,5 +141,13 @@ export default {
 }
 ul {
   list-style: none;
+}
+.bottom-border
+{
+    border-bottom: 2px solid #80808040;
+}
+.footer-heading
+{
+      font-size: 22px;
 }
 </style>

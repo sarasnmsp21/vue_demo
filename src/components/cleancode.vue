@@ -1,13 +1,14 @@
+<!--Created by saraswati-->
 <template>
-  <b-col lg="10" class="mx-auto pt-5 card-index">
+  <b-col lg="9" class="mx-auto pt-5 card-index">
     <b-row>
       <div class="col-md-4 p-0" v-for="card in cards" v-bind:key="card.index">
-        <div class="media mr-3">
+        <div class="media mr-3 mb-5">
           <div class="icon mr-3 ml-3 rounded p-3 text-white" :style="card.iconbg">
             <font-awesome-icon icon="coffee" />
           </div>
           <div class="media-body text-left">
-            <h3>{{card.heading}}</h3>
+            <div class="font-weight-bold icon-heading-font mb-1" >{{card.heading}}</div>
             <div class="text-dark text-left ipad-text-font">
               <p>{{card.para}}
               </p>
@@ -63,14 +64,18 @@
       }
     }
   }
-</script lang="scss">
+</script>
 <style lang="scss">
-.ipad-text-font{
-    font-size: 15px;
-}
-.card-index{
-  z-index: -1;
-}
+  .ipad-text-font {
+    font-size: 14px;
+  }
+  .card-index {
+    z-index: -1;
+  }
+  .icon-heading-font
+  {
+    font-size: 20px;
+  }
 </style>
 
 

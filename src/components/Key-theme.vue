@@ -1,17 +1,18 @@
 <template>
     <div>
       <!-- created by roshan -->
-        <div class=" pt-3 pb-5 ">
+        <div class=" main-theme ">
             <b-row class="justify-content-center mx-auto">
-                <b-col md=3 class="text-center" v-for="card in cards" v-bind:key="card.index">
+                <b-col md=4 class="text-center" v-for="card in cards" v-bind:key="card.index">
                     <div class="text-warning icon">
                         <font-awesome-icon :icon="['fas','laptop']"
                          slot="aside"
                          blank blank-color="#cba"
+                         class="mb-4"
                          alt="placeholder" />
                     </div>
-                    <h3 class="py-2 text-white">{{card.heading}}</h3>
-                    <p class="text-white">{{card.para}} </p>
+                    <h4 class="mb-3 theme-heading text-white">{{card.heading}}</h4>
+                    <p class="text-secondary theme-text">{{card.para}} </p>
                 </b-col>
             </b-row>
         </div>
@@ -47,9 +48,18 @@ export default {
 </script>
 
 <style lang="scss">
-.icon {
+.main-theme{
+  padding: 40px 0px;
+  .icon {
   font-size: 30px;
 }
+    .theme-heading{
+      font-size: 18px;
+    }
+ 
+  
+}
+
 </style>
 
 

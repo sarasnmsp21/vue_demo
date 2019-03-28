@@ -5,11 +5,12 @@
     <div>
       <!-- created by roshan -->
         <b-container>
+          <div class="variants-main">
             <b-row class="m-auto">
                 <b-col md=4 v-for="card in cards" v-bind:key="card.index">
-                    <div>
+                    <div class="variants-content">
                         <b-card  :img-src="card.cardimg" img-alt="Image" img-top tag="article" class=" card mb-2 border-0 text-left">
-                            <h4>{{card.heading}} </h4>
+                            <h4 class="variants-heading">{{card.heading}} </h4>
                             <b-card-text>
                                 <p class="text-secondary">{{card.para}}</p>
                             </b-card-text>
@@ -18,6 +19,7 @@
                     </div>
                 </b-col>
             </b-row>
+            </div>
         </b-container>
     
     </div>
@@ -54,7 +56,20 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
-  background-color: transparent;
+.variants-main{
+  margin-bottom: 40px;
+  .variants-content{
+    padding: 10px;
+    .variants-heading{
+      color: black;
+        font-size: 19px !important;
+      margin-top: 20px !important;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  
 }
+
 </style>
