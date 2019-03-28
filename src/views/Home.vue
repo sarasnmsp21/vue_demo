@@ -36,7 +36,7 @@
       <p slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type  and more recently with
+                            
          </p>
     </product>
     <!--product-info-->
@@ -51,7 +51,7 @@
       <p slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type  and more recently with
+                               
          </p>
     </product>
     <!--product-info-->

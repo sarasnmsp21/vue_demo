@@ -3,10 +3,10 @@
     <div>
         <b-container class="mt-5">
             <b-row>
-                <b-col md=4 v-for="card in cards" v-bind:key="card.index" class="card-index">
+                <b-col md="4" v-for="card in cards" v-bind:key="card.index" class="card-index">
                     <div>
                         <b-card :img-src="card.landimg" class="mb-2 border-0 text-left">
-                            <h4>{{card.heading}} </h4>
+                            <h4 class="mb-2">{{card.heading}} </h4>
                             <b-card-text>
                                 <p class="text-secondary">{{card.para}}</p>
                             </b-card-text>

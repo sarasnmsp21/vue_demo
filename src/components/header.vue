@@ -32,18 +32,19 @@
        </b-navbar>
      </div>
        <!-- Navigation Bar -->
-       <div class="mt-5 pt-5">
+       <div class="mt-5 pt-4">
         <b-container>
            <div class="mt-3 my-5">
           <b-row>
           <div class=" mt-5 pt-5 ml-5 mr_5 text-white text-center">
             <h2 class="font-weight-bolder">About Us.</h2>
+             <div class="mx-5 px-5">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius
-               Eligendi, eius natus. Eius orem Ipsum is simply dummy text of the printing 
-                            
+               Eligendi, eius natus. Eius orem
+                         
             </p>
-          
+          </div>   
           </div>
           </b-row>
             </div>

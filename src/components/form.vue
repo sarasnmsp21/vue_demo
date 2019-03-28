@@ -1,7 +1,7 @@
 <template>
       <!--form-->
-                             <div class="p-5">
-                              <form class="text-center">
+                             <div class=" mb-5">
+                              <form class="text-center pb-5">
                                <b-row>
                                   <div class="col-md-2"></div>
                                   <div class="col-md-8">
@@ -27,10 +27,32 @@
                                   <div class="col-md-2"></div>
 
                               </b-row>
-                                  <div class="but-style pt-3">
-                                  <button type="submit" class="rounded-pill btn btn-primary text-center">Submit</button>
+                                  <div class="but-style pt-4">
+                                  <button type="submit" class="rounded-pill btn px-4 py-2 text-white text-center"><small>LETS TALK</small></button>
                                 
                                 </div></form>
                              </div>
                                <!--form-->
 </template>
+
+<style lang="scss">
+.form-control
+{
+  border-left-style: none !important;
+  border-right-style: none !important;
+  border-top-style: none !important;
+  border-bottom-style: 1px solid #000 !important;
+}
+.custom-select
+{
+  border-left-style: none !important;
+  border-right-style: none !important;
+  border-top-style: none !important;
+  border-bottom-style: 1px solid #000 !important;
+  
+}
+.btn
+{
+ background-color:  #9c27b0 !important;
+}
+</style>
