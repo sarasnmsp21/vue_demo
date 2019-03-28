@@ -10,9 +10,21 @@
            <b-navbar-toggle target="nav_collapse"/>
            <b-collapse is-nav id="nav_collapse">
              <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#"><font-awesome-icon :icon="['fas','calendar']" size="lg" /> Components</b-nav-item>
-            <b-nav-item href="#"><font-awesome-icon :icon="['fas','circle']" size="lg" /> Section</b-nav-item>
-            <b-nav-item href="#"><font-awesome-icon :icon="['fas','square']" size="lg" /> Example </b-nav-item>
+            <b-nav-item href="#">
+              <small>
+              <font-awesome-icon :icon="['fas','calendar']" size="lg" /> Components0
+              </small>
+                </b-nav-item>
+            <b-nav-item href="#">
+                  <small>
+              <font-awesome-icon :icon="['fas','circle']" size="lg" /> Section
+                  </small>
+                </b-nav-item>
+            <b-nav-item href="#">
+               <small>
+              <font-awesome-icon :icon="['fas','square']" size="lg" /> Example 
+               </small>
+              </b-nav-item>
          
             </b-navbar-nav>
           </b-collapse>
@@ -22,21 +34,16 @@
        <!-- Navigation Bar -->
        <div class="mt-5 pt-5">
         <b-container>
-           <div class="mt-5">
+           <div class="mt-3 my-5">
           <b-row>
           <div class=" mt-5 pt-5 ml-5 mr_5 text-white text-center">
-            <h2 class="font-weight-bolder">Your Story Starts With Us.</h2>
+            <h2 class="font-weight-bolder">About Us.</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius
-              dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo,
-              similique et earum voluptates amet ad similique et earum voluptates amet ad .
+               Eligendi, eius natus. Eius orem Ipsum is simply dummy text of the printing 
+                            
             </p>
-            <!-- <button type="button" class="ml-3 px-4 py-2 btn btn-danger">
-              <small>
-                <i class="fas fa-caret-right mr-1"></i>
-                Watch Video
-              </small>
-            </button> -->
+          
           </div>
           </b-row>
             </div>
@@ -62,9 +69,9 @@ export default {
   }
 }
 .top-jumbotron {
-  height: 600px;
+  height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/rimages/headerimage.jpg");
+    url("../assets/back.jpg");
   background-size: cover;
   margin-top: -110px;
 }

@@ -1,7 +1,7 @@
   
  
 <template>
- <b-row class="mt-5 pt-5 col-lg-12"> 
+ <b-row class="mt-5 pb-5 col-lg-12"> 
    
          <b-col md="4" sm="12" class="p-0"  v-for="media in medias" v-bind:key="media.index">  
         <!-- <div class="col-md-4 p-0" v-for="media in medias" v-bind:key="media.index"> -->

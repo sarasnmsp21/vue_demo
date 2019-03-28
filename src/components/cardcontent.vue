@@ -18,6 +18,7 @@
                       <p class="card-text  ">{{card.para}}</p>
                       <a href="#" class="card-link">{{card.link}}</a>
                       <a href="#" class="card-link"> {{card.link}}</a>
+                      
                     </div>    
                     
                 </div>

@@ -15,6 +15,7 @@ library.add(faUserSecret)
 import {
   faCoffee,
   faShieldAlt,
+  faQuoteLeft,
   faFingerprint,
   faCaretRight,
   faLaptop,
