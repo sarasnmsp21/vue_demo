@@ -21,7 +21,8 @@ import {
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 } from "@fortawesome/free-brands-svg-icons"; //fab
 import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -41,7 +42,8 @@ library.add(
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 ); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

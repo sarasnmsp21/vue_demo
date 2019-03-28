@@ -9,12 +9,12 @@
             slot="navlinks"
             v-for="link in navlinks"
             v-bind:key="link.index"
-          ><small>{{ link.name }}</small></b-nav-item>
+          ><small v-html="link.name"></small></b-nav-item>
         </Navbarheader>
 
         <div class="banner-content">
           <div class="container mt-5 pt-5">
-            <div class="mt-5 pt-5 text-white text-left">
+            <div class="main-banner-content text-white text-left">
               <h2 class="col-md-4 font-weight-bolder">Your Story Starts With Us.</h2>
               <p class="col-md-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius dolores est dolorum fugit. Debitis rerum voluptatum facere ipsam eligendi, natus explicabo, similique et earum voluptates amet ad.
@@ -90,7 +90,6 @@
         </div>
       </b-col>
     </div>
-    <!-- <customfooter></customfooter> -->
     <div class="mt-5">
       <sfooter brandnm="MaterialKit"></sfooter>
     </div>
@@ -114,7 +113,7 @@ export default {
   },
   data() {
     return {
-      navlinks: [
+      navlinks: [  
         { name: "Components" },
         { name: "Sections" },
         { name: "Examples" }
@@ -141,12 +140,19 @@ export default {
     font-size: 1rem;
 }
 
+.addpadding{
+  padding: 0 40px !important;
+}
+
 .banner-content {
-  margin-top: 110px;
+  margin-top: 110px !important;
+  .main-banner-content{
+    padding-top: 12rem;
+  }
 }
 
 .top-jumbotron {
-  height: 600px;
+  height: 700px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/rimages/headerimage.jpg");
   background-size: cover;
@@ -158,7 +164,7 @@ export default {
   // position: relative;
   // top: -180px;
   // margin: 0 20px;
-  margin-top: -150px;
+  margin-top: -180px;
 }
 
 .workdesc {
