@@ -5,13 +5,9 @@ import store from "./store";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-
-
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 
  
-library.add(faUserSecret)
 import {
   faCoffee,
   faShieldAlt,
@@ -19,12 +15,14 @@ import {
   faFingerprint,
   faCaretRight,
   faLaptop,
- faBars,
- faSquare,
- faCalendar,
- faCircle,
- faPencilAlt,
-  faChevronRight
+  faBars,
+  faSquare,
+  faQuoteLeft,
+  faCalendar,
+  faCircle,
+  faPencilAlt,
+  faChevronRight,
+  faUserSecret
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -33,31 +31,46 @@ import {
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 } from "@fortawesome/free-brands-svg-icons"; //fab
-import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faCoffee, faCircle,faPencilAlt,faBars,faCalendar, faSquare, faQuoteLeft,faChevronRight,faLaptop); //fas
+import {
+  faCommentAlt
+} from "@fortawesome/free-regular-svg-icons"; //far
 
-library.add(); //far
-library.add(faLinkedinIn); //fab
-library.add(
+import {
+  FontAwesomeIcon
+} from "@fortawesome/vue-fontawesome";
+
+library.add( 
+  faCircle,
+  faPencilAlt,
+  faBars,
+  faCalendar,  
+  faSquare,
+  faQuoteLeft,
+  faChevronRight,
+  faLaptop,
   faCoffee,
   faShieldAlt,
   faFingerprint,
   faCaretRight,
-  faLaptop,
-  faChevronRight
+  faUserSecret
 ); //fas
-library.add(faCommentAlt); //far
+
+library.add(
+  faCommentAlt
+); //far
+
 library.add(
   faLinkedinIn,
   faFacebookSquare,
   faTwitter,
   faGoogle,
   faYoutube,
-  faInstagram
+  faInstagram,
+  faDribbble
 ); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

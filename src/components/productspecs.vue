@@ -5,6 +5,7 @@
     <b-col md="4" class="p-0" v-for="spec in specs" v-bind:key="spec.index">
       <div class="text-center">
         <figure class="pt-3" >
+          <i class="fas fa-shield-alt"></i>
           <font-awesome-icon :icon="['fas', 'shield-alt']" :class="spec.dynclass"/>
         </figure>
         <div>
