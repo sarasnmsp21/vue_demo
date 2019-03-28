@@ -32,6 +32,7 @@
 
     <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
+        <b-row>
         <b-col md="6" class="mx-auto">
           <!-- section header -->
           <divheaders>
@@ -39,6 +40,7 @@
             <p slot="ptag" class="text-muted">{{productDescription}}</p>
           </divheaders>
         </b-col>
+        </b-row>
           <!-- component used -->
           <productspecs></productspecs>
         <b-col md="10" class="mx-auto">
@@ -120,7 +122,7 @@ export default {
       ],
       productHeader: "Let's Talk Product",
       productDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,itaque? Dolor asperiores enim ipsa assumenda laudantium. Nihil explicabo at eaque assumenda modidoloresexpedita recusandae repellat mollitia, adipisci iste deserunt?",
+        "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.",
       teamHeader: "Here is our team",
       workHeader: "Work with us",
       workDescription:
@@ -131,8 +133,8 @@ export default {
 </script>
 
 <style lang="scss">
-.fulldiv {
-  font-family: "Ubuntu", sans-serif;
+body {
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   background-color: #e1e1e1;
 }
 
@@ -160,7 +162,8 @@ export default {
 }
 
 .oversection {
-  font-family: "Ubuntu", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   // position: relative;
   // top: -180px;
   // margin: 0 20px;
