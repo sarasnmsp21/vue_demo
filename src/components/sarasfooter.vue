@@ -26,9 +26,9 @@
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-                <h4 class="h6">
-                  <b>Popular Services</b>
-                </h4>
+                <div class="font-weight-bold footer-title mb-2">
+                 Popular Services
+                </div>
                 <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary border-bottom footer-text" href="#">Payment Center</a>
@@ -109,9 +109,9 @@
           <b-col cols="12">
             <div class="text-center text-sm">
               <p class="mb-1 pb-2">
-                &copy; 2018
+                &copy; 2019
                 <a class="text-secondary border-bottom footer-text" href="#">
-                  Robust UI
+                 Material
                   Kit
                 </a>.
               </p>

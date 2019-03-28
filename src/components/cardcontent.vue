@@ -34,7 +34,12 @@
                        
 
   <script>
+
   import img1 from "../assets/img4.jpeg";
+   import img2 from "../assets/img12.jpeg";
+    import img3 from "../assets/img150.jpg";
+    import img4 from "../assets/img152.jpeg";
+  
 export default {
     data() {
     return {
@@ -48,7 +53,7 @@ export default {
           link:"Card link"
         },
        {
-         img:img1,
+         img:img2,
           title: "Card title",
           subtitle:"Card subtitle",
           para:
@@ -56,7 +61,7 @@ export default {
           link:"Card link"
         },
         {
-         img:img1,
+         img:img3,
           title: "Card title",
           subtitle:"Card subtitle",
           para:
@@ -64,7 +69,7 @@ export default {
           link:"Card link"
         },
         {
-         img:img1,
+         img:img4,
           title: "Card title",
           subtitle:"Card subtitle",
           para:
