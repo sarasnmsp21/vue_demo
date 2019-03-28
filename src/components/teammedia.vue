@@ -29,16 +29,9 @@
               </div>
               <div class="member-socialmedia">
                 <p>
-                  <!-- <i class="fab fa-twitter ml-3"></i>
-                  <i class="fab fa-facebook-square ml-3"></i>
-                  <i class="fab fa-google ml-3"></i> -->
-                  <!-- <font-awesome-icon icon="linkedin-in" class="mr-4 small" style="color:tomato;"/> -->
-
-                  <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-                  
-                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:tomato;"/>
-                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:green;"/>
-                  <font-awesome-icon icon="coffee" class="mr-4 small" style="color:blue;"/>
+                  <span style="color:#55ACEE"><font-awesome-icon :icon="['fab', 'twitter']" class="mr-4"/></span>
+                  <span style="color:#3B5898"><font-awesome-icon :icon="['fab', 'facebook-square']" class="mr-4"/></span>
+                  <span style="color:#DD4B3A"><font-awesome-icon :icon="['fab', 'google']" class="mr-4"/></span>
                 </p>
               </div>
             </b-col>
@@ -56,29 +49,44 @@ export default {
   name: "teammedia",
   data() {
     return {
-      // team1image: team1,
-      // team2image: team2,
       members:[
         {
           teamimage: team1,
+          color1:'color:green',
+          color2:'color:blue',
+          color3:'color:red',
+          iconclass: "'fab'",
+          iconname:"'linkedin-in'",
+          icon1: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon2: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon3: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
           membername: "Alex Thompson",
           position: "FOUNDER",
           memberdesc: "Dont be scared of truth because we need torestart the human foundation..."
         },
         {
           teamimage: team2,
+          icon1: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon2: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon3: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
           membername: "Kendall Andrew",
           position: "GRAPHIC DESIGNER",
           memberdesc: "Dont be scared of truth because we need torestart the human foundation..."
         },
         {
           teamimage: team2,
+          icon1: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon2: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon3: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
           membername: "Gina Andrew",
           position: "WEB DESIGNER",
           memberdesc: "Dont be scared of truth because we need torestart the human foundation..."
         },
         {
           teamimage: team1,
+          icon1: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon2: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
+          icon3: "<font-awesome-icon :icon='['fab', 'linkedin-in']' />",
           membername: "George West",
           position: "BACKEND HACKER",
           memberdesc: "Dont be scared of truth because we need torestart the human foundation..."
