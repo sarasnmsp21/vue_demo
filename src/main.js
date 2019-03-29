@@ -16,13 +16,12 @@ import {
   faCaretRight,
   faLaptop,
   faChevronRight,
-  faQuoteLeft,
   faBars,
   faSquare,
    faCalendar,
   faCircle,
   faPencilAlt,
-  faChevronRight,
+
   faUserSecret
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
@@ -58,7 +57,7 @@ library.add(
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faChevronRight,
+  
   faQuoteLeft,
 
   faUserSecret
