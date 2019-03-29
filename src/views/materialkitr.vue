@@ -5,13 +5,25 @@
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit Pro">
           <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
+            <span style="color:#fff" v-if="link.icon1">
+              <font-awesome-icon :icon="['fas', 'th']" class="mr-1 small"/>
+            </span>
+            <span style="color:#fff" v-if="link.icon2">
+              <font-awesome-icon :icon="['fas', 'dumbbell']" class="mr-1 small"/>
+            </span>
+            <span style="color:#fff" v-if="link.icon3">
+              <font-awesome-icon :icon="['fas', 'envelope-open-text']" class="mr-1 small"/>
+            </span>
             <small v-html="link.name"></small>
+            <span style="color:#fff">
+              <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
+            </span>
           </b-nav-item>
         </Navbarheader>
 
         <div class="banner-content">
           <div class="container mt-5 pt-5 addpadding">
-            <b-col md="6" class="p-0">
+            <b-col md="6" sm="9" cols="12" class="p-0">
               <div class="main-banner-content text-white text-left">
                 <div class="mb-3">
                   <h2 class="font-weight-bolder banner-header">Your Story Starts With Us</h2>
@@ -33,7 +45,7 @@
       </b-jumbotron>
     </div>
 
-    <div class="oversection mx-4 shadow p-3 mb-0 bg-white rounded">
+    <div class="oversection mx-4 px-2 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
         <div class="mt-4">
           <b-row>
@@ -131,9 +143,24 @@ export default {
   data() {
     return {
       navlinks: [
-        { name: "Components" },
-        { name: "Sections" },
-        { name: "Examples" }
+        {
+          name: "Components",
+          icon1: true,
+          icon2:false,
+          icon3:false
+        },
+        {
+          name: "Sections",
+          icon1: false,
+          icon2:true,
+          icon3:false
+        },
+        {
+          name: "Examples",
+          icon1: false,
+          icon2:false,
+          icon3:true
+        }
       ],
       productHeader: "Let's talk product",
       productDescription:
@@ -161,18 +188,22 @@ body {
   padding: 0 100px !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .addpadding {
+    padding: 0 50px !important;
+  }
+}
+
 .banner-content {
   margin-top: 110px !important;
   .main-banner-content {
-    padding-top: 9rem;
-    // font-family: Roboto,Helvetica,Arial,sans-serif;
+    padding-top: 11rem;
   }
 
   .banner-header {
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 50px;
-    line-height: 60px;
-    // font-size: 50px;
+    font-size: 46px;
+    line-height: 50px;
   }
 }
 
@@ -223,8 +254,8 @@ body {
     outline: none;
     border-radius: 4px;
   }
-  
-  .workcolor:focus{
+
+  .workcolor:focus {
     outline: none;
   }
 }

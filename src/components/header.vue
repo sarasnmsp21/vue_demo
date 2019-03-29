@@ -70,7 +70,7 @@ export default {
  .nav-dark {
    .navbar-nav {
 .nav-item{
-      color:#fff !important;
+      color:#fff;
     }
  }
  }
@@ -92,7 +92,7 @@ background-color: #04172745;
   .nav-link{
 .nav-item:hover
 {
-  color:#fff !important;
+  color:#fff;
 }
 }
 }

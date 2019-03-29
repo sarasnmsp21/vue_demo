@@ -24,7 +24,7 @@
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-                <div class="font-weight-bold footer-title mb-2">
+                <div class="font-weight-bold footer-column-title">
                  Popular Services
                 </div>
                 <ul class="text-left p-0">
@@ -48,7 +48,7 @@
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-               <div class="font-weight-bold">Website Information</div>
+               <div class="font-weight-bold footer-column-title">Website Information</div>
                 <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary bottom-border footer-text" href="#">Website Tutorial</a>
@@ -73,7 +73,7 @@
               </b-col>
               <b-col md="3" sm="6" cols="6">
                 <div class="text-left pl-5">
-                <div class="font-weight-bold">Company</div>
+                <div class="font-weight-bold footer-column-title">Company</div>
                 <ul class="text-left p-0">
                   <li>
                     <a class="text-secondary bottom-border footer-text" href="#">Our team</a>

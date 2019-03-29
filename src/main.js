@@ -18,11 +18,14 @@ import {
   faChevronRight,
   faBars,
   faSquare,
-   faCalendar,
+  faCalendar,
   faCircle,
   faPencilAlt,
-
-  faUserSecret
+  faUserSecret,
+  faCaretDown,
+  faTh,
+  faDumbbell,
+  faEnvelopeOpenText
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -57,10 +60,12 @@ library.add(
   faFingerprint,
   faCaretRight,
   faLaptop,
-  
   faQuoteLeft,
-
-  faUserSecret
+  faUserSecret,
+  faCaretDown,
+  faTh,
+  faDumbbell,
+  faEnvelopeOpenText
 ); //fas
 
 library.add(
