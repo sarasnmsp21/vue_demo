@@ -4,7 +4,7 @@
 <template>
     <div>
       <!-- created by roshan -->
-        <b-container>
+        
           <div class="variants-main">
             <b-row class="m-auto">
                 <b-col md=4 v-for="card in cards" v-bind:key="card.index">
@@ -20,7 +20,7 @@
                 </b-col>
             </b-row>
             </div>
-        </b-container>
+       
     
     </div>
 </template>

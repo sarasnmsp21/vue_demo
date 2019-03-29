@@ -2,13 +2,13 @@
 <template>
   <div>
     <!-- created by roshan -->
-    <b-container>
+    
       <div class="landing-main">
       <b-row class="m-auto">
         <b-col md=4 v-for="card in cards" v-bind:key="card.index">
           <div class="landing-content">
             <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-              <h4 class="landing-title">{{card.heading}} <span class="bg-danger">{{card.spantext}}</span> </h4>
+              <h4 class="landing-title">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </h4>
               <b-card-text>
                 <p class="landing-text ">{{card.para}}</p>
               </b-card-text>
@@ -18,7 +18,7 @@
         </b-col>
       </b-row>
       </div>
-    </b-container>
+   
   
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
         {
           cardimg: images2,
           heading: "Real estate landin",
-          spantext: "new",
+          spantext: "New!",
           para: "You can use this page to promote your real estate."
         },
         {
@@ -64,7 +64,7 @@ export default {
         {
           cardimg: images6,
           heading: "Fullpage scrolling",
-          spantext: "new",
+          spantext: "New!",
           para: "You can use this page to promote your restaurant."
         },
         {
