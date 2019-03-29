@@ -22,24 +22,28 @@
         </Navbarheader>
 
         <div class="banner-content">
-          <div class="container mt-5 pt-5 addpadding">
-            <b-col md="6" sm="9" cols="12" class="p-0">
-              <div class="main-banner-content text-white text-left">
-                <div class="mb-3">
-                  <h2 class="font-weight-bolder banner-header">Your Story Starts With Us</h2>
+          <div class="container p-0">
+            <div class="addpadding mt-5 pt-5">
+              <b-col md="6" sm="9" cols="12" class="p-0">
+                <div class="main-banner-content text-white text-left">
+                  <div class="mb-3">
+                    <h2 class="font-weight-bolder banner-header">Your Story Starts With Us</h2>
+                  </div>
+                  <div>
+                    <p class="banner-text">
+                      Every landing page needs a small description after the big bold title,
+                      that's why we added this text here. Add here all the information that can
+                      make you or your product create the first impression.
+                    </p>
+                  </div>
+                  <button type="button" class="px-4 py-2 btn btn-danger">
+                    <small>
+                      <font-awesome-icon :icon="['fas', 'caret-right']" class="mr-2"/>Watch Video
+                    </small>
+                  </button>
                 </div>
-                <div>
-                  <p
-                    class="banner-text"
-                  >Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.</p>
-                </div>
-                <button type="button" class="px-4 py-2 btn btn-danger">
-                  <small>
-                    <font-awesome-icon :icon="['fas','caret-right']" class="mr-2"/>Watch Video
-                  </small>
-                </button>
-              </div>
-            </b-col>
+              </b-col>
+            </div>
           </div>
         </div>
       </b-jumbotron>
@@ -52,8 +56,8 @@
             <b-col md="8" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{productHeader}}</h3>
-                <p slot="ptag" class="header-text">{{productDescription}}</p>
+                <h3 slot="h3tag">{{ productHeader }}</h3>
+                <p slot="ptag" class="header-text">{{ productDescription }}</p>
               </divheaders>
             </b-col>
           </b-row>
@@ -67,7 +71,7 @@
             <b-col md="10" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{teamHeader}}</h3>
+                <h3 slot="h3tag">{{ teamHeader }}</h3>
               </divheaders>
             </b-col>
           </b-row>
@@ -82,8 +86,8 @@
             <b-col md="8" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{workHeader}}</h3>
-                <p slot="ptag" class="pt-4 workdesc">{{workDescription}}</p>
+                <h3 slot="h3tag">{{ workHeader }}</h3>
+                <p slot="ptag" class="pt-4 workdesc">{{ workDescription }}</p>
               </divheaders>
 
               <b-row class="mb-3">
@@ -146,20 +150,20 @@ export default {
         {
           name: "Components",
           icon1: true,
-          icon2:false,
-          icon3:false
+          icon2: false,
+          icon3: false
         },
         {
           name: "Sections",
           icon1: false,
-          icon2:true,
-          icon3:false
+          icon2: true,
+          icon3: false
         },
         {
           name: "Examples",
           icon1: false,
-          icon2:false,
-          icon3:true
+          icon2: false,
+          icon3: true
         }
       ],
       productHeader: "Let's talk product",
@@ -192,6 +196,10 @@ body {
   .addpadding {
     padding: 0 50px !important;
   }
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
 }
 
 .banner-content {

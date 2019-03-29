@@ -55,7 +55,7 @@ export default {
     line-height: 1.9;
 }
 .specs-heading{
-    color: #5D6774;
+    color: #3C4857;
 }
 .product-icon1{
     color: #24BCD4;

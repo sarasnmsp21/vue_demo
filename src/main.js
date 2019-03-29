@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
- 
 import {
   faCoffee,
   faShieldAlt,
@@ -16,7 +15,11 @@ import {
   faCaretRight,
   faLaptop,
   faChevronRight,
+<<<<<<< HEAD
  faBars,
+=======
+  faBars,
+>>>>>>> 342fb154843d143f22dc427e14e7347ed46f1dad
   faSquare,
   faCalendar,
   faCircle,
@@ -38,19 +41,15 @@ import {
   faDribbble
 } from "@fortawesome/free-brands-svg-icons"; //fab
 
-import {
-  faCommentAlt
-} from "@fortawesome/free-regular-svg-icons"; //far
+import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
 
-import {
-  FontAwesomeIcon
-} from "@fortawesome/vue-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add( 
+library.add(
   faCircle,
   faPencilAlt,
   faBars,
-  faCalendar,  
+  faCalendar,
   faSquare,
   faQuoteLeft,
   faChevronRight,
@@ -60,7 +59,6 @@ library.add(
   faFingerprint,
   faCaretRight,
   faLaptop,
-  faQuoteLeft,
   faUserSecret,
   faCaretDown,
   faTh,
@@ -68,9 +66,7 @@ library.add(
   faEnvelopeOpenText
 ); //fas
 
-library.add(
-  faCommentAlt
-); //far
+library.add(faCommentAlt); //far
 
 library.add(
   faLinkedinIn,
