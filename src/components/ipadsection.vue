@@ -5,7 +5,7 @@
       <div class="text-left row-height">
       <b-row >
        
-        <b-col md="5" class="mx-auto my-auto pt-5">
+        <b-col md="5" class="mx-auto my-auto pt-5 spacing-ipad-para">
           <div>
           <b-row v-for="card in cards" v-bind:key="card.index" class="ml-5 ">
             <div class="ipad-heading-font">{{card.heading}}</div>
@@ -14,7 +14,7 @@
           </div>
         </b-col>
        
-        <div class="col-md-6 ml-auto ipad-img-height">
+        <div class="col-md-6 ml-auto ipad-img-height mobile-display">
           <b-img :src="ipad" img-alt="Image" height="380" class="image-fluid ml-5" />
         </div>
       </b-row>
@@ -24,50 +24,68 @@
 </template>
 
 <script>
-  import images1 from "../assets/img12.png";
-  export default {
-    data() {
-      return {
-        cards: [{
-            heading: "Multi-device support",
-            para: " All pages inside Robust are optimized for mobile, tablet and desktop. It doesn't matter what device using."
-          },
-          {
-            heading: "Well-documented",
-            para: "All Robust's components are well-documented and a Quick Start document is included to speed things your sid."
-          },
-          {
-            heading: "3rd party plugin",
-            para: "Robust comes with multiple 3rd party plugins that are easy to use and and combine well with other."
-          }
-        ],
-        ipad: images1
-      }
-    }
-  };
+import images1 from "../assets/img12.png";
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          heading: "Multi-device support",
+          para:
+            " All pages inside Robust are optimized for mobile, tablet and desktop. It doesn't matter what device using."
+        },
+        {
+          heading: "Well-documented",
+          para:
+            "All Robust's components are well-documented and a Quick Start document is included to speed things your sid."
+        },
+        {
+          heading: "3rd party plugin",
+          para:
+            "Robust comes with multiple 3rd party plugins that are easy to use and and combine well with other."
+        }
+      ],
+      ipad: images1
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  .container-top-margin {
-    margin-top: 60px;
+.container-top-margin {
+  margin-top: 60px;
+}
+.ipad-heading-font {
+  font-weight: bold;
+  font-size: 24px;
+}
+.ipad-para-font {
+  font-size: 12px;
+}
+.ipad-background-color {
+  background-color: #eff1f3;
+}
+.row-height {
+  height: 500px;
+}
+.ipad-img-height {
+  padding-top: 119px;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-display {
+    display: none;
   }
-  .ipad-heading-font {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .ipad-para-font {
-    font-size: 12px;
-  }
-  .ipad-background-color {
-    background-color: #eff1f3;
-  }
-  .row-height
+  .spacing-ipad-para
   {
-    height: 500px;
+    padding-top: 123px !important;
+    margin-left: -17px !important;
   }
-  .ipad-img-height
-  {
-    padding-top:119px;
+}
+@media only screen and (max-width: 768px){
+  .mobile-display {
+    display: none;
   }
+}
+
 </style>
 
