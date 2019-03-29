@@ -1,7 +1,7 @@
     <template>
            <!--image area-->
            <b-container>
-                          <div class="pl-5 pb-4 mr-5 ml-5 pad-top"  >
+                          <div class="pl-5 pb-4  pad-top"  >
                          
                                 <b-row> 
                                      <div class="col-md-6" v-for="image in images" v-bind:key="image.index">

@@ -2,10 +2,10 @@
      <template>
            <!--image area-->
            <b-container>
-                          <div class="pl-5  pt-2 mr-5 ml-5"  >
+                          <div class="pl-5  pt-2 "  >
                           <b-row>
                         
-                           <b-col md="4" v-for="image in images" v-bind:key="image.index">
+                           <b-col md="4" sm="12" v-for="image in images" v-bind:key="image.index">
                                 <div class="img-display">
                                   <figure>
                                   <b-img :src="image.imgsection" class="pt-0 img-fluid img-pb shadow  bg-danger rounded"  alt=""/>

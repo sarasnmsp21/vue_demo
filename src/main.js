@@ -16,8 +16,7 @@ import {
   faCaretRight,
   faLaptop,
   faChevronRight,
-  faQuoteLeft,
-  faBars,
+ faBars,
   faSquare,
   faCalendar,
   faCircle,
@@ -26,7 +25,6 @@ import {
   faCaretDown,
   faTh,
   faDumbbell,
-  faChevronRight,
   faEnvelopeOpenText
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 

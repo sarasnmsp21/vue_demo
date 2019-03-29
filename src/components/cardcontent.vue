@@ -86,8 +86,8 @@ export default {
       cards: [
         {
           img:img1,
-          title: "Card title",
-          subtitle:"Card subtitle",
+          title: "Tania Andrew",
+          subtitle:"Seo Speialist",
           para:
             "Some quick example text to build on the card title and make up the bulk  ",
           showlinkedin: false,
@@ -100,8 +100,8 @@ export default {
         },
        {
          img:img2,
-          title: "Card title",
-          subtitle:"Card subtitle",
+          title: "Rebecca Stormville",
+          subtitle:"Developer",
           para:
             "Some quick example text to build on the card title and make up the bulk  ",
            showlinkedin: true,
@@ -114,8 +114,8 @@ export default {
         },
         {
          img:img3,
-          title: "Card title",
-          subtitle:"Card subtitle",
+          title: "Christina Dolophe",
+          subtitle:"Project Manager",
           para:
             "Some quick example text to build on the card title and make up the bulk . ",
            showlinkedin: false,
@@ -128,8 +128,8 @@ export default {
         },
         {
          img:img4,
-          title: "Card title",
-          subtitle:"Card subtitle",
+          title: "Lousis Andrew",
+          subtitle:"Team Leader",
           para:
             "Some quick example text to build on the card title . ",
          showlinkedin: false,
