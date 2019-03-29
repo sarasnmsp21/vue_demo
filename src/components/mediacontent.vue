@@ -28,7 +28,7 @@ export default {
           icon: "user-secret",
           heading: "1. Design",
          para:
-            "An organization or organisation is an entity comprising multiple people, such as an institution or an association,.",
+          "An organization or organisation is an entity comprising multiple people, such as an institution or an association",
           link: "Find more.."
         },
         {

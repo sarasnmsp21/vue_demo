@@ -124,7 +124,7 @@ export default {
 <style lang="scss">
 .oversectiion
 {
- margin: -100px 20px 30px ;
+ margin: -84px 20px 30px ;
 }
 .home
 {

@@ -15,7 +15,7 @@ import {
   faCaretRight,
   faLaptop,
   faChevronRight,
-  faBars,
+ faBars,
   faSquare,
   faCalendar,
   faCircle,

@@ -6,7 +6,7 @@
        <div>
           <b-navbar fixed="top" toggleable="lg" type="dark" variant="">
            <b-container class="mx-5 px-5">
-           <b-navbar-brand class="text-white" href="#">{{msg}}</b-navbar-brand>
+           <b-navbar-brand class="text-white logo" href="#">{{msg}}</b-navbar-brand>
            <b-navbar-toggle target="nav_collapse"/>
            <b-collapse is-nav id="nav_collapse">
              <b-navbar-nav class="ml-auto ">
@@ -39,12 +39,12 @@
         <b-container>
            <div class="mt-3 my-5">
           <b-row>
-          <div class=" mt-5 pt-5 ml-5 mr_5 text-white text-center">
-            <span class="about-style font-weight-bolder">About Us.</span>
-             <div class="mx-5 px-5">
+          <div class=" mt-5 pt-5 mx-5 px-5 text-white text-center">
+            <span class="about-style font-weight-bolder">About Us</span>
+             <div class="mx-5 ">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius
-               Eligendi, eius natus. Eius orem
+               Eligendi eius natus eius natus. 
                          
             </p>
           </div>   
@@ -72,6 +72,11 @@ export default {
     color: #fff !important;
   }
 }
+.navbar-toggler-icon
+{
+  position:absolute;
+  top:8px;
+}
 .top-jumbotron {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -93,5 +98,9 @@ background-color: #04172745;
   color:#fff !important;
 }
 }
+}
+.logo:hover
+{
+  color:#fff !important;
 }
 </style>
