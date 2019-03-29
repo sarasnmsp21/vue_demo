@@ -13,19 +13,19 @@
    
             <b-nav-item href="#">
               <small>
-              <font-awesome-icon :icon="['fas','calendar']" size="lg" /> Components &#9660; &nbsp;
+              <font-awesome-icon :icon="['fas','th']" size="lg" /> Components &#9660; &nbsp;
               </small>
                 </b-nav-item>
            
             <b-nav-item href="#">
                   <small>
-              <font-awesome-icon :icon="['fas','circle']" size="lg" /> Section &#9660; &nbsp;
+              <font-awesome-icon :icon="['fas','dumbbell']" size="lg" /> Section &#9660; &nbsp;
                   </small>
                 </b-nav-item>
-       
+      
             <b-nav-item href="#">
                <small>
-              <font-awesome-icon :icon="['fas','square']" size="lg" /> Example &#9660;
+              <font-awesome-icon :icon="['fas','envelope-open-text']" size="lg" /> Example &#9660;
                </small>
               </b-nav-item>
          
@@ -66,14 +66,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
- .nav-dark {
-   .navbar-nav {
-.nav-item{
-      color:#fff;
-    }
- }
- }
+<style lang="scss">
+.navbar-nav {
+  .nav-link {
+    color: #fff !important;
+  }
+}
 .top-jumbotron {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -88,11 +86,11 @@ background-color: #04172745;
 {
   font-size: 2.4rem;
 }
-.nav-dark{
+.navbar{
   .nav-link{
-.nav-item:hover
+.nav-item a:hover
 {
-  color:#fff;
+  color:#fff !important;
 }
 }
 }
