@@ -224,7 +224,6 @@ body {
 }
 
 .oversection {
-  // font-family: "Ubuntu", sans-serif;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   margin-top: -180px;
 
