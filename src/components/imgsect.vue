@@ -7,7 +7,7 @@
                                      <div class="col-md-6" v-for="image in images" v-bind:key="image.index">
                                         
                                    <figure>
-                                    <b-img :src="image.imgsection1" class="pt-5 w-100  img-fluid t"  alt=""/>
+                                    <b-img :src="image.imgsection1" class="mt-5 w-100 pad-top shadow  bg-white  rounded img-fluid t"  alt=""/>
                                       </figure>
                                       
                                  </div>
@@ -23,6 +23,10 @@
       {
        margin-top: -31px;
       }
+      .img-pb1
+       {
+        border-radius: 0.4rem;
+        }
    </style>
    
                    
@@ -44,4 +48,6 @@ export default {
       }
    }
 }
-</script>       
+</script>   
+
+

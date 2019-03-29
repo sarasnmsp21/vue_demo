@@ -29,7 +29,7 @@ export default {
       specs:[
         {
             dynclass: "product-icon1",
-            heading:'Home',
+            heading:'Free Chat',
             para: 'Divide details about your product or agency work into parts.Write a few lines about each one. A paragraph describing a feature will be enough.'
         },
         {
@@ -55,7 +55,7 @@ export default {
     line-height: 1.9;
 }
 .specs-heading{
-    color: #212519;
+    color: #5D6774;
 }
 .product-icon1{
     color: #24BCD4;
@@ -69,4 +69,5 @@ export default {
     color: #F44337;
     font-size: 40px;
 }
+
 </style>

@@ -11,6 +11,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCoffee,
   faShieldAlt,
+  faQuoteLeft,
   faFingerprint,
   faCaretRight,
   faLaptop,
@@ -20,8 +21,11 @@ import {
   faCalendar,
   faCircle,
   faPencilAlt,
-  faChevronRight,
-  faUserSecret
+  faUserSecret,
+  faCaretDown,
+  faTh,
+  faDumbbell,
+  faEnvelopeOpenText
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -55,11 +59,11 @@ library.add(
   faShieldAlt,
   faFingerprint,
   faCaretRight,
-  faLaptop,
-  faChevronRight,
-  faQuoteLeft,
-
-  faUserSecret
+  faUserSecret,
+  faCaretDown,
+  faTh,
+  faDumbbell,
+  faEnvelopeOpenText
 ); //fas
 
 library.add(

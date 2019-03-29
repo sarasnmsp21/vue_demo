@@ -6,7 +6,7 @@
                       
                             
                            <b-col md="8" sm="12">
-                         <div class="prod-para ">
+                         <div class="prod-para my-5">
                             
                             <slot name="heading"></slot>
                             <slot name="paragraph"></slot>
