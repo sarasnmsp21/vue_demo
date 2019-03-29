@@ -1,9 +1,15 @@
 <template>
     <div>
+        <!-- created by roshan -->
         <div class="background  py-5 mb-5" fluid-grow alt="Fluid-grow image">
             <!-- navbar compomemt use -->
             <Navbarheader msg="Incline">
-                <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">{{link}}</b-nav-item>
+                <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
+                   <span class="small"> {{link.name}}</span>
+                    <span style="color:#fff" v-if="link.icon">
+                        <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
+                    </span>
+                </b-nav-item>
             </Navbarheader>
             <!--  -->
             <b-container>
@@ -316,7 +322,32 @@ import pictures3 from "../assets/3.jpg";
 export default {
   data() {
     return {
-      navlinks: ["Home", "Services", "About-us", "Contact Us"],
+      navlinks: [
+          {
+              name: " WELCOME ",
+              icon: true
+          },
+           {
+              name: " LANDINGS ",
+              icon: true
+          },
+           {
+              name: " PAGES ",
+              icon: true
+          },
+           {
+              name: " COMPONENTS",
+              icon: true
+          },
+           {
+              name: " DOCUMENTATION",
+              icon: false
+          },
+           {
+              name: " PURCHASE NOW",
+              icon: false
+          }
+      ],
       img1: pictures1,
       img2: pictures2,
       img3: pictures3
@@ -401,18 +432,18 @@ export default {
 }
 
 // card animation
-.card {
-  background-color: transparent !important;
-  img {
-    transition: 0.5s;
-  }
-  &:hover {
-    img {
-      box-shadow: 2px 5px 4px 5px #888888;
-      transform: translateY(-10px);
-    }
-  }
-}
+// .card {
+//   background-color: transparent !important;
+//   img {
+//     transition: 0.5s;
+//   }
+//   &:hover {
+//     img {
+//       box-shadow: 2px 5px 4px 5px #888888;
+//       transform: translateY(-10px);
+//     }
+//   }
+// }
 
 // quote text
 .quote {
@@ -582,5 +613,9 @@ export default {
 
 .btn {
   border-radius: 0%;
+  background-color: transparent !important;
+}
+.btn:hover{
+    background-color: #f5ba4b !important; 
 }
 </style>

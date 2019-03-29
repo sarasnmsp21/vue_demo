@@ -12,13 +12,13 @@ export default new Router({
       component: Home
     },
     {
-      path: "/roshan-content",
-      name: "roshan-content",
+      path: "/Incline-website",
+      name: "Incline-website",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/roshan-content.vue")
+        import(/* webpackChunkName: "about" */ "./views/Incline-website.vue")
     },
     {
       path: "/about",
