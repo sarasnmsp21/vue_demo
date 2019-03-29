@@ -15,7 +15,11 @@ import {
   faFingerprint,
   faCaretRight,
   faLaptop,
+<<<<<<< HEAD
   faChevronRight,
+=======
+  faQuoteLeft,
+>>>>>>> 9bf86a4d15958df2e84ee0752423b516ba97fe7a
   faBars,
   faSquare,
   faCalendar,
