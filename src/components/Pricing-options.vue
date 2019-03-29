@@ -6,7 +6,7 @@
         <b-row class="justify-content-center m-auto">
             <b-col md="4" v-for="card in cards" v-bind:key="card.index">
                 <div>
-                    <b-card img-alt="Image" img-top tag="article" class="card mb-2 py-5" :class="card.borderclass">
+                    <b-card img-alt="Image" img-top tag="article" class="card mb-2 py-3" :class="card.borderclass">
                         <b-card-text>
     
                             <h4 class=" text-center pricing-title p-3">Standard license</h4>

@@ -7,11 +7,11 @@
                 <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
                     <span class="small"> {{link.name}}</span>
                     <span style="color:#fff" v-if="link.icon">
-                                    <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
-                                </span>
+                                                <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
+                                            </span>
                 </b-nav-item>
             </Navbarheader>
-            <!--  -->
+            <!--banner  -->
             <b-container>
                 <div class="main-content">
                     <b-row class="justify-content-center m-auto">
@@ -55,12 +55,12 @@
         </b-container>
     
         <!-- -----------Header variants start-------- -->
-        <div class="background-2 mt-5 pb-3" fluid-grow alt="Fluid-grow image">
+        <div class="background-2  pb-3" fluid-grow alt="Fluid-grow image">
             <div class="line"></div>
-            <b-container fluid class="px-5 mt-5">
+            <b-container fluid class="px-5">
                 <b-row class="justify-content-center mx-auto">
                     <b-col md=6>
-                        <div class="text-center mt-5">
+                        <div class="text-center ">
                             <div class="title">
                                 <h2 class="pt-5 mb-4 landing-title">Header variants</h2>
                             </div>
@@ -79,21 +79,23 @@
             </b-container>
         </div>
         <!-- -------media object use------- -->
-        <div class="quote">
-            <b-row class="justify-content-center mx-auto">
-                <b-col md=8>
-                    <div class="mt-5">
-                        <b-media tag="li" class="my-4">
-                            <font-awesome-icon :icon="['fas','quote-left']" slot="aside" alt="placeholder" class="icon1" /> </font-awesome-icon>
-                            <p class="mb-0 text-left quote-text1">
-                                This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind, it can be easily adjusted to create layouts of any complexity within a few minutes.
-                            </p>
-                            <p class="text-left py-3 quote-text2">Yuri Gamin, Moscow</p>
-                        </b-media>
-                    </div>
-                </b-col>
-            </b-row>
-        </div>
+        <b-container>
+            <div class="quote">
+                <b-row class=" justify-content-center mx-auto">
+                    <b-col md=9>
+                        <div class="mt-5">
+                            <b-media tag="li" class="my-4">
+                                <font-awesome-icon :icon="['fas','quote-left']" slot="aside" alt="placeholder" class="icon1" /> </font-awesome-icon>
+                                <p class="mb-0 text-left quote-text1">
+                                    This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind, it can be easily adjusted to create layouts of any complexity within a few minutes.
+                                </p>
+                                <p class="text-left py-3 quote-text2">Yuri Gamin, Moscow</p>
+                            </b-media>
+                        </div>
+                    </b-col>
+                </b-row>
+            </div>
+        </b-container>
     
         <!-- ------Key theme features------- -->
     
@@ -118,65 +120,69 @@
     
         </div>
         <!-------------Intuitive workflow start -----------  -->
-        <b-container fluid class=" my-5 pt-5 ">
-            <b-row class="justify-content-center m-auto">
-                <b-col md=4>
-                    <div class="workflow-main">
-                        <div class="title">
-                            <h2 class=" mb-4 workflow-title text-left pb-3 ">Intuitive workflow</h2>
-                        </div>
-                        <div class="content ">
-                            <div class="d-flex flex-row ">
-                                <span class=" text-warning">
-                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                                  </span>
-                                <div class="text-secondary text-left ">
-                                    <p class="pl-2">Speed up your development process with Gulp and BrowserSync live browser reload</p>
+        <b-container fluid>
+            <div class="Intuitive ">
+                <b-row class="justify-content-center m-auto">
+                    <b-col md=4>
+                        <div class="workflow-main">
+                            <div class="title">
+                                <h2 class=" mb-4 workflow-title text-left pb-3 ">Intuitive workflow</h2>
+                            </div>
+                            <div class="content ">
+                                <div class="d-flex flex-row ">
+                                    <span class=" text-warning">
+                                                  <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                              </span>
+                                    <div class="text-secondary text-left ">
+                                        <p class="pl-2">Speed up your development process with Gulp and BrowserSync live browser reload</p>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex flex-row">
+                                    <span class=" text-warning">
+                                                  <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                              </span>
+    
+                                    <div class="text-secondary text-left ">
+                                        <p class="pl-2"> Easily adjust the look of any component with tons of additional SASS variables included</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <span class=" text-warning">
+                                                  <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
+                                              </span>
+                                    <div class="text-secondary text-left">
+                                        <p class="pl-2"> Easily make global changes with HTML file @@includes</p>
+                                    </div>
                                 </div>
                             </div>
     
-                            <div class="d-flex flex-row">
-                                <span class=" text-warning">
-                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                                  </span>
-    
-                                <div class="text-secondary text-left ">
-                                    <p class="pl-2"> Easily adjust the look of any component with tons of additional SASS variables included</p>
-                                </div>
+                            <div class="pt-3 text-left">
+                                <b-button class=" work-btn" variant="outline-warning">DOCUMENTATION</b-button>
                             </div>
-                            <div class="d-flex flex-row">
-                                <span class=" text-warning">
-                                      <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
-                                  </span>
-                                <div class="text-secondary text-left">
-                                    <p class="pl-2"> Easily make global changes with HTML file @@includes</p>
+                        </div>
+                    </b-col>
+                    <b-col md=5>
+                        <div class="workflow-image">
+                            <div class="d-flex justify-content-center align-items-center flexdiv">
+                                <div class="backgdiv bg-warning">
+                                    <figure>
+                                        <img src="../assets/vertical.jpg" class="imageover" alt="">
+                                    </figure>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="pt-3 text-left">
-                            <b-button class=" work-btn" variant="outline-warning">DOCUMENTATION</b-button>
-                        </div>
-                    </div>
-                </b-col>
-                <b-col md=6>
-                    <div class="d-flex justify-content-center align-items-center flexdiv">
-                        <div class="backgdiv bg-warning">
-                            <figure>
-                                <img src="../assets/vertical.jpg" class="imageover" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                </b-col>
-            </b-row>
+                    </b-col>
+                </b-row>
+            </div>
         </b-container>
         <!-- ---------- Ultimate solution start------------- -->
-        <div class="background-2 mt-5 pb-3" fluid-grow alt="Fluid-grow image">
+        <div class="background-2 " fluid-grow alt="Fluid-grow image">
     
-            <div class="mt-5">
+            <div class="">
                 <b-row class="justify-content-center m-auto">
                     <b-col md=6>
-                        <div class="text-center mt-5">
+                        <div class="text-center ">
                             <div class="title">
                                 <h2 class="pt-5 mb-4 landing-title">Ultimate solution</h2>
                             </div>
@@ -215,8 +221,6 @@
                                     </b-card>
     
                                 </b-col>
-                                <!-- <UltimateSolution>
-                                                                                                          </UltimateSolution> -->
                                 <!--  -->
                                 <b-col md=4 class="middle-image m-auto  ">
     
@@ -240,8 +244,7 @@
     
                                 </b-col>
                                 <!--  -->
-                                <!-- <UltimateSolution>
-                                                                                                    </UltimateSolution> -->
+    
                                 <b-col md=4 class="third-image p-0 m-0">
                                     <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0">
                                         <b-card-text>
@@ -268,20 +271,22 @@
             </div>
         </div>
         <!-- ------Pricing options start---- -->
-        <b-container class="my-5">
-            <b-row class="m-auto justify-content-center">
-                <div class="col-md-6">
-                    <div class="title">
-                        <h2 class="text-center Pricing-title my-4">Pricing options</h2>
-                    </div>
-                    <div class="content">
-                        <p class="Pricing-text mb-5 text-center">Secure payment via Stripe or Paypal. 100% money back guarantee.</p>
-                    </div>
-                </div>
-            </b-row>
-            <!-- using component -->
-            <PricingOptions>
-            </PricingOptions>
+        <b-container>
+            <div class="Pricing">
+                <b-row class="m-auto justify-content-center">
+                    <b-col md=10>
+                        <div class="title">
+                            <h2 class="text-center Pricing-title my-4">Pricing options</h2>
+                        </div>
+                        <div class="content">
+                            <p class="Pricing-text mb-5 text-center">Secure payment via Stripe or Paypal. 100% money back guarantee.</p>
+                        </div>
+                    </b-col>
+                </b-row>
+                <!-- using component -->
+                <PricingOptions>
+                </PricingOptions>
+            </div>
         </b-container>
         <!-- -----------Download it from the Bootstrap marketplace start--------- -->
         <div class="bg-light my-5 py-5">
@@ -373,13 +378,12 @@
         width: 100%;
         height: 650px;
     }
+    
     @media (min-width: 481px) and (max-width: 767px) {
-  
-  .background{
-      height: 800px;
-  }
-  
-}
+        .background {
+            height: 800px;
+        }
+    }
     
     // banner
     .main-content {
@@ -402,34 +406,13 @@
             padding: 19px 27px;
         }
     }
-
- @media (min-width: 320px) and (max-width: 480px){
-        .main-content {
-        margin-top: 50px;
     
-        // .text-1 {
-        //     font-size: 13px;
-        //     color: hsla(0, 0%, 100%, 0.65) !important;
-        //     margin-bottom: 34px;
-        // }
-        // .main-title {
-        //     font-size: 34px;
-        // }
-        // .text-2 {
-        //     font-size: 16px;
-        //     color: hsla(0, 0%, 100%, 0.65) !important;
-        // }
-        // .main-btn {
-        //     font-size: 11px;
-        //     text-transform: uppercase;
-        //     padding: 19px 27px;
-        // }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .main-content {
+            margin-top: 50px;
+        }
     }
-     }
-
-
-
-
+    
     // landing page
     .landing-title {
         font-size: 24px;
@@ -445,6 +428,7 @@
     .background-2 {
         background-image: url("../assets/back2.jpg");
         background-size: cover;
+        padding: 80px 0px;
         width: 100%;
         height: auto;
         z-index: 10;
@@ -478,7 +462,7 @@
     
     // quote text
     .quote {
-        margin: 75px 75px;
+        padding: 100px 0px;
         .quote-text1 {
             font-size: 17px;
             color: black;
@@ -512,9 +496,9 @@
     }
     
     // work flow image
-  
+    .Intuitive {
+        padding: 120px 0px;
         .workflow-main {
-          
             .workflow-title {
                 font-size: 26px;
                 color: black;
@@ -526,25 +510,27 @@
                 color: black !important;
             }
         }
-        .flexdiv {
-            height: 400px;
-           
+        .workflow-image {
+            float: right;
+            .flexdiv {
+                height: 400px;
+            }
+            .backgdiv {
+                height: 200px;
+                width: 400px;
+                top: 20px;
+                position: relative;
+            }
+            .imageover {
+                height: 400px;
+                width: 250px;
+                position: absolute;
+                top: -150px;
+                left: 50%;
+                transform: translateX(-40%);
+            }
         }
-        .backgdiv {
-            height: 200px;
-            width: 400px;
-            top: 20px;
-            position: relative;
-        }
-        .imageover {
-            height: 400px;
-            width: 250px;
-            position: absolute;
-            top: -150px;
-            left: 50%;
-            transform: translateX(-40%);
-        }
-    
+    }
     
     @media only screen and (max-width: 600px) {
         .flexdiv {
@@ -560,9 +546,7 @@
         .imageover {
             height: 300px;
             width: 150px;
-            
             top: -100px;
-            
         }
     }
     
@@ -615,13 +599,15 @@
     }
     
     //Pricing options
-    .Pricing-title {
-        font-size: 24px;
-        color: black;
-    }
-    
-    .Pricing-text {
-        color: #6c757d !important;
+    .Pricing {
+        padding:100px 0px;
+        .Pricing-title {
+            font-size: 24px;
+            color: black;
+        }
+        .Pricing-text {
+            color: #6c757d !important;
+        }
     }
     
     // Download it from the Bootstrap marketplace
