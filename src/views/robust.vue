@@ -5,7 +5,9 @@
         <div class="background py-5" fluid-grow alt="Fluid-grow image">
             <!-- navbar compomemt use -->
             <Navbarheader msg="Robust." class="navbar-bg text-white font-weight-bold">
-                <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">{{link.name}}</b-nav-item>
+               
+                <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index"><span class="ahover">{{link.name}}</span></b-nav-item>
+           
             </Navbarheader>
             <!--  -->
             <div class="pt-5">
@@ -22,7 +24,7 @@
                                 </div>
                                 <div>
                                     <button class="btn btn-green mr-2 btn:hover" type="button "><b>Get Started</b></button>
-                                    <button class="btn purchase-btn border-white text-white" type="button"><b>components</b></button>
+                                    <button class="btn purchase-btn border-white component-btn-color text-white" type="button"><b>components</b></button>
                                 </div>
                             </div>
                         </b-col>
@@ -37,7 +39,9 @@
                     Robust includes various demo pages for building <br>your custom app, blog or landing page. All code is <br> handwritten, all our components are optimized for <br> desktop, tablet and mobile.
                 </p>
             </Discoverpara>
+            <div>
             <Explorepage></Explorepage>
+            </div>
             <ipadsection></ipadsection>
             <Discoverpara>
                 <div slot="h2text" class="section2-para1-font">Enormous <br>collection of <br>elements</div>
@@ -47,8 +51,8 @@
             </Discoverpara>
             <clean></clean>
             <testimonial></testimonial>
-            <Discoverpara class="ipad-background-color">
-                <div slot="h2text" class="section2-para1-font">Integrates with all your favorite tools</div>
+            <Discoverpara class="ipad-background-color integrate-para-padding ">
+                <div slot="h2text" class="section2-para1-font ">Integrates with all your favorite tools</div>
                 <p slot="paratext" class="section2-para2-font ">
                     Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.
                 </p>
@@ -132,8 +136,11 @@
         background-color: #2370b6 !important;
     }
     .btn-green {
-        background-color: rgb(80, 204, 80);
+        background-color: rgb(80, 204, 80) !important;
         color: white;
+    }
+    .component-btn-color {
+        background-color: transparent !important;
     }
     .btn:hover {
         color: white;
@@ -153,6 +160,18 @@
         margin-left: -50px;
     }
     .ipad-background-color {
-    background-color: #eff1f3;
-  }
+        background-color: #eff1f3;
+    }
+    .integrate-para-padding
+    {
+            padding-top: 3rem !important;
+    }
+    .addpadding
+    {
+     padding: 0 100px;
+    }
+    .ahover:hover{
+        color:white;
+    }
+
 </style>
