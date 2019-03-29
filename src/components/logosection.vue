@@ -1,9 +1,9 @@
 <!--Created by saraswati-->
 <template>
-    <div class="align-items-center pb-5 pt-5 ipad-background-color">
+    <div class="align-items-center pb-5 pt-4 ipad-background-color">
         <b-row class="col-md-8 mx-auto ">
             <div class="col-md-2 col-xs-12 my-auto" v-for="product in products" v-bind:key="product.index">
-                <b-img :src="product.images" class="img-fluid p-md-2" alt="" width="120" />
+                <b-img :src="product.images" class="img-fluid p-md-2" alt="" width="100" />
             </div>
         </b-row>
     </div>

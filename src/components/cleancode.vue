@@ -67,7 +67,7 @@
 </script>
 <style lang="scss">
   .ipad-text-font {
-    font-size: 14px;
+    font-size: 13px;
   }
   .card-index {
     z-index: -1;

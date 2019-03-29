@@ -2,17 +2,23 @@
 </<template>
   <div class="ipad-background-color container-top-margin">
     <b-container>
-      <b-row class="text-left">
-        <b-col md="4">
+      <div class="text-left row-height">
+      <b-row >
+       
+        <b-col md="5" class="mx-auto my-auto pt-5">
+          <div>
           <b-row v-for="card in cards" v-bind:key="card.index" class="ml-5 ">
             <div class="ipad-heading-font">{{card.heading}}</div>
-            <div class="text-dark ipad-para-font">{{card.para}}</div>
+            <div class="text-dark ipad-para-font pb-3">{{card.para}}</div>
           </b-row>
+          </div>
         </b-col>
-        <div class="col-md-6 ml-auto">
-          <b-img :src="ipad" img-alt="Image" height="315" class="image-fluid" />
+       
+        <div class="col-md-6 ml-auto ipad-img-height">
+          <b-img :src="ipad" img-alt="Image" height="380" class="image-fluid ml-5" />
         </div>
       </b-row>
+      </div>
     </b-container>
   </div>
 </template>
@@ -50,10 +56,18 @@
     font-size: 24px;
   }
   .ipad-para-font {
-    font-size: 14px;
+    font-size: 12px;
   }
   .ipad-background-color {
     background-color: #eff1f3;
+  }
+  .row-height
+  {
+    height: 500px;
+  }
+  .ipad-img-height
+  {
+    padding-top:119px;
   }
 </style>
 
