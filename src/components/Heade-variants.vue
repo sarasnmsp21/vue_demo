@@ -62,8 +62,8 @@ export default {
     padding: 10px;
     .variants-heading{
       color: black;
-        font-size: 19px !important;
-      margin-top: 20px !important;
+        font-size: 19px;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
   }

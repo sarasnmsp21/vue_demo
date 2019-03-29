@@ -5,23 +5,23 @@
             <!-- navbar compomemt use -->
             <Navbarheader msg="Incline">
                 <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
-                   <span class="small"> {{link.name}}</span>
+                    <span class="small"> {{link.name}}</span>
                     <span style="color:#fff" v-if="link.icon">
-                        <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
-                    </span>
+                                    <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
+                                </span>
                 </b-nav-item>
             </Navbarheader>
             <!--  -->
             <b-container>
                 <div class="main-content">
-                    <b-row class="justify-content-center mx-auto">
-                        <b-col cols=8>
+                    <b-row class="justify-content-center m-auto">
+                        <b-col md=8>
                             <div class="text-center text-white pt-3">
     
                                 <p class="text-1">BY SIMPLEQADE</p>
     
                                 <div class="pb-3">
-                                    <h1 class=" mb-4 text-waight-bold">
+                                    <h1 class=" mb-4 main-title text-waight-bold">
                                         Landing pages for any occasion
                                     </h1>
                                 </div>
@@ -41,7 +41,7 @@
                 <b-col md=6>
                     <div class=" landing-maintitle text-center">
                         <h2 class="pt-5 mb-4 landing-title ">Landing page variants</h2>
-                        <p class="pt-2 mb-5 text-secondary landing-text">
+                        <p class=" mb-5 text-secondary landing-text">
                             Incline comes with several professionally designed landing pages that can be easily adapted for any project.
                         </p>
                     </div>
@@ -118,18 +118,18 @@
     
         </div>
         <!-------------Intuitive workflow start -----------  -->
-        <div class=" workflow ">
+        <b-container fluid class=" my-5 pt-5 ">
             <b-row class="justify-content-center m-auto">
                 <b-col md=4>
-                    <div class="">
+                    <div class="workflow-main">
                         <div class="title">
                             <h2 class=" mb-4 workflow-title text-left pb-3 ">Intuitive workflow</h2>
                         </div>
                         <div class="content ">
                             <div class="d-flex flex-row ">
                                 <span class=" text-warning">
-                          <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                      </span>
+                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                  </span>
                                 <div class="text-secondary text-left ">
                                     <p class="pl-2">Speed up your development process with Gulp and BrowserSync live browser reload</p>
                                 </div>
@@ -137,8 +137,8 @@
     
                             <div class="d-flex flex-row">
                                 <span class=" text-warning">
-                          <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                      </span>
+                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                  </span>
     
                                 <div class="text-secondary text-left ">
                                     <p class="pl-2"> Easily adjust the look of any component with tons of additional SASS variables included</p>
@@ -146,8 +146,8 @@
                             </div>
                             <div class="d-flex flex-row">
                                 <span class=" text-warning">
-                          <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
-                      </span>
+                                      <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
+                                  </span>
                                 <div class="text-secondary text-left">
                                     <p class="pl-2"> Easily make global changes with HTML file @@includes</p>
                                 </div>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </b-col>
-                <b-col md=5>
+                <b-col md=6>
                     <div class="d-flex justify-content-center align-items-center flexdiv">
                         <div class="backgdiv bg-warning">
                             <figure>
@@ -169,7 +169,7 @@
                     </div>
                 </b-col>
             </b-row>
-        </div>
+        </b-container>
         <!-- ---------- Ultimate solution start------------- -->
         <div class="background-2 mt-5 pb-3" fluid-grow alt="Fluid-grow image">
     
@@ -216,7 +216,7 @@
     
                                 </b-col>
                                 <!-- <UltimateSolution>
-                                                                                              </UltimateSolution> -->
+                                                                                                          </UltimateSolution> -->
                                 <!--  -->
                                 <b-col md=4 class="middle-image m-auto  ">
     
@@ -241,7 +241,7 @@
                                 </b-col>
                                 <!--  -->
                                 <!-- <UltimateSolution>
-                                                                                        </UltimateSolution> -->
+                                                                                                    </UltimateSolution> -->
                                 <b-col md=4 class="third-image p-0 m-0">
                                     <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0">
                                         <b-card-text>
@@ -308,314 +308,353 @@
 
 
 <script>
-import Navbarheader from "@/components/Navbarheader.vue";
-import landingPages from "@/components/landing-pages.vue";
-import HeadeVariants from "@/components/Heade-variants.vue";
-import PricingOptions from "@/components/Pricing-options.vue";
-import KeyTheme from "@/components/Key-theme.vue";
-import UltimateSolution from "@/components/Ultimate-solution.vue";
-import Footerweb from "@/components/sarasfooter.vue";
-import pictures1 from "../assets/1.jpg";
-import pictures2 from "../assets/2.jpg";
-import pictures3 from "../assets/3.jpg";
-
-export default {
-  data() {
-    return {
-      navlinks: [
-          {
-              name: " WELCOME ",
-              icon: true
-          },
-           {
-              name: " LANDINGS ",
-              icon: true
-          },
-           {
-              name: " PAGES ",
-              icon: true
-          },
-           {
-              name: " COMPONENTS",
-              icon: true
-          },
-           {
-              name: " DOCUMENTATION",
-              icon: false
-          },
-           {
-              name: " PURCHASE NOW",
-              icon: false
-          }
-      ],
-      img1: pictures1,
-      img2: pictures2,
-      img3: pictures3
+    import Navbarheader from "@/components/Navbarheader.vue";
+    import landingPages from "@/components/landing-pages.vue";
+    import HeadeVariants from "@/components/Heade-variants.vue";
+    import PricingOptions from "@/components/Pricing-options.vue";
+    import KeyTheme from "@/components/Key-theme.vue";
+    import UltimateSolution from "@/components/Ultimate-solution.vue";
+    import Footerweb from "@/components/sarasfooter.vue";
+    import pictures1 from "../assets/1.jpg";
+    import pictures2 from "../assets/2.jpg";
+    import pictures3 from "../assets/3.jpg";
+    
+    export default {
+        data() {
+            return {
+                navlinks: [{
+                        name: " WELCOME ",
+                        icon: true
+                    },
+                    {
+                        name: " LANDINGS ",
+                        icon: true
+                    },
+                    {
+                        name: " PAGES ",
+                        icon: true
+                    },
+                    {
+                        name: " COMPONENTS",
+                        icon: true
+                    },
+                    {
+                        name: " DOCUMENTATION",
+                        icon: false
+                    },
+                    {
+                        name: " PURCHASE NOW",
+                        icon: false
+                    }
+                ],
+                img1: pictures1,
+                img2: pictures2,
+                img3: pictures3
+            };
+        },
+    
+        components: {
+            Navbarheader,
+            landingPages,
+            HeadeVariants,
+            PricingOptions,
+            KeyTheme,
+            UltimateSolution,
+            Footerweb
+        }
     };
-  },
-
-  components: {
-    Navbarheader,
-    landingPages,
-    HeadeVariants,
-    PricingOptions,
-    KeyTheme,
-    UltimateSolution,
-    Footerweb
-  }
-};
 </script>
 
 <style lang="scss">
-// banner background image...
-.background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/background-img.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 650px;
-}
-
-// banner
-.main-content {
-  margin-top: 150px;
-  .text-1 {
-    font-size: 13px;
-    color: hsla(0, 0%, 100%, 0.65) !important;
-    margin-bottom: 34px;
+    // banner background image...
+    .background {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-img.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 650px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+  
+  .background{
+      height: 800px;
   }
-  h1 {
-    font-size: 34px;
-  }
-  .text-2 {
-    font-size: 16px;
-    color: hsla(0, 0%, 100%, 0.65) !important;
-  }
-  .main-btn {
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 19px 27px;
-  }
+  
 }
+    
+    // banner
+    .main-content {
+        margin-top: 150px;
+        .text-1 {
+            font-size: 13px;
+            color: hsla(0, 0%, 100%, 0.65) !important;
+            margin-bottom: 34px;
+        }
+        .main-title {
+            font-size: 34px;
+        }
+        .text-2 {
+            font-size: 16px;
+            color: hsla(0, 0%, 100%, 0.65) !important;
+        }
+        .main-btn {
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 19px 27px;
+        }
+    }
 
-// landing page
-.landing-title {
-  font-size: 24px;
-  color: black;
-  //   margin-bottom: 26px !important;
-}
+ @media (min-width: 320px) and (max-width: 480px){
+        .main-content {
+        margin-top: 50px;
+    
+        // .text-1 {
+        //     font-size: 13px;
+        //     color: hsla(0, 0%, 100%, 0.65) !important;
+        //     margin-bottom: 34px;
+        // }
+        // .main-title {
+        //     font-size: 34px;
+        // }
+        // .text-2 {
+        //     font-size: 16px;
+        //     color: hsla(0, 0%, 100%, 0.65) !important;
+        // }
+        // .main-btn {
+        //     font-size: 11px;
+        //     text-transform: uppercase;
+        //     padding: 19px 27px;
+        // }
+    }
+     }
 
-.landing-text {
-  color: #6c757d !important;
-  letter-spacing: 0.5px;
-}
 
-// second background image..
-.background-2 {
-  background-image: url("../assets/back2.jpg");
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  z-index: 10;
-  position: relative;
-}
 
-// line on background image
-.line {
-  width: 0px;
-  height: 115px;
-  border-left: 2px solid #f5ba4b;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-// card animation
-// .card {
-//   background-color: transparent !important;
-//   img {
-//     transition: 0.5s;
-//   }
-//   &:hover {
-//     img {
-//       box-shadow: 2px 5px 4px 5px #888888;
-//       transform: translateY(-10px);
-//     }
-//   }
-// }
-
-// quote text
-.quote {
-  margin: 75px 75px;
-  .quote-text1 {
-    font-size: 17px;
-    color: black;
-    letter-spacing: 0.7px;
-  }
-  .icon1 {
-    color: black;
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 1.5;
-    min-width: 2.5em;
-  }
-  .quote-text2 {
-    color: black;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #f5ba4b;
-  }
-}
-
-// Key theme features
-.Key-theme {
-  padding: 50px;
-  .Key-theme-title {
-    font-size: 24px;
-    color: black;
-  }
-  .Key-theme-text {
-    color: #9da5ac !important;
-  }
-}
-
-// work flow image
-.workflow {
-  margin: 150px 0px;
-  .workflow-title {
-    font-size: 26px;
-    color: black;
-  }
-  .work-btn {
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 13px 27px;
-    color: black !important;
-  }
-  .flexdiv {
-    height: 400px;
-  }
-  .backgdiv {
-    height: 200px;
-    width: 400px;
-    top: 20px;
-    position: relative;
-  }
-  .imageover {
-    height: 400px;
-    width: 250px;
-    position: absolute;
-    top: -150px;
-    left: 50%;
-    transform: translateX(-40%);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .flexdiv {
-    height: 300px;
-    margin-bottom: 70px;
-  }
-  .backgdiv {
-    height: 150px;
-    width: 255px;
-    position: relative;
-  }
-  .imageover {
-    height: 300px;
-    width: 150px;
-  }
-}
-
-// ---------card images for Ultimate solution----------------------
-.iconh {
-  font-size: 30px;
-}
-
-.Ultimate-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.Ultimate-text {
-  color: #6c757d !important;
-}
-
-.first-image {
-  padding: 0px !important;
-}
-
-.middle-image {
-  transform: scale(1.1, 1.2);
-  z-index: 10 !important;
-  padding: 0px !important;
-}
-
-.third-image {
-  padding: 0px !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .first-image {
-    margin: 20px 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .middle-image {
-    z-index: 10 !important;
-    transform: scale(1, 1);
-    margin: 30px 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .third-image {
-    margin: 20px 0;
-  }
-}
-
-//Pricing options
-.Pricing-title {
-  font-size: 24px;
-  color: black;
-}
-
-.Pricing-text {
-  color: #6c757d !important;
-}
-
-// Download it from the Bootstrap marketplace
-.Download-title {
-  font-size: 22px;
-  color: black;
-}
-
-.Download-text {
-  color: #6c757d !important;
-}
-
-.Download-btn {
-  font-size: 12px;
-  position: relative;
-  text-transform: uppercase;
-  padding: 18px 25px;
-  color: black;
-}
-
-// button focus none
-.btn-outline-warning {
-  &:focus {
-    box-shadow: none !important;
-  }
-}
-
-.btn {
-  border-radius: 0%;
-  background-color: transparent !important;
-}
-.btn:hover{
-    background-color: #f5ba4b !important; 
-}
+    // landing page
+    .landing-title {
+        font-size: 24px;
+        color: black;
+    }
+    
+    .landing-text {
+        color: #6c757d !important;
+        letter-spacing: 0.5px;
+    }
+    
+    // second background image..
+    .background-2 {
+        background-image: url("../assets/back2.jpg");
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+        position: relative;
+    }
+    
+    // line on background image
+    .line {
+        width: 0px;
+        height: 115px;
+        border-left: 2px solid #f5ba4b;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    // card animation
+    .card {
+        background-color: transparent !important;
+        img {
+            transition: 0.5s;
+        }
+        &:hover {
+            img {
+                box-shadow: 2px 5px 4px 5px #888888;
+                transform: translateY(-10px);
+            }
+        }
+    }
+    
+    // quote text
+    .quote {
+        margin: 75px 75px;
+        .quote-text1 {
+            font-size: 17px;
+            color: black;
+            letter-spacing: 0.7px;
+        }
+        .icon1 {
+            color: black;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1.5;
+            min-width: 2.5em;
+        }
+        .quote-text2 {
+            color: black;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #f5ba4b;
+        }
+    }
+    
+    // Key theme features
+    .Key-theme {
+        padding: 50px;
+        .Key-theme-title {
+            font-size: 24px;
+            color: black;
+        }
+        .Key-theme-text {
+            color: #9da5ac !important;
+        }
+    }
+    
+    // work flow image
+  
+        .workflow-main {
+          
+            .workflow-title {
+                font-size: 26px;
+                color: black;
+            }
+            .work-btn {
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 13px 27px;
+                color: black !important;
+            }
+        }
+        .flexdiv {
+            height: 400px;
+           
+        }
+        .backgdiv {
+            height: 200px;
+            width: 400px;
+            top: 20px;
+            position: relative;
+        }
+        .imageover {
+            height: 400px;
+            width: 250px;
+            position: absolute;
+            top: -150px;
+            left: 50%;
+            transform: translateX(-40%);
+        }
+    
+    
+    @media only screen and (max-width: 600px) {
+        .flexdiv {
+            height: 300px;
+            margin-top: 90px;
+        }
+        .backgdiv {
+            height: 150px;
+            width: 255px;
+            position: relative;
+            bottom: 10px;
+        }
+        .imageover {
+            height: 300px;
+            width: 150px;
+            
+            top: -100px;
+            
+        }
+    }
+    
+    // ---------card images for Ultimate solution----------------------
+    .iconh {
+        font-size: 30px;
+    }
+    
+    .Ultimate-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .Ultimate-text {
+        color: #6c757d !important;
+    }
+    
+    .first-image {
+        padding: 0px !important;
+    }
+    
+    .middle-image {
+        transform: scale(1.1, 1.2);
+        z-index: 10 !important;
+        padding: 0px !important;
+    }
+    
+    .third-image {
+        padding: 0px !important;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .first-image {
+            margin: 20px 0;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .middle-image {
+            z-index: 10 !important;
+            transform: scale(1, 1);
+            margin: 30px 0;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .third-image {
+            margin: 20px 0;
+        }
+    }
+    
+    //Pricing options
+    .Pricing-title {
+        font-size: 24px;
+        color: black;
+    }
+    
+    .Pricing-text {
+        color: #6c757d !important;
+    }
+    
+    // Download it from the Bootstrap marketplace
+    .Download-title {
+        font-size: 22px;
+        color: black;
+    }
+    
+    .Download-text {
+        color: #6c757d !important;
+    }
+    
+    .Download-btn {
+        font-size: 12px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 18px 25px;
+        color: black;
+    }
+    
+    // button focus none
+    .btn-outline-warning {
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+    
+    .btn {
+        border-radius: 0%;
+        background-color: transparent !important;
+    }
+    
+    .btn:hover {
+        background-color: #f5ba4b !important;
+    }
 </style>

@@ -7,10 +7,10 @@
       <b-row class="m-auto">
         <b-col md=4 v-for="card in cards" v-bind:key="card.index">
           <div class="landing-content">
-            <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left">
-              <h4 class="landing-title">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </h4>
+            <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left ">
+              <h4 class="landing-titlee" :class="card.textcolor">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </h4>
               <b-card-text>
-                <p class="landing-text ">{{card.para}}</p>
+                <p class="landing-textt" :class="card.textcolor">{{card.para}}</p>
               </b-card-text>
   
             </b-card>
@@ -76,7 +76,8 @@ export default {
           cardimg: images7,
           heading: "Coming soon",
           para:
-            "Feel free to contact us with your ideas about new pages and components."
+            "Feel free to contact us with your ideas about new pages and components.",
+            textcolor:"changecolor"
         }
       ]
     };
@@ -85,15 +86,22 @@ export default {
 </script>
 
 <style lang="scss">
+.changecolor{
+  color: rgb(199, 195, 197) !important;
+ 
+}
 .landing-main {
   margin-bottom: 100px !important;
   .landing-content {
-    padding: 10px !important;
-    .landing-title {
-      font-size: 19px !important;
-      margin-top: 20px !important;
+    padding: 10px;
+    .landing-titlee {
+      font-size: 19px;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
-  }
+  .landing-textt{
+    letter-spacing: 0.5px;
+     color: #6c757d;
+    }  }
 }
 </style>
