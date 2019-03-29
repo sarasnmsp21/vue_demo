@@ -11,6 +11,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faCoffee,
   faShieldAlt,
+  faQuoteLeft,
   faFingerprint,
   faCaretRight,
   faLaptop,
