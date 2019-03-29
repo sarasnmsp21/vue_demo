@@ -56,6 +56,9 @@ export default {
     .theme-heading{
       font-size: 18px;
     }
+    .theme-text{
+      color: #9da5ac !important;
+    }
  
   
 }
