@@ -9,21 +9,21 @@
            <b-navbar-brand class="text-white logo" href="#">{{msg}}</b-navbar-brand>
            <b-navbar-toggle target="nav_collapse"/>
            <b-collapse is-nav id="nav_collapse">
-             <b-navbar-nav class="ml-auto ">
+             <b-navbar-nav class="ml-auto " >
    
-            <b-nav-item href="#">
+            <b-nav-item href="#"  v-scroll-to="'#components'">
               <small>
               <font-awesome-icon :icon="['fas','th']" size="lg" /> Components &#9660; &nbsp;
               </small>
-                </b-nav-item>
+            </b-nav-item>
            
-            <b-nav-item href="#">
+            <b-nav-item href="#" v-scroll-to="'#section'">
                   <small>
               <font-awesome-icon :icon="['fas','dumbbell']" size="lg" /> Section &#9660; &nbsp;
                   </small>
                 </b-nav-item>
       
-            <b-nav-item href="#">
+            <b-nav-item href="#" v-scroll-to="'#example'">
                <small>
               <font-awesome-icon :icon="['fas','envelope-open-text']" size="lg" /> Example &#9660;
                </small>
@@ -42,11 +42,11 @@
           <div class=" mt-5 pt-5 mx-5 px-5 text-white text-center">
             <span class="about-style font-weight-bolder">About Us</span>
              <div class="mx-5 ">
-            <p>
+            <div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eius natus. Eius
                Eligendi eius natus eius natus. 
                          
-            </p>
+            </div>
           </div>   
           </div>
           </b-row>
