@@ -6,9 +6,9 @@
       <div class="landing-main">
       <b-row class="m-auto">
         <b-col md=4 v-for="card in cards" v-bind:key="card.index">
-          <div class="landing-content">
-            <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left ">
-              <div class="landing-titlee" :class="card.textcolor">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </div>
+          <div class="landing-content rounded-0">
+            <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left rounded-0">
+              <div class="landing-titlee" :class="card.textcolor">{{card.heading}} <span :class="card.spannclass">{{card.spantext}}</span> </div>
               <b-card-text>
                 <div class="landing-textt" :class="card.textcolor">{{card.para}}</div>
               </b-card-text>
@@ -44,6 +44,7 @@ export default {
           cardimg: images2,
           heading: "Real estate landin",
           spantext: "New!",
+          spannclass: "bg-danger  text-white pb-1 px-1 fontless",
           para: "You can use this page to promote your real estate."
         },
         {
@@ -65,6 +66,7 @@ export default {
           cardimg: images6,
           heading: "Fullpage scrolling",
           spantext: "New!",
+          spannclass: "bg-danger  text-white pb-1 px-1 fontless",
           para: "You can use this page to promote your restaurant."
         },
         {
@@ -86,6 +88,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.card-img-top{
+  border-radius: 0%;
+}
 .changecolor{
   color: rgb(199, 195, 197) !important;
  
@@ -104,5 +110,10 @@ export default {
     letter-spacing: 0.5px;
      color: #6c757d;
     }  }
+}
+
+.fontless{
+  font-size: 12px;
+  font-weight: bold;
 }
 </style>

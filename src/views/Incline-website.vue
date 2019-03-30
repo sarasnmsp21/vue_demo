@@ -8,8 +8,8 @@
                     <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index" v-scroll-to="link.divid">
                         <span class="small"> {{link.name}}</span>
                         <span style="color:#fff" v-if="link.icon">
-                                                    <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
-                                                </span>
+                                                        <font-awesome-icon :icon="['fas', 'caret-down']" class="ml-1 small"/>
+                                                    </span>
                     </b-nav-item>
                 </Navbarheader>
                 <!--banner  -->
@@ -35,7 +35,7 @@
         </div>
         <!--------------------Landing page variants section start ---------------------- -->
         <div id="welcome">
-            <b-container fluid class="px-5">
+            <b-container>
                 <b-row class="justify-content-center mx-auto">
                     <b-col md=6>
                         <div class=" landing-maintitle text-center">
@@ -57,7 +57,7 @@
         <div id="landing">
             <div class="background-2  pb-3" fluid-grow alt="Fluid-grow image">
                 <div class="line"></div>
-                <b-container fluid class="px-5">
+                <b-container>
                     <b-row class="justify-content-center mx-auto">
                         <b-col md=6>
                             <div class="text-center ">
@@ -87,7 +87,7 @@
                         <b-col md=9>
                             <div class="mt-5">
                                 <b-media tag="li" class="my-4">
-                                    <font-awesome-icon :icon="['fas','quote-left']" slot="aside" alt="placeholder" class="icon1" /> 
+                                    <font-awesome-icon :icon="['fas','quote-left']" slot="aside" alt="placeholder" class="icon1" />
                                     <div class="mb-0 text-left quote-text1">
                                         This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind, it can be easily adjusted to create layouts of any complexity within a few minutes.
                                     </div>
@@ -102,30 +102,34 @@
     
         <!-- ------Key theme features------- -->
         <div id="component">
+    
             <div class="mt-5 bg-dark Key-theme ">
-                <b-row class="justify-content-center m-auto">
-                    <b-col md=6>
-                        <div class="">
-                            <div class="title">
-                                <div class=" text-white pt-5 Key-theme-title text-center">Key theme features</div>
-                            </div>
-                            <div class="content">
-                                <div class=" text-white text-center Key-theme-text mt-3">
-                                    Incline can be used to create anything from a small marketing page to a sophisticated website.
+                <b-container>
+    
+                    <b-row class="justify-content-center m-auto">
+                        <b-col md=6>
+                            <div class="">
+                                <div class="title">
+                                    <div class=" text-white pt-5 Key-theme-title text-center">Key theme features</div>
+                                </div>
+                                <div class="content">
+                                    <div class=" text-white text-center Key-theme-text mt-3">
+                                        Incline can be used to create anything from a small marketing page to a sophisticated website.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </b-col>
-                </b-row>
-                <!-- use component  -->
-                <KeyTheme>
-                </KeyTheme>
-    
+                        </b-col>
+                    </b-row>
+                    <!-- use component  -->
+                    <KeyTheme>
+                    </KeyTheme>
+                </b-container>
             </div>
+    
         </div>
         <!-------------Intuitive workflow start -----------  -->
         <div id="documentation">
-            <b-container fluid>
+            <b-container>
                 <div class="Intuitive ">
                     <b-row class="justify-content-center m-auto">
                         <b-col md=4>
@@ -136,8 +140,8 @@
                                 <div class="content ">
                                     <div class="d-flex flex-row ">
                                         <span class=" text-warning">
-                                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                                                  </span>
+                                                          <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                                      </span>
                                         <div class="text-secondary text-left ">
                                             <div class="pl-2 mb-2">Speed up your development process with Gulp and BrowserSync live browser reload</div>
                                         </div>
@@ -145,8 +149,8 @@
     
                                     <div class="d-flex flex-row">
                                         <span class=" text-warning">
-                                                      <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
-                                                  </span>
+                                                          <font-awesome-icon class="text-warning" :icon="['fas','chevron-right']" />
+                                                      </span>
     
                                         <div class="text-secondary text-left ">
                                             <div class="pl-2 mb-2"> Easily adjust the look of any component with tons of additional SASS variables included</div>
@@ -154,8 +158,8 @@
                                     </div>
                                     <div class="d-flex flex-row">
                                         <span class=" text-warning">
-                                                      <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
-                                                  </span>
+                                                          <font-awesome-icon class=" text-warning" :icon="['fas','chevron-right']" />
+                                                      </span>
                                         <div class="text-secondary text-left">
                                             <div class="pl-2"> Easily make global changes with HTML file @@includes</div>
                                         </div>
@@ -185,97 +189,99 @@
         <!-- ---------- Ultimate solution start------------- -->
     
         <div class="background-2 " fluid-grow alt="Fluid-grow image">
-    
-            <div class="">
-                <b-row class="justify-content-center m-auto">
-                    <b-col md=6>
-                        <div class="text-center ">
-                            <div class="title">
-                                <div class="pt-5 mb-4 landing-title">Ultimate solution</div>
-                            </div>
-                            <div class="content">
-                                <div class=" text-dark mb-5 landing-text">
-                                    Easily create a website of any complexity with dozens of pages and independent components for any purpose.
+            <b-container>
+                <div class="">
+                    <b-row class="justify-content-center m-auto">
+                        <b-col md=6>
+                            <div class="text-center ">
+                                <div class="title">
+                                    <div class="pt-5 mb-4 landing-title">Ultimate solution</div>
+                                </div>
+                                <div class="content">
+                                    <div class=" text-dark mb-5 landing-text">
+                                        Easily create a website of any complexity with dozens of pages and independent components for any purpose.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </b-col>
-                </b-row>
+                        </b-col>
+                    </b-row>
     
-                <!--  -->
-                <b-row class=" m-auto pb-5">
-                    <b-col md=10 class=" mx-auto ">
-                        <div class=" ">
-                            <b-row class="m-auto">
-                                <b-col md=4 class="first-image p-0 m-0">
+                    <!--  -->
+                    <b-row class=" m-auto pb-5">
+                        <b-col md=10 class=" mx-auto ">
+                            <div class=" ">
+                                <b-row class="m-auto">
+                                    <b-col md=4 class="first-image p-0 m-0">
     
-                                    <b-card overlay :img-src="img1" img-alt="Card Image" text-variant="white" class="border-0">
-                                        <b-card-text class="d-flex flex-column justify-content-end">
-                                            <div class="card-img-overlay  d-flex flex-column justify-content-end">
-                                                <div class="text-warning icon text-left  pl-2">
-                                                    <font-awesome-icon icon="coffee" alt="placeholder" class="iconh" />
-                                                </div>
-                                                <div class="card-title text-left">
-                                                    <div class="Ultimate-title my-3 ">Support pages</div>
-                                                </div>
-                                                <div class="card-text text-left">
-                                                    <div class="mb-5  Ultimate-text">
-                                                        Finish off your website with multiple support pages included into the package.
+                                        <b-card overlay :img-src="img1" img-alt="Card Image" text-variant="white" class="border-0 rounded-0">
+                                            <b-card-text class="d-flex flex-column justify-content-end">
+                                                <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                                                    <div class="text-warning icon text-left  pl-2">
+                                                        <font-awesome-icon icon="coffee" alt="placeholder" class="iconh" />
+                                                    </div>
+                                                    <div class="card-title text-left">
+                                                        <div class="Ultimate-title my-3 ">Support pages</div>
+                                                    </div>
+                                                    <div class="card-text text-left">
+                                                        <div class="mb-5  Ultimate-text">
+                                                            Finish off your website with multiple support pages included into the package.
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </b-card-text>
-                                    </b-card>
+                                            </b-card-text>
+                                        </b-card>
     
-                                </b-col>
-                                <!--  -->
-                                <b-col md=4 class="middle-image m-auto  ">
+                                    </b-col>
+                                    <!--  -->
+                                    <b-col md=4 class="middle-image m-auto  ">
     
-                                    <b-card overlay :img-src="img2" img-alt="Card Image" text-variant="white" class="border-0">
-                                        <b-card-text>
-                                            <div class="card-img-overlay  d-flex flex-column justify-content-end">
-                                                <div class="text-warning icon text-left  pl-2">
-                                                    <font-awesome-icon icon="coffee" class="iconh" alt="placeholder" />
-                                                </div>
-                                                <div class="card-title text-left ">
-                                                    <div class=" Ultimate-title my-3">Landing pages</div>
-                                                </div>
-                                                <div class="card-text text-left">
-                                                    <div class="mb-5  Ultimate-text">
-                                                        Beautiful marketing pages to help you promote your product or a service.
+                                        <b-card overlay :img-src="img2" img-alt="Card Image" text-variant="white" class="border-0 rounded-0">
+                                            <b-card-text>
+                                                <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                                                    <div class="text-warning icon text-left  pl-2">
+                                                        <font-awesome-icon icon="coffee" class="iconh" alt="placeholder" />
+                                                    </div>
+                                                    <div class="card-title text-left ">
+                                                        <div class=" Ultimate-title my-3">Landing pages</div>
+                                                    </div>
+                                                    <div class="card-text text-left">
+                                                        <div class="mb-5  Ultimate-text">
+                                                            Beautiful marketing pages to help you promote your product or a service.
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </b-card-text>
-                                    </b-card>
+                                            </b-card-text>
+                                        </b-card>
     
-                                </b-col>
-                                <!--  -->
+                                    </b-col>
+                                    <!--  -->
     
-                                <b-col md=4 class="third-image p-0 m-0">
-                                    <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0">
-                                        <b-card-text>
-                                            <div class="card-img-overlay  d-flex flex-column justify-content-end">
-                                                <div class="text-warning icon text-left pl-2">
-                                                    <font-awesome-icon icon="coffee" class="iconh" alt="placeholder" />
-                                                </div>
-                                                <div class="card-title text-left ">
-                                                    <div class=" Ultimate-title my-3">Custom components</div>
-                                                </div>
-                                                <div class="card-text text-left">
-                                                    <div class="mb-5  Ultimate-text">
-                                                        Combine dozens of components to create unique layouts.
+                                    <b-col md=4 class="third-image p-0 m-0">
+                                        <b-card overlay :img-src="img3" img-alt="Card Image" text-variant="white" class="border-0 rounded-0">
+                                            <b-card-text>
+                                                <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                                                    <div class="text-warning icon text-left pl-2">
+                                                        <font-awesome-icon icon="coffee" class="iconh" alt="placeholder" />
+                                                    </div>
+                                                    <div class="card-title text-left ">
+                                                        <div class=" Ultimate-title my-3">Custom components</div>
+                                                    </div>
+                                                    <div class="card-text text-left">
+                                                        <div class="mb-5  Ultimate-text">
+                                                            Combine dozens of components to create unique layouts.
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </b-card-text>
-                                    </b-card>
-                                </b-col>
-                            </b-row>
-                        </div>
-                    </b-col>
-                </b-row>
-            </div>
+                                            </b-card-text>
+                                        </b-card>
+                                    </b-col>
+                                </b-row>
+                            </div>
+                        </b-col>
+                    </b-row>
+    
+                </div>
+            </b-container>
         </div>
         <!-- ------Pricing options start---- -->
         <div id="purchase">
@@ -299,18 +305,19 @@
         </div>
         <!-- -----------Download it from the Bootstrap marketplace start--------- -->
         <div class="bg-light my-5 py-5">
-            <b-row class="justify-content-center mx-auto">
-                <b-col md=7>
-                    <div class="text-left Download-title mb-4">Download it from the Bootstrap marketplace</div>
-                    <div class="text-left Download-text text-secondary ">Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators. Six month technical support by the theme author is provided.</div>
-                </b-col>
-                <b-col md=2>
-                    <div>
-                        <b-button class="mt-4 Download-btn" variant="outline-warning">PURCHASE NOW</b-button>
-                    </div>
-                </b-col>
-            </b-row>
-    
+            <b-container>
+                <b-row class="justify-content-center mx-auto">
+                    <b-col md=7>
+                        <div class="text-left Download-title mb-4">Download it from the Bootstrap marketplace</div>
+                        <div class="text-left Download-text text-secondary ">Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators. Six month technical support by the theme author is provided.</div>
+                    </b-col>
+                    <b-col md=2>
+                        <div>
+                            <b-button class="mt-4 Download-btn" variant="outline-warning">PURCHASE NOW</b-button>
+                        </div>
+                    </b-col>
+                </b-row>
+            </b-container>
         </div>
         <!--  footer using component-->
         <Footerweb brandnm="Icline" class="bg-dark text-white p-5">
@@ -524,7 +531,7 @@
             }
         }
         .workflow-image {
-            float:"";
+            float: "";
             .flexdiv {
                 height: 400px;
             }
@@ -558,12 +565,25 @@
         }
         .imageover {
             height: 300px;
-            width: 250px;
+            width: 1000px;
+            top: -100px;
+            position: absolute;
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+        .imageover {
+            height: 100px;
+            width: 100px;
             top: -100px;
         }
     }
- 
+    
     // ---------card images for Ultimate solution----------------------
+    .card-img {
+        border-radius: 0%;
+    }
+    
     .iconh {
         font-size: 30px;
     }

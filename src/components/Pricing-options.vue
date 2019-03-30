@@ -6,7 +6,7 @@
         <b-row class="justify-content-center m-auto">
             <b-col md="4" v-for="card in cards" v-bind:key="card.index">
                 <div>
-                    <b-card img-alt="Image" img-top tag="article" class="card mb-2 py-3" :class="card.borderclass">
+                    <b-card img-alt="Image" img-top tag="article" class="card mb-2 py-3 rounded-0" :class="card.borderclass">
                         <b-card-text>
     
                             <div class=" text-center pricing-title p-3">Standard license</div>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
     
-                            <div class="pt-3">
+                            <div class="py-4">
                                 <b-button class="text-dark pricing-btn" variant="outline-warning">purchase now</b-button>
                             </div>
                         </b-card-text>
@@ -98,7 +98,7 @@
         font-size: 11px;
         line-height: 1.64063rem;
         text-transform: uppercase;
-        padding: 13px 27px;
+        padding: 10px 13px;
     }
     
     .price {
