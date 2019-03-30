@@ -56,20 +56,5 @@ export default {
 </script>
 
 <style lang="scss">
-.variants-main{
-  margin-bottom: 40px;
-  .variants-content{
-    padding: 10px;
-    .variants-heading{
-      color: black;
-        font-size: 19px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  }
-
-
-  
-}
-
+@import "../assets/scss/incline-website/Heade-variants.scss";
 </style>

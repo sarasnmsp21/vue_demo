@@ -1,0 +1,12 @@
+.card-img-top{
+    border-radius: 0%;
+  }
+      .first-image {
+          padding: 0px !important;
+      }
+      
+      @media only screen and (max-width: 600px) {
+          .first-image {
+              margin: 20px 0;
+          }
+      }
