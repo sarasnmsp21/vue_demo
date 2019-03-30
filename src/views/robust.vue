@@ -2,10 +2,10 @@
 
 <template>
   <div>
-    <div class="background py-5" fluid-grow alt="Fluid-grow image">
+    <div id="topid" class="background py-5" fluid-grow alt="Fluid-grow image">
       <!-- navbar compoment use -->
-      <Navbarheader msg="Robust." class="navbar-bg text-white font-weight-bold">
-        <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
+      <Navbarheader  msg="Robust."  class="navbar-bg text-white font-weight-bold">
+        <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index" v-scroll-to="link.scrollspy">
           <span class="ahover">
             <span v-html="link.name"></span>
             <span v-if="link.button">
@@ -23,28 +23,28 @@
         </b-nav-item>
       </Navbarheader>
       <!-- banner -->
-      <div class="pt-5">
+      <div id="home" class="pt-5">
         <b-container>
           <b-row>
             <div class="justify-content-center mx-auto">
               <b-col cols="12">
                 <div class="text-center text-white">
                   <div class="pt-5">
-                    <p class="text-white font-weight-bold banner-heading-font">Robust UI Kit</p>
+                    <div class="text-white font-weight-bold banner-heading-font">Robust UI Kit</div>
                   </div>
                   <div class="section2-para2-font">
-                    <p>
+                    <div>
                       Robust is premium theme build with bootstrap. The theme
                       <br>is fully custmizable & can be used in any
                       <br>application
-                    </p>
+                    </div>
                   </div>
-                  <div>
+                  <div class="pt-4">
                     <button class="btn btn-green mr-2 res-button-margin btn:hover" type="button ">
-                      <b>Get Started</b>
+                      <b>Get started</b>
                     </button>
                     <button class="btn border-white component-btn-color text-white" type="button">
-                      <b>components</b>
+                      <b>Components</b>
                     </button>
                   </div>
                 </div>
@@ -56,50 +56,66 @@
     </div>
     <!--Main section-->
     <div id="bottomsection">
+      <div id="discover">
       <Discoverpara>
         <div slot="h2text" class="section2-para1-font discover-margin">
           Discover our
           <br>landing, app & blog
           <br>pages
         </div>
-        <p slot="paratext" class="section2-para2-font">
+        <div slot="paratext" class="section2-para2-font">
           Robust includes various demo pages for building
           <br>your custom app, blog or landing page. All code is
           <br>handwritten, all our components are optimized for
           <br>desktop, tablet and mobile.
-        </p>
+        </div>
       </Discoverpara>
-      <div>
+      </div>
+      <div id="explorepage">
         <Explorepage></Explorepage>
       </div>
+      <div id="mobilesecion">
       <ipadsection></ipadsection>
+      </div>
+      <div id="enormou">
       <Discoverpara>
         <div slot="h2text" class="section2-para1-font discover-margin enoroumd-margin-ipad">
           Enormous
           <br>collection of
           <br>elements
         </div>
-        <p slot="paratext" class="section2-para2-font enoroums-margin">
+        <div slot="paratext" class="section2-para2-font enoroums-margin">
           Robust is a premium theme built with Bootstrap 4,
           <br>the most popular UI framework. The theme is fully
           <br>responsive and customizable and can be used for
           <br>any type of web application.
-        </p>
+        </div>
       </Discoverpara>
+      </div>
+      <div id="features">
       <clean></clean>
+      </div>
+      <div id="testimonial">
       <testimonial></testimonial>
+      </div>
+      <div id="intergrates">
       <Discoverpara class="ipad-background-color integrate-para-padding">
         <div
           slot="h2text"
           class="section2-para1-font discover-margin"
         >Integrates with all your favorite tools</div>
-        <p
+        <div
           slot="paratext"
           class="section2-para2-font"
-        >Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.</p>
+        >Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.</div>
       </Discoverpara>
+      </div>
+      <div id="logos">
       <brandlogo></brandlogo>
+      </div>
+      <div id="#footer">
       <custom-footer brandnm="Robust." class="pt-5"></custom-footer>
+      </div>
     </div>
   </div>
 </template>
@@ -129,22 +145,27 @@ export default {
     return {
       navlinks: [
         {
+          scrollspy:"#home",
           name: "Overview",
           iconif: true
         },
         {
+          scrollspy:"#discover",
           name: "Pages",
           iconif: true
         },
         {
+          scrollspy:"#mobilesecion",
           name: "Components",
           iconif: true
         },
         {
+          scrollspy:"#enormou",
           name: "Docs",
           iconif: true
         },
         {
+          scrollspy:"#intergrates",
           button: true,
           iconif: false
         }
@@ -168,6 +189,12 @@ export default {
 .btn-green {
   background-color: rgb(80, 204, 80) !important;
   color: white;
+}
+.carousel-indicators li
+{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
 }
 .component-btn-color {
   background-color: transparent !important;
