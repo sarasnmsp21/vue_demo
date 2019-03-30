@@ -88,32 +88,5 @@ export default {
 </script>
 
 <style lang="scss">
-
-.card-img-top{
-  border-radius: 0%;
-}
-.changecolor{
-  color: rgb(199, 195, 197) !important;
- 
-}
-.landing-main {
-  margin-bottom: 100px !important;
-  .landing-content {
-    padding: 10px;
-    .landing-titlee {
-      font-size: 19px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: black;
-    }
-  .landing-textt{
-    letter-spacing: 0.5px;
-     color: #6c757d;
-    }  }
-}
-
-.fontless{
-  font-size: 12px;
-  font-weight: bold;
-}
+@import "../assets/scss/incline-website/landing-pages.scss";
 </style>

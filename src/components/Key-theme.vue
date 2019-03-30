@@ -48,21 +48,7 @@ export default {
 </script>
 
 <style lang="scss">
-.main-theme{
-  padding: 40px 0px;
-  .icon {
-  font-size: 30px;
-}
-    .theme-heading{
-      font-size: 18px;
-    }
-    .theme-text{
-      color: #9da5ac !important;
-    }
- 
-  
-}
-
+@import "../assets/scss/incline-website/Key-theme.scss";
 </style>
 
 

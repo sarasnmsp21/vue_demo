@@ -89,24 +89,5 @@
 </script>
 
 <style lang="scss">
-    .pricing-title {
-        font-size: 18px;
-        color: black;
-    }
-    
-    .pricing-btn {
-        font-size: 11px;
-        line-height: 1.64063rem;
-        text-transform: uppercase;
-        padding: 10px 13px;
-    }
-    
-    .price {
-        font-size: 25px;
-        color: #f5ba4b;
-    }
-    
-    .addborder {
-        border-top: 2px solid #f5ba4b;
-    }
+@import"../assets/scss/incline-website/Pricing-options.scss";
 </style>

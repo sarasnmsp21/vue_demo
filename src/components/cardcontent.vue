@@ -148,24 +148,10 @@ export default {
              
 
   <style lang="scss">
-  .card-line
-  {
-    font-size: 0.85rem;
-  }
-  .card-style
-  {
-    padding: 0 5rem;
-  }
-  
+   @import "../assets/scss/Material-Kit/material.scss";
    </style>
 
-<style>
- @media only screen and (min-width: 375px) and (max-width: 667px){
-   .card-style{
-   padding:0 0 !important;
-    } 
-  }
-</style>
+
 
   
    

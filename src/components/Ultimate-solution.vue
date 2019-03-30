@@ -53,17 +53,6 @@
 </script>
 
 <style lang="scss">
-.card-img-top{
-  border-radius: 0%;
-}
-    .first-image {
-        padding: 0px !important;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .first-image {
-            margin: 20px 0;
-        }
-    }
+@import"../assets/scss/incline-website/Ultimate-solution.scss";
 </style>
 

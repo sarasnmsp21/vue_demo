@@ -1,0 +1,287 @@
+ 
+ 
+ 
+ // banner background image...
+  .background {
+    background : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/background-img.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .background {
+        height: 800px;
+    }
+}
+
+// banner
+.main-content {
+    margin-top: 150px;
+    .text-1 {
+        font-size: 13px;
+        color: hsla(0, 0%, 100%, 0.65) !important;
+        margin-bottom: 34px;
+    }
+    .main-title {
+        font-size: 34px;
+    }
+    .text-2 {
+        font-size: 16px;
+        color: hsla(0, 0%, 100%, 0.65) !important;
+    }
+    .main-btn {
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 19px 27px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main-content {
+        margin-top: 50px;
+    }
+}
+
+// landing page
+.landing-title {
+    font-size: 24px;
+    color: black;
+}
+
+.landing-text {
+    color: #6c757d !important;
+    letter-spacing: 0.5px;
+}
+
+// second background image..
+.background-2 {
+    background-color: #F2F3F4;
+    background-size: cover;
+    padding: 80px 0px;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: relative;
+}
+
+// line on background image
+.line {
+    width: 0px;
+    height: 115px;
+    border-left: 2px solid #f5ba4b;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// card animation
+.card {
+    background-color: transparent !important;
+    img {
+        transition: 0.5s;
+    }
+    &:hover {
+        img {
+            box-shadow: 2px 5px 4px 5px #888888;
+            transform: translateY(-10px);
+        }
+    }
+}
+
+// quote media text
+.quote {
+    padding: 100px 0px;
+    .quote-text1 {
+        font-size: 17px;
+        color: black;
+        letter-spacing: 0.7px;
+    }
+    .icon1 {
+        color: black;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1.5;
+        min-width: 2.5em;
+    }
+    .quote-text2 {
+        color: black;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #f5ba4b;
+    }
+}
+
+// Key theme features
+.Key-theme {
+    padding: 50px;
+    .Key-theme-title {
+        font-size: 24px;
+    }
+    .Key-theme-text {
+        color: #9da5ac !important;
+    }
+}
+
+// work flow image
+.Intuitive {
+    padding: 120px 0px;
+    .workflow-main {
+        .workflow-title {
+            font-size: 26px;
+            color: black;
+        }
+        .work-btn {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 13px 27px;
+            color: black !important;
+        }
+    }
+    .workflow-image {
+        float: "";
+        .flexdiv {
+            height: 400px;
+        }
+        .backgdiv {
+            height: 200px;
+            width: 400px;
+            top: 20px;
+            position: relative;
+        }
+        .imageover {
+            height: 400px;
+            width: 250px;
+            position: absolute;
+            top: -150px;
+            left: 50%;
+            transform: translateX(-40%);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flexdiv {
+        height: 300px;
+        margin-top: 90px;
+    }
+    .backgdiv {
+        height: 150px;
+        width: 255px;
+        position: relative;
+        bottom: 10px;
+    }
+    .imageover {
+        height: 300px;
+        width: 1000px;
+        top: -100px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .imageover {
+        height: 100px;
+        width: 100px;
+        top: -100px;
+    }
+}
+
+// ---------card images for Ultimate solution----------------------
+.card-img {
+    border-radius: 0%;
+}
+
+.iconh {
+    font-size: 30px;
+}
+
+.Ultimate-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Ultimate-text {
+    color: #6c757d !important;
+}
+
+.first-image {
+    padding: 0px !important;
+}
+
+.middle-image {
+    transform: scale(1.1, 1.2);
+    z-index: 10 !important;
+    padding: 0px !important;
+}
+
+.third-image {
+    padding: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .first-image {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .middle-image {
+        z-index: 10 !important;
+        transform: scale(1, 1);
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .third-image {
+        margin: 20px 0;
+    }
+}
+
+//Pricing options
+.Pricing {
+    padding: 100px 0px;
+    .Pricing-title {
+        font-size: 24px;
+        color: black;
+    }
+    .Pricing-text {
+        color: #6c757d !important;
+    }
+}
+
+// Download it from the Bootstrap marketplace
+.Download-title {
+    font-size: 22px;
+    color: black;
+}
+
+.Download-text {
+    color: #6c757d !important;
+}
+
+.Download-btn {
+    font-size: 12px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 18px 25px;
+    color: black;
+}
+
+// button focus none
+.btn-outline-warning {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.btn {
+    border-radius: 0%;
+    background-color: transparent !important;
+}
+
+.btn:hover {
+    background-color: #f5ba4b !important;
+}

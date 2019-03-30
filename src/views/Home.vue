@@ -131,17 +131,5 @@ export default {
 </script>
 
 <style lang="scss">
-.oversectiion
-{
- margin: -84px 20px 30px ;
-}
-.home
-{
-  background-color: #ccc;
-}
-body
-{
-  font-size: 0.95rem !important;
-}
-
+ @import "../assets/scss/Material-Kit/material.scss";
 </style>
