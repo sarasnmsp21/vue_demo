@@ -57,7 +57,7 @@
 
     <div class="oversection mx-4 px-2 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
-        <div class="mt-4" id="components">
+        <div class="pt-4" id="components">
           <b-row>
             <b-col md="8" class="mx-auto">
               <!-- section header -->
