@@ -2,7 +2,7 @@
 
 
        <div class="p-4">
-                  <div class="mx-5 px-5">
+                  <div class="card-style mx-5 ">
                   <b-container>   
                  <b-row>  
                     
@@ -152,5 +152,24 @@ export default {
   {
     font-size: 0.85rem;
   }
-  </style>
+  .card-style
+  {
+    padding: 0 5rem;
+  }
+  
+   </style>
+
+<style>
+ @media only screen and (min-width: 375px) and (max-width: 667px){
+   .card-style{
+   padding:0 0 !important;
+    } 
+  }
+</style>
+
+  
+   
+
+ 
+ 
   

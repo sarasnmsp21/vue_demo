@@ -1,7 +1,7 @@
     <template>
            <!--image area-->
            <b-container>
-                          <div class="pl-5 pb-4  pad-top"  >
+                          <div class=" pb-4 card-style mx-5 pad-top"  >
                          
                                 <b-row> 
                                      <div class="col-md-6" v-for="image in images" v-bind:key="image.index">
@@ -50,4 +50,18 @@ export default {
 }
 </script>   
 
+<style lang="scss">
+ .card-style
+  {
+    padding: 0 5rem;
+  }
+  
+   </style>
 
+<style>
+ @media only screen and (min-width: 375px) and (max-width: 667px){
+   .card-style{
+   padding:0 0 !important;
+    } 
+  }
+</style>

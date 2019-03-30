@@ -2,9 +2,11 @@
   <!--home -->
   <div class="home">
    
+   <div id="head">
     <!--header-->
    <appheader msg="Material Kit"></appheader>
     <!--header-->
+   </div>
 
     <!--card content-->
    <div class="oversectiion ml-4  mr-4 ml-4 shadow p-3  bg-white rounded">
@@ -141,4 +143,5 @@ body
 {
   font-size: 0.95rem !important;
 }
+
 </style>

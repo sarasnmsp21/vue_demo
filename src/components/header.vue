@@ -6,7 +6,7 @@
        <div>
           <b-navbar fixed="top" toggleable="lg" type="dark" variant="">
            <b-container class="mx-5 px-5">
-           <b-navbar-brand class="text-white logo" href="#">{{msg}}</b-navbar-brand>
+           <b-navbar-brand class="text-white logo" href="#"  v-scroll-to="'#head'">{{msg}}</b-navbar-brand>
            <b-navbar-toggle target="nav_collapse"/>
            <b-collapse is-nav id="nav_collapse">
              <b-navbar-nav class="ml-auto " >
