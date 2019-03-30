@@ -1,10 +1,16 @@
 <template>
   <div class="fulldiv">
     <div>
-      <b-jumbotron class="p-0 top-jumbotron">
+      <b-jumbotron class="p-0 top-jumbotron" id="topid">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit Pro">
-          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index" v-scroll-to="link.divid">
+          <b-nav-item
+            href="#"
+            slot="navlinks"
+            v-for="link in navlinks"
+            v-bind:key="link.index"
+            v-scroll-to="link.divid"
+          >
             <span style="color:#fff" v-if="link.icon1">
               <font-awesome-icon :icon="['fas', 'th']" class="mr-1 small"/>
             </span>
@@ -30,11 +36,11 @@
                     <h2 class="font-weight-bolder banner-header">Your Story Starts With Us</h2>
                   </div>
                   <div>
-                    <p class="banner-text">
+                    <div class="banner-text mb-3">
                       Every landing page needs a small description after the big bold title,
                       that's why we added this text here. Add here all the information that can
                       make you or your product create the first impression.
-                    </p>
+                    </div>
                   </div>
                   <button type="button" class="px-4 py-2 btn btn-danger">
                     <small>
@@ -56,8 +62,8 @@
             <b-col md="8" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{ productHeader }}</h3>
-                <p slot="ptag" class="header-text">{{ productDescription }}</p>
+                <div class="divh3" slot="h3tag">{{ productHeader }}</div>
+                <div slot="ptag" class="header-text">{{ productDescription }}</div>
               </divheaders>
             </b-col>
           </b-row>
@@ -71,7 +77,7 @@
             <b-col md="10" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{ teamHeader }}</h3>
+                <div class="divh3" slot="h3tag">{{ teamHeader }}</div>
               </divheaders>
             </b-col>
           </b-row>
@@ -86,8 +92,8 @@
             <b-col md="8" class="mx-auto">
               <!-- section header -->
               <divheaders>
-                <h3 slot="h3tag">{{ workHeader }}</h3>
-                <p slot="ptag" class="pt-4 workdesc">{{ workDescription }}</p>
+                <div class="divh3" slot="h3tag">{{ workHeader }}</div>
+                <div slot="ptag" class="pt-4 workdesc">{{ workDescription }}</div>
               </divheaders>
 
               <b-row class="mb-3">
@@ -271,6 +277,10 @@ body {
 
   .workcolor:focus {
     outline: none;
+  }
+
+  .your-msg-txtarea {
+    resize: none;
   }
 }
 </style>

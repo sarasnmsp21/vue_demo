@@ -11,8 +11,8 @@
                          class="mb-4"
                          alt="placeholder" />
                     </div>
-                    <h4 class="mb-3 theme-heading text-white">{{card.heading}}</h4>
-                    <p class="text-secondary theme-text">{{card.para}} </p>
+                    <div class="mb-3 theme-heading text-white">{{card.heading}}</div>
+                    <div class="text-secondary theme-text">{{card.para}} </div>
                 </b-col>
             </b-row>
         </div>

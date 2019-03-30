@@ -8,9 +8,9 @@
         <b-col md=4 v-for="card in cards" v-bind:key="card.index">
           <div class="landing-content">
             <b-card :img-src="card.cardimg" img-alt="Image" img-top tag="article" class="mb-2 border-0 text-left ">
-              <h4 class="landing-titlee" :class="card.textcolor">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </h4>
+              <div class="landing-titlee" :class="card.textcolor">{{card.heading}} <span class="bg-danger text-white">{{card.spantext}}</span> </div>
               <b-card-text>
-                <p class="landing-textt" :class="card.textcolor">{{card.para}}</p>
+                <div class="landing-textt" :class="card.textcolor">{{card.para}}</div>
               </b-card-text>
   
             </b-card>
@@ -98,6 +98,7 @@ export default {
       font-size: 19px;
       margin-top: 20px;
       margin-bottom: 20px;
+      color: black;
     }
   .landing-textt{
     letter-spacing: 0.5px;

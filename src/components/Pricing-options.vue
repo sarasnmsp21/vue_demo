@@ -9,8 +9,8 @@
                     <b-card img-alt="Image" img-top tag="article" class="card mb-2 py-3" :class="card.borderclass">
                         <b-card-text>
     
-                            <h4 class=" text-center pricing-title p-3">Standard license</h4>
-                            <p class="text-center price py-2 text-warning ">{{card.price}}</p>
+                            <div class=" text-center pricing-title p-3">Standard license</div>
+                            <div class="text-center price py-2 text-warning ">{{card.price}}</div>
     
     
                             <div class="d-flex flex-row ">
@@ -22,7 +22,7 @@
                               </span>
                                 </div>
                                 <div class="p-2">
-                                    <p class="mb-0"> {{card.para1}}</p>
+                                    <div class="mb-0"> {{card.para1}}</div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row ">
@@ -35,7 +35,7 @@
                                     </span>
                                 </div>
                                 <div class="p-2">
-                                    <p class="mb-0"> {{card.para2}}</p>
+                                    <div class="mb-0"> {{card.para2}}</div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row ">
@@ -47,7 +47,7 @@
                               </span>
                                 </div>
                                 <div class="p-2">
-                                    <p> {{card.para3}} <span class="text-warning">{{card.para4}}</span></p>
+                                    <div> {{card.para3}} <a href="#"> <span class="text-warning link">{{card.para4}}</span></a></div>
                                 </div>
                             </div>
     
@@ -59,14 +59,7 @@
                 </div>
             </b-col>
         </b-row>
-    
-    
-    
-    
-    
-    
-    
-    
+        
     </div>
 </template>
 
@@ -76,7 +69,7 @@
             return {
                 cards: [{
                         price: "$49.00",
-                        para1: "Use for a single produc",
+                        para1: "Use for a single product",
                         para2: "Non-paying users only",
                         para3: "Read",
                         para4: "full description",
