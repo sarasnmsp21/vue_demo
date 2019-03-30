@@ -48,23 +48,7 @@ export default {
 }
 </script>                        
 <style lang="scss">
-.img-pb
-{
- border-radius: 0.4rem;
-}
- .card-style
-  {
-    padding: 0 5rem;
-  }
-  
-   </style>
-
-<style>
- @media only screen and (min-width: 375px) and (max-width: 667px){
-   .card-style{
-   padding:0 0 !important;
-    } 
-  }
+ @import "../assets/scss/Material-Kit/material.scss";
 </style>
 
 

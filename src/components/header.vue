@@ -67,39 +67,5 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar-nav {
-  .nav-link {
-    color: #fff !important;
-  }
-}
-.navbar-toggler-icon{
-  position:absolute;
-  top:8px;
-}
-.top-jumbotron {
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/back.jpg");
-  background-size: cover;
-  margin-top: -110px;
-}
-.navbar{
-background-color: #04172745;
-}
-.about-style
-{
-  font-size: 2.4rem;
-}
-.navbar{
-  .nav-link{
-.nav-item a:hover
-{
-  color:#fff !important;
-}
-}
-}
-.logo:hover
-{
-  color:#fff !important;
-}
+ @import "../assets/scss/Material-Kit/material.scss";
 </style>

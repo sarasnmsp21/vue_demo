@@ -51,42 +51,10 @@ export default {
 };
 </script> 
   <style lang="scss">
-.link {
-  color: #615a5a;
-}
-a:hover {
-  color: #615a5a !important;
-}
-.awesome
-{
-  color:#ea4563;
-}
-.text-wrap
-{
-  word-wrap: normal;
-}
-.media-line
-{
-  font-size:0.85rem;
-}
-.media-link
-{
-  font-size:0.95rem;
-}
- .card-style
-  {
-    padding: 0 5rem;
-  }
-  
-   </style>
+   @import "../assets/scss/Material-Kit/material.scss";
 
-<style>
- @media only screen and (min-width: 375px) and (max-width: 667px){
-   .card-style{
-   padding:0 0 !important;
-    } 
-  }
-</style>
+ </style>
+
 
 
   
