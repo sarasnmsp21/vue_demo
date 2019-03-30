@@ -1,4 +1,14 @@
+%form-style
+{
+  border-left-style: none !important;
+  border-right-style: none !important;
+  border-top-style: none !important;
+  border-bottom-style: 1px solid #000 !important;
+}
+  $font-size:0.95rem !important;
+  $color:#fff !important;
 
+  
 // CardContent
 .card-line
   {
@@ -18,18 +28,11 @@
 //form
 .form-control
 {
-  border-left-style: none !important;
-  border-right-style: none !important;
-  border-top-style: none !important;
-  border-bottom-style: 1px solid #000 !important;
+    @extend %form-style;
 }
 .custom-select
 {
-  border-left-style: none !important;
-  border-right-style: none !important;
-  border-top-style: none !important;
-  border-bottom-style: 1px solid #000 !important;
-  
+    @extend %form-style;
 }
 .btn
 {
@@ -40,7 +43,7 @@
 //header
 .navbar-nav {
     .nav-link {
-      color: #fff !important;
+      color:$color;
     }
   }
   .navbar-toggler-icon{
@@ -65,13 +68,13 @@
     .nav-link{
   .nav-item a:hover
   {
-    color:#fff !important;
+    color:$color;
   }
   }
   }
   .logo:hover
   {
-    color:#fff !important;
+    color:$color;
   }
 
   //header
@@ -119,6 +122,6 @@
 }
 body
 {
-  font-size: 0.95rem !important;
+  font-size:$font-size;
 }
 //home
