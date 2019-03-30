@@ -8,36 +8,37 @@
 
     <!--card content-->
    <div class="oversectiion ml-4  mr-4 ml-4 shadow p-3  bg-white rounded">
-
+  <div id="components">
       <!--contentparagraph-->
     <contentparagraph></contentparagraph>
      <!--contentparagraph-->
 
       <!--product-info-->
     <product>
-      <h3 slot="heading" class="text-center pt-5 pb-3"><b>We are nerd Rockstars </b></h3>
-      <p slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
+      <div  slot="heading" class="h3 text-center pt-5 pb-3"><b>We are nerd Rockstars </b></div>
+      <div  slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard  
                               
                                 
-         </p>
+         </div>
     </product>
     <!--product-info-->
 
      <!--cardcontent-->
     <cardcontent></cardcontent>
       <!--cardcontent-->
+  </div>
 
-
+     <div id="section">
     <!--product-info-->
      <product>
-      <h3 slot="heading" class="text-center pt-5 pb-3"><b>We build awesome products</b></h3>
-      <p slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
+      <div slot="heading" class="h3 text-center pt-5 pb-3"><b>We build awesome products</b></div>
+      <div slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard dummy text ever since the 1500s, 
                             
-         </p>
+         </div>
     </product>
     <!--product-info-->
 
@@ -47,12 +48,12 @@
 
     <!--product-info-->
    <product>
-      <h3 slot="heading" class="text-center pt-5 pb-3"><b>Our office is our second home </b></h3>
-      <p slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
+      <div slot="heading" class="h3 text-center pt-5 pb-3"><b>Our office is our second home </b></div>
+      <div slot="paragraph" class="text-center pt-0 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard dummy text ever since the 1500s, 
                                
-         </p>
+         </div>
     </product>
     <!--product-info-->
     
@@ -60,22 +61,26 @@
     <productimg> </productimg>
     <productimgsec></productimgsec>
       <!--productimg-->
+     </div>
 
+     <div id="example">
     <!--product-info-->
-     <product>
-      <h3 slot="heading" class="text-center pt-5 pb-3"><b>Want to work with us?</b></h3>
-      <p slot="paragraph" class="text-center pt-4 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
+  
+     <product >
+      <div slot="heading" class="h3 text-center pt-5 pb-3"><b>Want to work with us?</b></div>
+      <div slot="paragraph" class="text-center pt-4 pl-5 pr-5 pb-5">Lorem Ipsum is simply dummy text of the printing 
                                 and typesetting industry. Lorem Ipsum has 
                                 been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type  and more recently with
-         </p>
+                                
+         </div>
     </product>
+   
     <!--product-info-->
 
     <!--form-->
      <appform></appform>
       <!--form-->
-
+     </div>
    </div>
    <!--card content-->
 
@@ -117,8 +122,10 @@ export default {
       productimgsec, 
         appform,
    customfooter
-    }
-  };
+    },
+     
+ }
+  
 </script>
 
 <style lang="scss">
@@ -129,5 +136,9 @@ export default {
 .home
 {
   background-color: #ccc;
+}
+body
+{
+  font-size: 0.95rem !important;
 }
 </style>

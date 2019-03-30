@@ -2,7 +2,7 @@
 
 
        <div class="p-4">
-                  <div class="mx-5">
+                  <div class="mx-5 px-5">
                   <b-container>   
                  <b-row>  
                     
@@ -13,13 +13,13 @@
                       
                     <b-img :src="card.img" class="card-img-top  w-50 h-30  mx-auto rounded-circle  shadow  bg-white rounded"  alt="Card image cap"/>
                      <div class="card-body text-center">
-                       <h5 class="card-title ">{{card.title}}</h5>
-                       <h6 class="card-subtitle mb-2 text-muted ">{{card.subtitle}}</h6>
-                      <p class="card-text  ">{{card.para}}</p>
+                       <div class="h5 card-title ">{{card.title}}</div>
+                       <div class="h6 card-subtitle mb-2 text-muted ">{{card.subtitle}}</div>
+                      <div class="card-text card-line ">{{card.para}}</div>
                       <!-- <a href="#" class="card-link">{{card.link}}</a>
                       <a href="#" class="card-link"> {{card.link}}</a> -->
                         
-                <p>
+                <div>
                   <a href="#">
                     <span style="color:#0975B4" v-if="card.showlinkedin">
                       <font-awesome-icon :icon="['fab', 'linkedin-in']" class="mr-4"/>
@@ -56,7 +56,7 @@
                       <font-awesome-icon :icon="['fab', 'google']" class="mr-4"/>
                     </span>
                   </a>
-                </p>
+                </div>
              
                     </div>    
                     
@@ -146,3 +146,11 @@ export default {
 }
 </script> 
              
+
+  <style lang="scss">
+  .card-line
+  {
+    font-size: 0.85rem;
+  }
+  </style>
+  
