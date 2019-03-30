@@ -53,6 +53,9 @@
 </script>
 
 <style lang="scss">
+.card-img-top{
+  border-radius: 0%;
+}
     .first-image {
         padding: 0px !important;
     }
