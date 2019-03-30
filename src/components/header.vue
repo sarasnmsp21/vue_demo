@@ -72,8 +72,7 @@ export default {
     color: #fff !important;
   }
 }
-.navbar-toggler-icon
-{
+.navbar-toggler-icon{
   position:absolute;
   top:8px;
 }
