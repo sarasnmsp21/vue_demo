@@ -46,11 +46,6 @@
     };
 </script>
     
-<style lang="scss">
-.ipad-background-color {
-    background-color: #eff1f3;
-  }
-</style>
 
 
 

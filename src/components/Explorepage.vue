@@ -27,8 +27,6 @@
 
 <script>
 import images1 from "../assets/img13.png";
-import images2 from "../assets/web10.png";
-import images3 from "../assets/web7.png";
 export default {
   data() {
     return {
@@ -57,30 +55,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.shadow-sm {
-  border-radius: 0.35rem !important;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0.3rem 0.3rem 0 0 rgba(53, 52, 52, 0.1) !important;
-}
-.card-index {
-  z-index: link-font;
-}
-.card-bodylink-font {
-  padding-right: 5px !important;
-  flex: 0 !important;
-}
-.dash-para-font {
-  font-size: 15px;
-}
-.link-font {
-  font-size: 14px;
-  color: #42464a;
-}
-.bottom-border {
-  border-bottom: 2px solid #80808040;
-}
-.card-margin {
-  margin-right: -16px !important;
-}
-</style>

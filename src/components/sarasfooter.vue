@@ -124,17 +124,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.footer-text {
-  text-decoration: none !important;
-}
-ul {
-  list-style: none;
-}
-.bottom-border {
-  border-bottom: 2px solid #80808040;
-}
-.footer-heading {
-  font-size: 22px;
-}
-</style>

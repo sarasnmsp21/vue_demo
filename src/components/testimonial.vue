@@ -100,18 +100,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.para-text-size {
-  font-size: 22px;
-}
-.block-color {
-  background-color: #2680d4;
-}
-.pointer-caurosel
-{
-      margin-right: 10px !important;
-    margin-top: -51px;
-}
-</style>
-
 
