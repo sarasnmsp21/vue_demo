@@ -4,7 +4,7 @@
       <b-jumbotron class="p-0 top-jumbotron">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit Pro">
-          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index">
+          <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index" v-scroll-to="link.divid">
             <span style="color:#fff" v-if="link.icon1">
               <font-awesome-icon :icon="['fas', 'th']" class="mr-1 small"/>
             </span>
@@ -51,7 +51,7 @@
 
     <div class="oversection mx-4 px-2 shadow p-3 mb-0 bg-white rounded">
       <b-col md="10" class="mx-auto">
-        <div class="mt-4">
+        <div class="mt-4" id="components">
           <b-row>
             <b-col md="8" class="mx-auto">
               <!-- section header -->
@@ -66,7 +66,7 @@
         <div class="my-4 pt-3">
           <productspecs></productspecs>
         </div>
-        <div class="mt-5 pt-5">
+        <div id="section" class="mt-5 pt-5">
           <b-row>
             <b-col md="10" class="mx-auto">
               <!-- section header -->
@@ -81,7 +81,7 @@
           </div>
         </div>
 
-        <div class="pt-5">
+        <div id="example" class="pt-5">
           <b-row>
             <b-col md="8" class="mx-auto">
               <!-- section header -->
@@ -149,18 +149,21 @@ export default {
       navlinks: [
         {
           name: "Components",
+          divid: "#components",
           icon1: true,
           icon2: false,
           icon3: false
         },
         {
           name: "Sections",
+          divid: "#section",
           icon1: false,
           icon2: true,
           icon3: false
         },
         {
           name: "Examples",
+          divid: "#example",
           icon1: false,
           icon2: false,
           icon3: true
@@ -188,6 +191,10 @@ body {
   font-size: 1rem;
 }
 
+.navbar-brand:hover {
+  color: white !important;
+}
+
 .addpadding {
   padding: 0 100px !important;
 }
@@ -203,7 +210,7 @@ body {
 }
 
 .banner-content {
-  margin-top: 110px !important;
+  margin-top: 110px;
   .main-banner-content {
     padding-top: 11rem;
   }

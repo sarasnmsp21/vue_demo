@@ -5,6 +5,10 @@ import store from "./store";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
+var VueScrollTo = require('vue-scrollto');
+Vue.use(VueScrollTo)
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import {
@@ -15,7 +19,7 @@ import {
   faCaretRight,
   faLaptop,
   faChevronRight,
- faBars,
+  faBars,
   faSquare,
   faCalendar,
   faCircle,

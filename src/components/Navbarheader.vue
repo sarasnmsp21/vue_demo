@@ -3,7 +3,7 @@
   <div>
     <b-navbar id="mainnav" fixed="top" toggleable="lg" type variant>
       <b-container class="addpadding">
-        <b-navbar-brand class="text-white" href="#">{{ msg }}</b-navbar-brand>
+        <b-navbar-brand class="text-white nohover" href="#">{{ msg }}</b-navbar-brand>
         <b-navbar-toggle target="nav_collapse"/>
         <b-collapse is-nav id="nav_collapse">
           <b-navbar-nav class="ml-auto">
