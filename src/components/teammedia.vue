@@ -143,13 +143,7 @@ export default {
 </script>
 
 <style lang="scss">
-.team-members {
-  color: #3c4857;
-}
-
-.member-designation{
-  font-size: 10px;
-}
+@import '../assets/scss/materialkitr/teammedia.scss';
 </style>
 
 

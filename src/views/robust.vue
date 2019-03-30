@@ -4,8 +4,14 @@
   <div>
     <div id="topid" class="background py-5" fluid-grow alt="Fluid-grow image">
       <!-- navbar compoment use -->
-      <Navbarheader  msg="Robust."  class="navbar-bg text-white font-weight-bold">
-        <b-nav-item href="#" slot="navlinks" v-for="link in navlinks" v-bind:key="link.index" v-scroll-to="link.scrollspy">
+      <Navbarheader msg="Robust." class="navbar-bg text-white font-weight-bold">
+        <b-nav-item
+          href="#"
+          slot="navlinks"
+          v-for="link in navlinks"
+          v-bind:key="link.index"
+          v-scroll-to="link.scrollspy"
+        >
           <span class="ahover">
             <span v-html="link.name"></span>
             <span v-if="link.button">
@@ -57,64 +63,64 @@
     <!--Main section-->
     <div id="bottomsection">
       <div id="discover">
-      <Discoverpara>
-        <div slot="h2text" class="section2-para1-font discover-margin">
-          Discover our
-          <br>landing, app & blog
-          <br>pages
-        </div>
-        <div slot="paratext" class="section2-para2-font">
-          Robust includes various demo pages for building
-          <br>your custom app, blog or landing page. All code is
-          <br>handwritten, all our components are optimized for
-          <br>desktop, tablet and mobile.
-        </div>
-      </Discoverpara>
+        <Discoverpara>
+          <div slot="h2text" class="section2-para1-font discover-margin">
+            Discover our
+            <br>landing, app & blog
+            <br>pages
+          </div>
+          <div slot="paratext" class="section2-para2-font">
+            Robust includes various demo pages for building
+            <br>your custom app, blog or landing page. All code is
+            <br>handwritten, all our components are optimized for
+            <br>desktop, tablet and mobile.
+          </div>
+        </Discoverpara>
       </div>
       <div id="explorepage">
         <Explorepage></Explorepage>
       </div>
       <div id="mobilesecion">
-      <ipadsection></ipadsection>
+        <ipadsection></ipadsection>
       </div>
       <div id="enormou">
-      <Discoverpara>
-        <div slot="h2text" class="section2-para1-font discover-margin enoroumd-margin-ipad">
-          Enormous
-          <br>collection of
-          <br>elements
-        </div>
-        <div slot="paratext" class="section2-para2-font enoroums-margin">
-          Robust is a premium theme built with Bootstrap 4,
-          <br>the most popular UI framework. The theme is fully
-          <br>responsive and customizable and can be used for
-          <br>any type of web application.
-        </div>
-      </Discoverpara>
+        <Discoverpara>
+          <div slot="h2text" class="section2-para1-font discover-margin enoroumd-margin-ipad">
+            Enormous
+            <br>collection of
+            <br>elements
+          </div>
+          <div slot="paratext" class="section2-para2-font enoroums-margin">
+            Robust is a premium theme built with Bootstrap 4,
+            <br>the most popular UI framework. The theme is fully
+            <br>responsive and customizable and can be used for
+            <br>any type of web application.
+          </div>
+        </Discoverpara>
       </div>
       <div id="features">
-      <clean></clean>
+        <clean></clean>
       </div>
       <div id="testimonial">
-      <testimonial></testimonial>
+        <testimonial></testimonial>
       </div>
       <div id="intergrates">
-      <Discoverpara class="ipad-background-color integrate-para-padding">
-        <div
-          slot="h2text"
-          class="section2-para1-font discover-margin"
-        >Integrates with all your favorite tools</div>
-        <div
-          slot="paratext"
-          class="section2-para2-font"
-        >Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.</div>
-      </Discoverpara>
+        <Discoverpara class="ipad-background-color integrate-para-padding">
+          <div
+            slot="h2text"
+            class="section2-para1-font discover-margin"
+          >Integrates with all your favorite tools</div>
+          <div
+            slot="paratext"
+            class="section2-para2-font"
+          >Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.</div>
+        </Discoverpara>
       </div>
       <div id="logos">
-      <brandlogo></brandlogo>
+        <brandlogo></brandlogo>
       </div>
       <div id="#footer">
-      <custom-footer brandnm="Robust." class="pt-5"></custom-footer>
+        <custom-footer brandnm="Robust." class="pt-5"></custom-footer>
       </div>
     </div>
   </div>
@@ -145,27 +151,27 @@ export default {
     return {
       navlinks: [
         {
-          scrollspy:"#home",
+          scrollspy: "#home",
           name: "Overview",
           iconif: true
         },
         {
-          scrollspy:"#discover",
+          scrollspy: "#discover",
           name: "Pages",
           iconif: true
         },
         {
-          scrollspy:"#mobilesecion",
+          scrollspy: "#mobilesecion",
           name: "Components",
           iconif: true
         },
         {
-          scrollspy:"#enormou",
+          scrollspy: "#enormou",
           name: "Docs",
           iconif: true
         },
         {
-          scrollspy:"#intergrates",
+          scrollspy: "#intergrates",
           button: true,
           iconif: false
         }
@@ -176,85 +182,5 @@ export default {
 </script>
 
 <style lang="scss">
-.background {
-  background: linear-gradient(rgba(46, 126, 196, 1), rgba(7, 134, 238, 0.856)),
-    url("../assets/rimages/headerimage.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 580px;
-}
-#mainnav {
-  background-color: #2e7ec4;
-}
-.btn-green {
-  background-color: rgb(80, 204, 80) !important;
-  color: white;
-}
-.carousel-indicators li
-{
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-}
-.component-btn-color {
-  background-color: transparent !important;
-}
-.btn:hover {
-  color: white;
-}
-.banner-heading-font {
-  font-size: 50px;
-}
-.section2-para1-font {
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.2;
-}
-.section2-para2-font {
-  line-height: 1.7;
-}
-.enoroums-margin {
-  margin-left: -50px;
-}
-.ipad-background-color {
-  background-color: #eff1f3;
-}
-.integrate-para-padding {
-  padding-top: 3rem !important;
-}
-.addpadding {
-  padding: 0 100px;
-}
-.ahover:hover {
-  color: white;
-}
-.navbar-brand:hover {
-  color: white !important;
-}
-.ahover {
-  font-size: 15px;
-}
-.purchase-now-button {
-  font-size: 13px;
-}
-@media only screen and (max-width: 600px) {
-  .res-button-margin {
-    margin-right: 20px !important;
-    margin-top: 8px;
-  }
-
-  .enoroums-margin {
-    margin-left: 0px;
-  }
-  .discover-margin {
-    margin-left: 16px !important;
-    margin-bottom: 10px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .enoroumd-margin-ipad {
-    margin-left: -42px !important;
-    margin-right: 52px !important;
-  }
-}
+@import "../assets/scss/robust/import.scss";
 </style>

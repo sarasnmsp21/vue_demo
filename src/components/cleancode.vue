@@ -65,17 +65,6 @@
     }
   }
 </script>
-<style lang="scss">
-  .ipad-text-font {
-    font-size: 13px;
-  }
-  .card-index {
-    z-index: -1;
-  }
-  .icon-heading-font
-  {
-    font-size: 20px;
-  }
-</style>
+
 
 

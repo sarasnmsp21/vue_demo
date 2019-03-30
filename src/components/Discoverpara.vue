@@ -20,10 +20,5 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.section2-top-padding {
-  padding-top: 5rem;
-}
-</style>
 
 
