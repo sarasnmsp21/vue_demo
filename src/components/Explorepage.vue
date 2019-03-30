@@ -14,7 +14,7 @@
               <b-card :img-src="card.landimg" class="shadow-sm border-0 mb-3"/>
               <div class="font-weight-bold">{{card.heading}}</div>
               <b-card-text class="dash-para-font">
-                <p class="text-secondary">{{card.para}}</p>
+                <div class="text-secondary">{{card.para}}</div>
               </b-card-text>
               <a href="#" class="text-left bottom-border link-font footer-text">Explore Pages ›</a>
             </b-card>
