@@ -1,6 +1,7 @@
 <template>
   <div class="fulldiv">
     <div>
+      <b-jumbotron class="p-0 top-jumbotron" id="topid">
         <!-- Navigation Bar -->
         <Navbarheader msg="Material Kit Pro">
           <b-nav-item
