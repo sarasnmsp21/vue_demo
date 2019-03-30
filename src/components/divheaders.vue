@@ -19,12 +19,5 @@ export default {
 </script>
 
 <style lang="scss">
-.sectionheader {
-  color: #3c4857;
-  .divh3 {
-    margin-bottom: 15px;
-    font-size: 33px;
-    font-weight: 900;
-  }
-}
+@import "../assets/scss/materialkitr/divheaders.scss";
 </style>

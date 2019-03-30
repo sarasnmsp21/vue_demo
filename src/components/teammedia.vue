@@ -2,7 +2,13 @@
   <!-- created by ram -->
   <div>
     <b-row class="mx-auto team-members">
-      <b-col md="6" sm="12" class="text-center mb-4" v-for="member in members" v-bind:key="member.index">
+      <b-col
+        md="6"
+        sm="12"
+        class="text-center mb-4"
+        v-for="member in members"
+        v-bind:key="member.index"
+      >
         <b-media>
           <b-row>
             <b-col md="4" class="text-center">
@@ -19,7 +25,7 @@
               <div class="team-member-name mt-0">
                 <h6 class="font-weight-bolder">{{member.membername}}</h6>
               </div>
-              <div class="member-designation mt-0 ">
+              <div class="member-designation mt-0">
                 <p class="text-muted font-weight-bold">{{member.position}}</p>
               </div>
               <div class="member-description">
@@ -143,7 +149,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/scss/materialkitr/teammedia.scss';
+@import "../assets/scss/materialkitr/teammedia.scss";
 </style>
 
 
