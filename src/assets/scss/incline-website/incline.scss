@@ -1,5 +1,5 @@
  
- 
+ @import "../assets/scss/incline-website/_incline-variables.scss";
  
  // banner background image...
   .background {
@@ -45,13 +45,15 @@
 
 // landing page
 .landing-title {
-    font-size: 24px;
-    color: black;
+
+    @include title-text();
+
 }
 
 .landing-text {
     color: #6c757d !important;
     letter-spacing: 0.5px;
+  
 }
 
 // second background image..
@@ -94,19 +96,19 @@
 .quote {
     padding: 100px 0px;
     .quote-text1 {
-        font-size: 17px;
-        color: black;
+        font-size: $text-font;
+        color: $title-color;
         letter-spacing: 0.7px;
     }
     .icon1 {
-        color: black;
+        color: $title-color;
         font-size: 28px;
         font-weight: 900;
         line-height: 1.5;
         min-width: 2.5em;
     }
     .quote-text2 {
-        color: black;
+        color: $title-color;
         text-decoration: underline;
         text-decoration-style: wavy;
         text-decoration-color: #f5ba4b;
@@ -117,7 +119,7 @@
 .Key-theme {
     padding: 50px;
     .Key-theme-title {
-        font-size: 24px;
+        font-size: $title-font;
     }
     .Key-theme-text {
         color: #9da5ac !important;
@@ -130,13 +132,13 @@
     .workflow-main {
         .workflow-title {
             font-size: 26px;
-            color: black;
+            color: $title-color;
         }
         .work-btn {
             font-size: 12px;
             text-transform: uppercase;
             padding: 13px 27px;
-            color: black !important;
+            color: $title-color !important;
         }
     }
     .workflow-image {
@@ -203,7 +205,7 @@
 }
 
 .Ultimate-text {
-    color: #6c757d !important;
+    color: $text-color !important;
 }
 
 .first-image {
@@ -244,22 +246,21 @@
 .Pricing {
     padding: 100px 0px;
     .Pricing-title {
-        font-size: 24px;
-        color: black;
+        @include title-text();
     }
     .Pricing-text {
-        color: #6c757d !important;
+        color: $text-color !important;
     }
 }
 
 // Download it from the Bootstrap marketplace
 .Download-title {
-    font-size: 22px;
-    color: black;
+    font-size: 21px;
+    color: $title-color;
 }
 
 .Download-text {
-    color: #6c757d !important;
+    color:$text-color !important;
 }
 
 .Download-btn {
@@ -267,7 +268,7 @@
     position: relative;
     text-transform: uppercase;
     padding: 18px 25px;
-    color: black;
+    color: $title-color;
 }
 
 // button focus none
