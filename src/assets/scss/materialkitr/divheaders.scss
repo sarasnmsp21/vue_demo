@@ -1,5 +1,6 @@
+@import "./color-variables";
 .sectionheader {
-  color: #3c4857;
+  color: $sectionheader;
   .divh3 {
     margin-bottom: 15px;
     font-size: 33px;
