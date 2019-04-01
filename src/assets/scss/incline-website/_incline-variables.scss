@@ -1,0 +1,9 @@
+$text-color:#6c757d;
+$title-color:black;
+$title-font:22px;
+$text-font:17px;
+
+@mixin title-text{
+    color: black;
+    font-size: 22px;
+} 
