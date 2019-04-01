@@ -18,17 +18,7 @@
            </b-container>
                           <!--image area-->
    </template>
-   <style lang="scss">
-   .pad-top 
-      {
-       margin-top: -31px;
-      }
-      .img-pb1
-       {
-        border-radius: 0.4rem;
-        }
-   </style>
-   
+  
                    
 <script>
  
@@ -51,11 +41,9 @@ export default {
 </script>   
 
 <style lang="scss">
- .card-style
-  {
-    padding: 0 5rem;
-  }
+
   
+    @import "../assets/scss/Material-Kit/material.scss";
    </style>
 
 <style>

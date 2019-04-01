@@ -69,3 +69,13 @@ export default {
 <style lang="scss">
  @import "../assets/scss/Material-Kit/material.scss";
 </style>
+
+<style>
+@media only screen and (min-width: 375px) and (max-width: 667px){
+  .pt-5
+  {
+    padding-top: 0 !important;
+  }
+}
+</style>
+
