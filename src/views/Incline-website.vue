@@ -220,7 +220,7 @@
                                                         <font-awesome-icon icon="coffee" alt="placeholder" class="iconh" />
                                                     </div>
                                                     <div class="card-title text-left">
-                                                        <div class="Ultimate-title  ">Support pages</div>
+                                                        <div class="Ultimate-title ">Support pages</div>
                                                     </div>
                                                     <div class="card-text text-left">
                                                         <div class="mb-5  Ultimate-text">
